@@ -3,88 +3,220 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>The Lone Analyst™</title>
-  <meta name="description" content="The Lone Analyst™ — cybersecurity, AI, technology, commentary, podcast, and digest.">
+  <title>The Lone Analyst™ — Cybersecurity, AI & Technology Analysis</title>
+  <meta name="description" content="The Lone Analyst™ is an independent media property covering cybersecurity, artificial intelligence, technology, and the systems shaping them.">
   <link rel="canonical" href="https://theloneanalyst.com/">
   <style>
-    :root { color-scheme: dark; }
+    :root {
+      color-scheme: dark;
+      --bg: #0b0b0c;
+      --panel: #131315;
+      --text: #f3f3f3;
+      --muted: #a9a9ad;
+      --line: #303035;
+      --line-strong: #55555d;
+    }
     * { box-sizing: border-box; }
     body {
       margin: 0;
-      min-height: 100vh;
-      display: grid;
-      place-items: center;
-      background: #0b0b0c;
-      color: #f2f2f2;
+      background: var(--bg);
+      color: var(--text);
       font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.6;
     }
-    main {
-      width: min(760px, calc(100% - 40px));
-      padding: 64px 0;
+    a { color: inherit; }
+    .shell {
+      width: min(1060px, calc(100% - 40px));
+      margin: 0 auto;
     }
+    header {
+      border-bottom: 1px solid var(--line);
+    }
+    .topbar {
+      min-height: 72px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+    .brand {
+      font-weight: 750;
+      text-decoration: none;
+      letter-spacing: -.02em;
+    }
+    .topnav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 18px;
+    }
+    .topnav a {
+      color: var(--muted);
+      text-decoration: none;
+      font-size: .95rem;
+    }
+    .topnav a:hover,
+    .topnav a:focus-visible { color: var(--text); }
+    main { padding: 80px 0 64px; }
     .kicker {
       text-transform: uppercase;
       letter-spacing: .18em;
       font-size: .78rem;
-      color: #a6a6a6;
+      color: var(--muted);
       margin-bottom: 18px;
     }
     h1 {
-      margin: 0 0 14px;
-      font-size: clamp(2.8rem, 9vw, 6rem);
-      line-height: .95;
-      letter-spacing: -.04em;
+      max-width: 900px;
+      margin: 0;
+      font-size: clamp(3rem, 9vw, 7rem);
+      line-height: .9;
+      letter-spacing: -.055em;
     }
     .tagline {
-      font-size: clamp(1.2rem, 3vw, 1.65rem);
-      line-height: 1.4;
-      color: #d6d6d6;
-      max-width: 680px;
+      max-width: 760px;
+      margin: 28px 0 0;
+      font-size: clamp(1.3rem, 3vw, 2rem);
+      line-height: 1.35;
+      color: #d7d7da;
     }
-    .sub {
+    .intro {
+      max-width: 720px;
+      margin: 28px 0 0;
+      color: var(--muted);
+      font-size: 1.05rem;
+    }
+    .sections {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 18px;
+      margin-top: 56px;
+    }
+    .card {
+      display: block;
+      min-height: 230px;
+      padding: 28px;
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      background: var(--panel);
+      text-decoration: none;
+      transition: border-color .15s ease, transform .15s ease;
+    }
+    .card:hover,
+    .card:focus-visible {
+      border-color: var(--line-strong);
+      transform: translateY(-2px);
+    }
+    .card-label {
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: .14em;
+      font-size: .75rem;
+    }
+    .card h2 {
+      margin: 14px 0 10px;
+      font-size: 1.7rem;
+      line-height: 1.15;
+    }
+    .card p {
+      margin: 0;
+      color: var(--muted);
+      max-width: 48ch;
+    }
+    .card .cta {
+      display: inline-block;
       margin-top: 24px;
-      line-height: 1.7;
-      color: #a9a9a9;
-      max-width: 650px;
+      color: var(--text);
+      font-weight: 650;
     }
-    nav {
+    .follow {
+      margin-top: 64px;
+      padding-top: 28px;
+      border-top: 1px solid var(--line);
+    }
+    .follow h2 {
+      margin: 0 0 14px;
+      font-size: 1rem;
+    }
+    .links {
       display: flex;
       flex-wrap: wrap;
       gap: 12px;
-      margin-top: 34px;
     }
-    a {
-      color: #fff;
-      text-decoration: none;
-      border: 1px solid #3a3a3a;
+    .links a {
+      padding: 8px 12px;
+      border: 1px solid var(--line);
       border-radius: 999px;
-      padding: 10px 16px;
+      color: var(--muted);
+      text-decoration: none;
+      font-size: .92rem;
     }
-    a:hover { border-color: #888; }
+    .links a:hover,
+    .links a:focus-visible {
+      color: var(--text);
+      border-color: var(--line-strong);
+    }
     footer {
-      margin-top: 52px;
+      padding: 32px 0 48px;
+      color: #77777d;
       font-size: .85rem;
-      color: #777;
+    }
+    @media (max-width: 700px) {
+      .topbar { align-items: flex-start; padding: 20px 0; flex-direction: column; }
+      main { padding-top: 54px; }
+      .sections { grid-template-columns: 1fr; }
     }
   </style>
 </head>
 <body>
-  <main>
-    <div class="kicker">Cybersecurity · AI · Technology</div>
+  <header>
+    <div class="shell topbar">
+      <a class="brand" href="/">The Lone Analyst™</a>
+      <nav class="topnav" aria-label="Primary">
+        <a href="https://apt6pack.neocities.org/podcast/">Podcast</a>
+        <a href="https://ap6pack.github.io/dist/newsletters/">Digest</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="shell">
+    <div class="kicker">Cybersecurity · AI · Technology · Analysis</div>
     <h1>The Lone Analyst™</h1>
-    <div class="tagline">Most people read the news. I read what's between it.</div>
-    <p class="sub">
-      The new home of The Lone Analyst is coming online. The podcast remains live while
-      the full site, Digest, sources, and archive move here.
+    <p class="tagline">Most people read the news. I read what's between it.</p>
+    <p class="intro">
+      Independent analysis of cybersecurity, artificial intelligence, technology,
+      and the systems shaping them — through the podcast and The Lone Analyst Digest.
     </p>
-    <nav aria-label="Current Lone Analyst destinations">
-      <a href="https://apt6pack.neocities.org/podcast/">Podcast</a>
-      <a href="https://podcasts.apple.com/us/podcast/the-lone-analyst-podcast/id6811771757">Apple Podcasts</a>
-      <a href="https://open.spotify.com/show/4lpVtQb18ONBPjEuBzeIle">Spotify</a>
-      <a href="https://www.youtube.com/playlist?list=PLI13iNuQCeQ8">YouTube</a>
-      <a href="https://x.com/TheLoneAnalyst">X</a>
-    </nav>
-    <footer>© 2026 Veritas Aequitas Holdings LLC. THE LONE ANALYST™ is a media property of Veritas Aequitas Holdings LLC.</footer>
+
+    <section class="sections" aria-label="The Lone Analyst publications">
+      <a class="card" href="https://apt6pack.neocities.org/podcast/">
+        <span class="card-label">Listen</span>
+        <h2>The Lone Analyst Podcast</h2>
+        <p>Real reporting, technical context, and a skeptical look at what sits underneath the headlines.</p>
+        <span class="cta">Open the podcast →</span>
+      </a>
+
+      <a class="card" href="https://ap6pack.github.io/dist/newsletters/">
+        <span class="card-label">Read</span>
+        <h2>The Lone Analyst Digest</h2>
+        <p>Long-form analysis, research notes, source-driven commentary, and the stories worth following deeper.</p>
+        <span class="cta">Read the Digest →</span>
+      </a>
+    </section>
+
+    <section class="follow" aria-label="Follow The Lone Analyst">
+      <h2>Follow</h2>
+      <div class="links">
+        <a href="https://x.com/TheLoneAnalyst">X</a>
+        <a href="https://www.instagram.com/the.lone.analyst/">Instagram</a>
+        <a href="https://www.tiktok.com/@the.lone.analyst">TikTok</a>
+        <a href="https://www.youtube.com/playlist?list=PLI13iNuQCeQ8">YouTube</a>
+        <a href="https://podcasts.apple.com/us/podcast/the-lone-analyst-podcast/id6811771757">Apple Podcasts</a>
+        <a href="https://open.spotify.com/show/4lpVtQb18ONBPjEuBzeIle">Spotify</a>
+      </div>
+    </section>
   </main>
+
+  <footer class="shell">
+    © 2026 Veritas Aequitas Holdings LLC. THE LONE ANALYST™ is a media property of Veritas Aequitas Holdings LLC.
+  </footer>
 </body>
 </html>

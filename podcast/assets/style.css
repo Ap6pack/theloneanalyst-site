@@ -1,0 +1,411 @@
+/**
+ * Copyright (c) 2026 Veritas Aequitas Holdings LLC. All rights reserved.
+ * See docs/OWNERSHIP.md for the repository's ownership and license status.
+ *
+ * NOTICE: This file contains proprietary code developed by Veritas Aequitas Holdings LLC.
+ * Unauthorized use, reproduction, or distribution is strictly prohibited.
+ * For inquiries, contact: contact@veritasandaequitas.com
+ */
+/* The Lone Analyst Podcast -- dossier / conspiracy-wall styling */
+
+:root {
+  --color-bg: #141210;
+  --color-bg-panel: #1c1a17;
+  --color-text: #e7e0cf;
+  --color-text-muted: #9a9284;
+  --color-accent: #b3272c;
+  --color-accent-bright: #d5423f;
+  --color-border: #34302a;
+
+  --paper-bg: #ddd3b8;
+  --paper-text: #1a1712;
+  --paper-muted: #6b6353;
+
+  --font-display: 'Arial Black', 'Helvetica Neue', Impact, sans-serif;
+  --font-mono: ui-monospace, 'SFMono-Regular', 'Cascadia Code', 'Courier New', monospace;
+  --font-body: Georgia, 'Times New Roman', serif;
+
+  --spacing: 1rem;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-body);
+  background-color: var(--color-bg);
+  background-image:
+    radial-gradient(rgba(255,255,255,0.02) 1px, transparent 1px);
+  background-size: 3px 3px;
+  color: var(--color-text);
+  line-height: 1.6;
+}
+
+a {
+  color: var(--color-accent-bright);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Header & Navigation */
+.site-header {
+  background: var(--color-bg-panel);
+  border-bottom: 4px solid var(--color-accent);
+  padding: var(--spacing) 0;
+}
+
+.navbar {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 var(--spacing);
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--spacing);
+}
+
+.site-title {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  font-weight: 900;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--color-text);
+}
+
+.site-title a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.site-title::before {
+  content: "";
+  display: inline-block;
+  width: 0.6em;
+  height: 0.6em;
+  background: var(--color-accent);
+  margin-right: 0.5em;
+  vertical-align: middle;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: calc(var(--spacing) * 1.5);
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.nav-links a {
+  color: var(--color-text-muted);
+  font-weight: 700;
+  border-bottom: 2px solid transparent;
+  padding-bottom: 2px;
+}
+
+.nav-links a:hover {
+  color: var(--color-text);
+  border-bottom-color: var(--color-accent);
+  text-decoration: none;
+}
+
+/* Hero banner */
+.hero-banner {
+  display: block;
+  width: 100%;
+  max-height: 420px;
+  object-fit: contain;
+  background: var(--color-bg);
+  border-bottom: 4px solid var(--color-border);
+}
+
+/* Container & Main */
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 var(--spacing) calc(var(--spacing) * 3);
+}
+
+main {
+  min-height: 60vh;
+}
+
+h1 {
+  font-family: var(--font-display);
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  font-size: 2rem;
+  margin: calc(var(--spacing) * 2) 0 var(--spacing);
+  color: var(--color-text);
+}
+
+h2 {
+  font-family: var(--font-mono);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 1.1rem;
+  margin: calc(var(--spacing) * 2.5) 0 var(--spacing);
+  color: var(--color-accent-bright);
+  border-bottom: 1px solid var(--color-border);
+  padding-bottom: calc(var(--spacing) * 0.5);
+}
+
+h3 {
+  font-size: 1.2rem;
+  margin: var(--spacing) 0 calc(var(--spacing) * 0.5);
+}
+
+p {
+  margin: var(--spacing) 0;
+}
+
+/* Episode detail page */
+.episode {
+  background-color: var(--color-bg-panel);
+  border: 1px solid var(--color-border);
+  padding: calc(var(--spacing) * 2);
+  margin: calc(var(--spacing) * 1.5) 0;
+}
+
+.episode-header {
+  margin-bottom: calc(var(--spacing) * 1.5);
+  border-bottom: 2px solid var(--color-accent);
+  padding-bottom: var(--spacing);
+}
+
+.episode-header h1 {
+  margin: 0 0 var(--spacing);
+  font-size: 1.6rem;
+}
+
+.episode-meta {
+  display: flex;
+  gap: var(--spacing);
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--color-text-muted);
+}
+
+.audio-player {
+  background-color: var(--paper-bg);
+  color: var(--paper-text);
+  padding: calc(var(--spacing) * 1.25);
+  margin: var(--spacing) 0;
+  border-left: 6px solid var(--color-accent);
+}
+
+.audio-player audio {
+  width: 100%;
+  margin-bottom: calc(var(--spacing) * 0.5);
+}
+
+.duration {
+  margin: 0;
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--paper-muted);
+}
+
+.episode-body {
+  margin: calc(var(--spacing) * 2) 0;
+  line-height: 1.85;
+}
+
+.episode-body p {
+  margin: var(--spacing) 0;
+}
+
+.episode-body pre {
+  background-color: var(--color-bg);
+  border: 1px solid var(--color-border);
+  padding: var(--spacing);
+  overflow-x: auto;
+}
+
+.episode-body code {
+  font-family: var(--font-mono);
+  font-size: 0.9em;
+}
+
+/* Episodes List -- pinned clipping cards */
+.episodes-list {
+  display: grid;
+  gap: calc(var(--spacing) * 2);
+  margin: calc(var(--spacing) * 2) 0;
+}
+
+.episode-card {
+  background-color: var(--paper-bg);
+  color: var(--paper-text);
+  padding: calc(var(--spacing) * 1.25);
+  position: relative;
+  box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.35);
+}
+
+.episode-card:nth-child(odd) {
+  transform: rotate(-0.6deg);
+}
+
+.episode-card:nth-child(even) {
+  transform: rotate(0.5deg);
+}
+
+.episode-card::before {
+  content: "";
+  position: absolute;
+  top: -6px;
+  left: calc(var(--spacing) * 1.5);
+  width: 12px;
+  height: 12px;
+  background: var(--color-accent);
+  border-radius: 50%;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.episode-card h3 {
+  margin: var(--spacing) 0 calc(var(--spacing) * 0.5);
+  font-family: var(--font-display);
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  letter-spacing: 0.01em;
+}
+
+.episode-card h3 a {
+  color: var(--paper-text);
+  font-weight: 900;
+}
+
+.episode-card p {
+  color: var(--paper-text);
+}
+
+.episode-card .episode-meta {
+  font-size: 0.75rem;
+  margin-bottom: var(--spacing);
+  color: var(--paper-muted);
+}
+
+.mini-player {
+  width: 100%;
+  margin: var(--spacing) 0;
+  height: 32px;
+}
+
+.read-more {
+  display: inline-block;
+  margin-top: var(--spacing);
+  padding: 0.5rem 1rem;
+  background-color: var(--color-accent);
+  color: #fff;
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  font-weight: 700;
+}
+
+.read-more:hover {
+  text-decoration: none;
+  background-color: var(--color-accent-bright);
+}
+
+/* Episode Navigation */
+.episode-nav {
+  display: flex;
+  justify-content: space-between;
+  gap: var(--spacing);
+  margin-top: calc(var(--spacing) * 2);
+  padding-top: calc(var(--spacing) * 2);
+  border-top: 1px solid var(--color-border);
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.prev-episode, .next-episode {
+  padding: 0.6rem 1.2rem;
+  border: 2px solid var(--color-accent);
+  font-weight: 700;
+  color: var(--color-accent-bright);
+}
+
+.prev-episode:hover, .next-episode:hover {
+  background-color: var(--color-accent);
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Footer */
+.site-footer {
+  background: var(--color-bg-panel);
+  border-top: 4px solid var(--color-accent);
+  margin-top: calc(var(--spacing) * 3);
+  padding: calc(var(--spacing) * 1.5);
+  text-align: center;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--color-text-muted);
+}
+
+.site-footer p {
+  margin: calc(var(--spacing) * 0.5) 0;
+}
+
+.site-footer a {
+  color: var(--color-text);
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .site-title {
+    font-size: 1.1rem;
+  }
+
+  .nav-links {
+    gap: var(--spacing);
+    font-size: 0.7rem;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  h2 {
+    font-size: 1rem;
+  }
+
+  .episode-nav {
+    flex-direction: column;
+  }
+
+  .episode-card {
+    padding: var(--spacing);
+    transform: none !important;
+  }
+
+  .hero-banner {
+    max-height: 220px;
+  }
+}

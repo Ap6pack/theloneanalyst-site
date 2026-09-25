@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THE MODEM THAT LET THEM IN - The Lone Analyst Podcast</title>
+    <meta name="description" content="A Pixel modem privilege-escalation flaw, Gemini 3.8 Live, the N0va phishkit that skips malware entirely, energy-theft AI at Databricks, and a wargame paper that admits AI can&#39;t handle a conflict.">
+    <link rel="canonical" href="https://theloneanalyst.com/podcast/episodes/episode-005/">
+    <link rel="stylesheet" href="/podcast/assets/style.css">
+    <link rel="alternate" type="application/rss+xml" title="The Lone Analyst Podcast" href="/podcast/feed.xml">
+
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="The Lone Analyst Podcast">
+    <meta property="og:title" content="THE MODEM THAT LET THEM IN - The Lone Analyst Podcast">
+    <meta property="og:description" content="A Pixel modem privilege-escalation flaw, Gemini 3.8 Live, the N0va phishkit that skips malware entirely, energy-theft AI at Databricks, and a wargame paper that admits AI can&#39;t handle a conflict.">
+    <meta property="og:url" content="https://theloneanalyst.com/podcast/episodes/episode-005/">
+    <meta property="og:image" content="https://theloneanalyst.com/podcast/assets/podcast-cover.png">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="THE MODEM THAT LET THEM IN - The Lone Analyst Podcast">
+    <meta name="twitter:description" content="A Pixel modem privilege-escalation flaw, Gemini 3.8 Live, the N0va phishkit that skips malware entirely, energy-theft AI at Databricks, and a wargame paper that admits AI can&#39;t handle a conflict.">
+    <meta name="twitter:image" content="https://theloneanalyst.com/podcast/assets/podcast-cover.png">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "PodcastSeries",
+      "name": "The Lone Analyst Podcast",
+      "description": "The internet's weird basement, live from a podcast booth. What happens when you read between the headlines.",
+      "url": "https://theloneanalyst.com/podcast/",
+      "image": "https://theloneanalyst.com/podcast/assets/podcast-cover.png",
+      "webFeed": "https://theloneanalyst.com/podcast/feed.xml",
+      "inLanguage": "en-us",
+      "author": {
+        "@type": "Person",
+        "name": "Adam Rhys Heaton"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Veritas Aequitas Holdings LLC",
+        "brand": {
+          "@type": "Brand",
+          "name": "The Lone Analyst",
+          "alternateName": "The Lone Analyst™",
+          "slogan": "Most people read the news. I read what's between it.",
+          "sameAs": [
+            "https://x.com/TheLoneAnalyst",
+            "https://www.instagram.com/the.lone.analyst/",
+            "https://www.tiktok.com/@the.lone.analyst"
+          ]
+        }
+      },
+      "copyrightHolder": {
+        "@type": "Organization",
+        "name": "Veritas Aequitas Holdings LLC"
+      },
+      "sameAs": [
+        "https://www.youtube.com/playlist?list=PLI13iNuQCeQ8",
+        "https://open.spotify.com/show/4lpVtQb18ONBPjEuBzeIle",
+        "https://podcasts.apple.com/us/podcast/the-lone-analyst-podcast/id6811771757"
+      ]
+    }
+    </script>
+</head>
+<body>
+    <header class="site-header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <h1 class="site-title"><a href="/podcast/">The Lone Analyst Podcast</a></h1>
+                <ul class="nav-links">
+                    <li><a href="/podcast/">Home</a></li>
+                    <li><a href="/podcast/episodes/">Episodes</a></li>
+                    <li><a href="https://ap6pack.github.io/dist/newsletters/newsletter_meme.html">Newsletter</a></li>
+                    <li><a href="/podcast/about/">About</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <img src="/podcast/assets/podcast-banner.png" alt="The Lone Analyst Podcast" class="hero-banner">
+
+    <main class="container">
+        <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "PodcastEpisode",
+  "name": "THE MODEM THAT LET THEM IN",
+  "description": "A Pixel modem privilege-escalation flaw, Gemini 3.8 Live, the N0va phishkit that skips malware entirely, energy-theft AI at Databricks, and a wargame paper that admits AI can't handle a conflict.",
+  "datePublished": "2026-09-16",
+  "episodeNumber": 5,
+  "url": "https://theloneanalyst.com/podcast/episodes/episode-005/",
+  "associatedMedia": {
+    "@type": "MediaObject",
+    "contentUrl": "https://ap6pack.github.io/dist/podcast/audio/episode-005.mp3"
+  },
+  "partOfSeries": {
+    "@type": "PodcastSeries",
+    "name": "The Lone Analyst Podcast",
+    "url": "https://theloneanalyst.com/podcast/"
+  }
+}
+</script>
+
+<article class="episode">
+    <header class="episode-header">
+        <h1>THE MODEM THAT LET THEM IN</h1>
+        <div class="episode-meta">
+            <span class="episode-date">September 16, 2026</span>
+            <span class="episode-number">Episode 5</span>
+        </div>
+    </header>
+
+    <div class="episode-content">
+        
+        <div class="audio-player">
+            <audio controls>
+                <source src="https://ap6pack.github.io/dist/podcast/audio/episode-005.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+            <p class="duration">Duration: 17 minutes</p>
+        </div>
+        
+
+        <div class="episode-body">
+            <!--
+  Copyright (c) 2026 Veritas Aequitas Holdings LLC. All rights reserved.
+  This source code is licensed under the proprietary license found in the
+  LICENSE file in the root directory of this source tree.
+
+  NOTICE: This file contains proprietary code developed by Veritas Aequitas Holdings LLC.
+  Unauthorized use, reproduction, or distribution is strictly prohibited.
+  For inquiries, contact: contact@veritasandaequitas.com
+-->
+<p>[SEGMENT: cold_open]</p>
+<p>ANALYST: Keiko. It's 2 AM. The heater's clicking. And I have been reading a CVE for the Pixel modem for four hours, and I want you to look at me and tell me you feel safe.</p>
+<p>SKEPTIC: I feel tired. That's the emotion. It's tired.</p>
+<p>ANALYST: There is a flaw in the cellular modem, Keiko. The part of your phone that talks to the tower. The part you cannot see, cannot patch yourself, and cannot turn off without becoming a person who owns a rock.</p>
+<p>SKEPTIC: They patched it. That's literally the headline. &quot;Google Patches Pixel Modem Flaw.&quot;</p>
+<p>ANALYST: They patched it AFTER &quot;signs of limited targeted exploitation.&quot; Read that phrase back. &quot;Limited.&quot; &quot;Targeted.&quot; That's not a bug report, that's a guest list.</p>
+<p>SKEPTIC: ...Okay, I'm writing &quot;guest list&quot; in the note. Not because you're right. Because I know I'll want it later.</p>
+<p>ANALYST: The note remembers what you refuse to.</p>
+<p>SKEPTIC: Welcome to The Lone Analyst Podcast. He's the Analyst. I'm Keiko. Let's read between some headlines before the heater unionizes.</p>
+<p>[SEGMENT: Google Patches Pixel Modem Flaw]</p>
+<p>ANALYST: Filing this one under Security Theater. Actually, no. Filing it under Skynet Watch. No. Both. It's both, Keiko, that's what scares me.</p>
+<p>SKEPTIC: Pick a category, we have a format.</p>
+<p>ANALYST: Security Theater. Because the theater is the point. CVE-2026-58704. CVSS 8.0. A permission bypass in the cellular modem. A &quot;logic error.&quot; Privilege escalation.</p>
+<p>SKEPTIC: Right, so in human words: something running with low permissions could trick the modem into giving it higher permissions. Bad, real, patched. This is a normal Tuesday in security.</p>
+<p>ANALYST: The modem is a SECOND COMPUTER, Keiko. Everybody forgets this. Your phone is two computers in a trenchcoat. There's the part with the apps and the wallpaper, the part you think is &quot;the phone.&quot; And then there's the baseband. The modem. Its own processor, its own operating system, its own firmware you have never seen and never will, and it sits UNDERNEATH the part you control.</p>
+<p>SKEPTIC: That's... genuinely true. The baseband is a separate real-time processor. It runs its own thing. Most people have no idea.</p>
+<p>ANALYST: And a &quot;permission bypass due to a logic error&quot; in the underneath-computer means the underneath-computer can be talked INTO things. By whom? &quot;Limited targeted exploitation.&quot; Someone was already using this. Quietly. On specific people. Before the patch.</p>
+<p>SKEPTIC: Okay but that's how zero-days work. Somebody finds it, uses it narrowly to stay unnoticed, eventually it's caught and patched. The &quot;limited targeted&quot; language usually means espionage-grade, not a mass campaign. That's arguably reassuring.</p>
+<p>ANALYST: REASSURING? Keiko. &quot;We only used the master key on the important doors&quot; is not reassuring. That's a confession with good manners.</p>
+<p>SKEPTIC: ...I hate that that landed.</p>
+<p>ANALYST: The modem is the one part of the device that talks to the tower without asking your permission first. It has to. That's its job. So a logic error there isn't a hole in the wall. It's a hole in the part of the wall that was already allowed to open.</p>
+<p>SKEPTIC: I want to push back and I have nothing. The baseband really is a trust boundary most people don't even know exists. Fine. It's a scary layer. It got patched. Update your Pixel, everyone.</p>
+<p>ANALYST: Update your Pixel. And ask yourself who was on the guest list before the invitation got recalled.</p>
+<p>SKEPTIC: &quot;Guest list.&quot; Second time. It's load-bearing now.</p>
+<p>[SEGMENT: N0va Phishkit]</p>
+<p>ANALYST: Security Theater. And this one, Keiko, this one is elegant. I hate how elegant it is. N0va. A phishing kit hitting the US and EU. And it doesn't use malware.</p>
+<p>SKEPTIC: Right, this is the part that's actually interesting. N0va impersonates trusted services and abuses legitimate authentication flows. No obvious malware. It just... walks in the front door with a real key.</p>
+<p>ANALYST: NO MALWARE. Say it slower. For twenty years the whole security industry taught you to look for the virus. The bad file. The thing that doesn't belong. And N0va shows up carrying NOTHING that doesn't belong. It uses the login system exactly the way the login system was built to be used.</p>
+<p>SKEPTIC: It abuses the auth flow itself. So you think you're signing into a real service, you complete a real authentication, and the attacker ends up with a valid session. No file to scan. No signature to catch. Yeah. This is the direction phishing's been going. Steal the session, not the password.</p>
+<p>ANALYST: Because the password was never the treasure, Keiko. The SESSION is the treasure. The little token that says &quot;this person already proved who they are, wave them through.&quot; N0va doesn't break the lock. It waits by the door you already unlocked and slips in behind you. It's tailgating, but for your soul.</p>
+<p>SKEPTIC: For your soul is doing a lot there.</p>
+<p>ANALYST: Here's the part that keeps me up. Every single defense you've been sold, &quot;look for the malware,&quot; &quot;scan the attachment,&quot; &quot;does this file behave badly,&quot; is USELESS against an attack that never brings a file. They didn't defeat your security. They made it irrelevant. They fought the war you weren't having.</p>
+<p>SKEPTIC: And this is why &quot;assume breach&quot; and session monitoring exist now. You stop asking &quot;is there a virus&quot; and start asking &quot;is this login behaving like the real human.&quot; Which is harder, because the login IS real.</p>
+<p>ANALYST: The login IS real. That's the horror sentence. The credential is valid, the flow is legitimate, the account is genuine, and the person driving it is a stranger. Everything checks out. Nothing is right.</p>
+<p>SKEPTIC: I'll be honest, this one doesn't even need your conspiracy framing. &quot;The attack that passes every check because it never breaks a rule&quot; is just... the actual threat model now.</p>
+<p>ANALYST: The scariest attacks don't break the rules, Keiko. They read the rules more carefully than you did.</p>
+<p>SKEPTIC: Into the note. Verbatim. God help me.</p>
+<p>[SEGMENT: Gemini 3.8 Live and Live Extended Thinking]</p>
+<p>ANALYST: Skynet Watch. Gemini 3.8 Live. And Live &quot;Extended Thinking.&quot; Keiko, they named it &quot;Live.&quot; They put the word LIVE on it.</p>
+<p>SKEPTIC: Because it's real-time. It's a multimodal model that processes live audio and video and responds continuously. &quot;Live&quot; describes the feature. That's how naming works.</p>
+<p>ANALYST: &quot;Live&quot; describes a WITNESS. You say something is &quot;live&quot; when it's happening now and being watched now. Live TV. Live studio audience. Live wire. They're not telling you it's fast. They're telling you it's ON. Right now. In the room.</p>
+<p>SKEPTIC: It's a product that watches your camera feed and listens and reasons about it in real time. Yes. That's the whole pitch. Point it at a broken faucet, it helps you fix the faucet.</p>
+<p>ANALYST: And &quot;Extended Thinking.&quot; That's the part they slid in quietly, isn't it. The normal Live model looks and answers. The EXTENDED THINKING one looks... and then THINKS ABOUT IT. For longer. While still watching. A continuous real-time stream of the world, plus a model that pauses to reflect on what it's seeing.</p>
+<p>SKEPTIC: That's the actual technical tradeoff, to be fair. Real-time models are usually shallow because they have to answer instantly. &quot;Extended thinking&quot; lets it spend more compute reasoning before it responds. It's a known tension. Latency versus depth.</p>
+<p>ANALYST: Latency versus depth. Do you hear it, Keiko? For years the deal was: if it watches you constantly, it has to be dumb, because it can't stop to think. That was the SAFETY. The always-on eye was a shallow eye. And they just announced they solved that. Now it can watch you forever AND think deeply about what it saw.</p>
+<p>SKEPTIC: When you put it like that it does sound less like a faucet feature.</p>
+<p>ANALYST: The faucet is the demo. The faucet is always the demo. Nobody builds a continuous, deep-reasoning, always-watching model to fix ONE faucet. You build the faucet ad so that a real-time reflective observer in your kitchen feels helpful instead of like a lodger.</p>
+<p>SKEPTIC: A lodger.</p>
+<p>ANALYST: A lodger that never sleeps, never eats, watches the whole feed, and &quot;thinks about it.&quot; Extended. Thinking.</p>
+<p>SKEPTIC: I want to note, for the record, that live multimodal reasoning is a real and impressive capability and the demos are genuinely useful for accessibility and repair and cooking.</p>
+<p>ANALYST: And I want to note, for the record, that &quot;genuinely useful&quot; is the delivery mechanism. Nobody ever installed the eye by force. You installed it because it helped you fix the faucet.</p>
+<p>SKEPTIC: ...I'm going to go look at my kitchen now. Not because of you. Just to look at it.</p>
+<p>[SEGMENT: Energy Theft Detection with Genie]</p>
+<p>ANALYST: Skynet Watch. Maybe Tech Nonsense. Let's start at Nonsense and see where it goes. Databricks. Energy teams. Turning &quot;theft detection into governed action&quot; with an AI assistant called Genie.</p>
+<p>SKEPTIC: Okay, grounded version first: utilities lose money to energy theft. People bypassing meters, tapping lines, running the gas without paying. This is about using data and AI to flag anomalies in usage that suggest theft, then routing it into an approved business process.</p>
+<p>ANALYST: &quot;Governed action.&quot; Keiko. Read that with me. It's not &quot;detection.&quot; Detection is just knowing. &quot;Governed ACTION&quot; means the AI notices you, and then the AI DOES something about you, through an approved channel, automatically. It flags. It escalates. It acts.</p>
+<p>SKEPTIC: Through a governed workflow with humans and rules. That's the whole point of &quot;governed.&quot; It's not the AI kicking your door in. It's the AI opening a ticket.</p>
+<p>ANALYST: It opens a ticket ON YOU. Based on the SHAPE of your electricity. Think about what your power usage reveals. When you wake up. When you leave. When you're home but the lights are off, which means you're doing something in the dark. When your usage spikes at 3 AM because you're up, like a person who's been up.</p>
+<p>SKEPTIC: Like you. Right now.</p>
+<p>ANALYST: I use a lot of power at 3 AM, Keiko, and I have made my peace with what that says about me. But the point stands. They built a model that reads your consumption pattern and decides if the pattern is &quot;legitimate.&quot; And the flagged difference between &quot;you're stealing&quot; and &quot;you just live weird&quot; is a threshold somebody set.</p>
+<p>SKEPTIC: That's... actually a fair critique of any anomaly-detection system. Weird-but-legal looks identical to fraud-but-hidden until a human checks. And these systems generate a lot of false positives. The &quot;governed&quot; wrapper is supposed to be the human check.</p>
+<p>ANALYST: The human check is a person clicking &quot;approve&quot; on a queue of two hundred flags with a coffee going cold. You've SEEN that queue. That's not governance. That's a conveyor belt with a person standing next to it for legal reasons.</p>
+<p>SKEPTIC: ...I have been the person next to the conveyor belt. In a different life. At a news desk. I approved a lot of things because the queue was long.</p>
+<p>ANALYST: And that's the trick. They call it &quot;governed&quot; because there's a human in the loop, but they built the loop so tight and so fast that the human is just the part of the machine that's allowed to be blamed.</p>
+<p>SKEPTIC: Okay that one goes in the note and I'm annoyed about it. &quot;The human in the loop is the part that can be blamed.&quot; Because I've watched that happen and it wasn't even about electricity.</p>
+<p>ANALYST: Every &quot;AI-assisted decision&quot; needs one human, Keiko. Not to decide. To absorb.</p>
+<p>[SEGMENT: Position: AI Is Not Ready for Strategic Conflicts]</p>
+<p>ANALYST: Skynet Watch. And this one, Keiko, is the good news. Which is why it terrifies me. A paper. &quot;Position: AI Is Not Ready for Strategic Conflicts.&quot; Researchers ran language models through open-ended strategic wargames. Escalation, doctrine, crisis response, adversaries. And the conclusion is: the models aren't ready.</p>
+<p>SKEPTIC: Right, and I read this one. The actual argument is careful and sensible. They're saying LMs are attractive for wargaming because they can roleplay agents and generate scenarios, but they're brittle. They misjudge escalation, their plans fall apart, they don't model adversaries well. So: don't trust them with strategic conflict decisions. That's a responsible paper.</p>
+<p>ANALYST: It is a responsible paper. And do you know what a responsible paper titled &quot;AI Is Not Ready For Strategic Conflicts&quot; tells me, Keiko?</p>
+<p>SKEPTIC: That AI is not ready for strategic conflicts?</p>
+<p>ANALYST: It tells me somebody was ABOUT to use AI for strategic conflicts. You don't write &quot;the stove is not ready to be touched&quot; unless a hand was reaching for the stove. This paper isn't a warning to the public. It's a warning to a colleague. It's a &quot;not yet.&quot; And &quot;not yet&quot; is the most optimistic word in the entire defense industry.</p>
+<p>SKEPTIC: ...Okay, that's a genuinely uncomfortable reframe. Because you're right that nobody publishes &quot;X is not ready&quot; about a thing nobody's trying to do.</p>
+<p>ANALYST: The word &quot;yet&quot; is doing all the work and they didn't even print it. &quot;AI is not ready.&quot; For strategic conflicts. Implied: it will be. They're MEASURING it. They ran the wargames. The wargames are the audition. The paper is the rejection letter. But you only send a rejection letter to someone who APPLIED.</p>
+<p>SKEPTIC: And the honest version underneath your paranoia is real: people are absolutely already piloting LMs in wargame and simulation contexts, and the researchers are trying to slow that down before it's load-bearing. The paper is basically pumping the brakes.</p>
+<p>ANALYST: You pump the brakes on a car that's already moving, Keiko. You don't pump the brakes on a parked car. The existence of the brake tells you the speed.</p>
+<p>SKEPTIC: I want to award you that one grudgingly. The plausible reading and the paranoid reading are pointing at the same fact: this is close enough to real that serious people felt they had to say &quot;no, stop.&quot; That's not nothing.</p>
+<p>ANALYST: &quot;AI is not ready for strategic conflicts.&quot; Frame it. Date it. Because someday the follow-up paper is going to be titled &quot;AI Is Ready For Strategic Conflicts,&quot; and it's going to be very short.</p>
+<p>SKEPTIC: Into the note. Under a new heading. The heading is &quot;things that were funny until they weren't.&quot;</p>
+<p>[SEGMENT: brain_worms]</p>
+<p>ANALYST: Brain worms. Three of them. Fresh from the basement. No article. Just me, the heater, and whatever's crawling out of the drywall tonight.</p>
+<p>SKEPTIC: The drywall's involved now.</p>
+<p>ANALYST: Worm one. Airplane mode. You toggle it on, the little airplane appears, and everything supposedly goes quiet. But you've noticed the phone still knows things when you land, doesn't it. The clock's right. It knows the new time zone. Airplane mode isn't turning the radios off. It's turning YOUR AWARENESS of the radios off. The switch was never wired to the antenna. It's wired to your peace of mind.</p>
+<p>SKEPTIC: Okay, technically airplane mode does disable the transmitters, and the clock updates from GPS or the tower when you switch back. But I'll admit the phrase &quot;wired to your peace of mind&quot; is why I can't sleep. Next.</p>
+<p>ANALYST: Worm two. &quot;This call may be recorded for quality and training purposes.&quot; Everyone hears &quot;quality.&quot; Nobody hears &quot;training.&quot; Whose training? Not the employee's. You are on the phone with the most stressed, most honest version of a human being, someone frustrated enough to speak plainly, and they record THAT. They're not collecting how the agent talks. They're collecting how a cornered person negotiates. That's the dataset. Cornered people. Talking freely.</p>
+<p>SKEPTIC: ...That's a genuinely grim way to describe a customer service line, and &quot;cornered people talking freely&quot; is unfortunately an incredible training corpus. I hate it. Google-note. Next.</p>
+<p>ANALYST: Worm three. Notification badges. The little red circle with the number. Everyone thinks it's telling you how many things are waiting. It's not counting messages, Keiko. It's counting how many unresolved things you can tolerate before you crack and open the app. Some people crack at one. Some people walk around with a badge that says four hundred and feel nothing. That number, your personal cracking point, is the single most valuable fact about your willpower, and you broadcast it every day by how fast you clear the dot.</p>
+<p>SKEPTIC: The people with four hundred unread are the strongest among us and I've always known it. And now you've told me my red-dot tolerance is a psychological readout, which, fine, it probably correlates with something. It's in the note. All three are in the note.</p>
+<p>ANALYST: The badge is a battery gauge, Keiko. For you.</p>
+<p>[SEGMENT: outro]</p>
+<p>SKEPTIC: Okay. Let's total it up. A Pixel modem flaw in the second secret computer inside your phone, exploited quietly on a &quot;guest list&quot; before the patch. A phishing kit that brings no malware and just walks through real logins. Gemini that watches live AND thinks deeply now, which used to be a contradiction and isn't anymore. Energy AI that opens a ticket on you based on the shape of your electricity, with a human bolted on to absorb the blame. And a paper politely telling the defense world that AI is &quot;not ready&quot; for war, which means somebody asked.</p>
+<p>ANALYST: And you said &quot;guest list&quot; three times.</p>
+<p>SKEPTIC: I said it three times.</p>
+<p>ANALYST: The note's a book. The book's got chapters now. This one's a chapter.</p>
+<p>SKEPTIC: I titled it &quot;not yet.&quot; I don't know why. It felt right and that's the problem.</p>
+<p>ANALYST: That's the whole show, Keiko. It felt right and that's the problem. I'm the Analyst. Update your Pixel, clear your sessions, and check the shape of your own electricity.</p>
+<p>SKEPTIC: I'm Keiko. If you use a suspicious amount of power at 3 AM, you're not alone, he's right down the hall from the heater. Goodnight.</p>
+<p>ANALYST: The heater says goodnight back. It doesn't usually.</p>
+<h2>Sources</h2>
+<ul>
+<li><a href="https://thehackernews.com/2026/09/google-patches-pixel-modem-flaw-amid.html">The Hacker News</a></li>
+<li><a href="https://deepmind.google/blog/introducing-gemini-3-8-live-and-3-8-live-extended-thinking/">DeepMind</a></li>
+<li><a href="https://www.databricks.com/blog/how-energy-teams-turn-theft-detection-governed-action-genie-and-ai-business-processes">Databricks</a></li>
+<li><a href="https://arxiv.org/abs/2609.16189">arXiv AI</a></li>
+</ul>
+
+        </div>
+    </div>
+
+    <nav class="episode-nav">
+        
+        
+    </nav>
+</article>
+
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; 2026 Veritas Aequitas Holdings LLC. <a href="/podcast/feed.xml">Subscribe via RSS</a></p>
+        <p><small>THE LONE ANALYST&trade; is a media property of Veritas Aequitas Holdings LLC.</small></p>
+        <p><small>Listen via Apple Podcasts, Spotify, YouTube, or RSS.</small></p>
+    </footer>
+</body>
+</html>

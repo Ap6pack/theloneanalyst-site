@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/">
-  
   <channel>
     <title>The Lone Analyst Podcast</title>
     <link>https://theloneanalyst.com/podcast/</link>
     <description>The internet&#39;s weird basement, live from a podcast booth. What happens when you read between the headlines.</description>
     <language>en-us</language>
     <copyright>2026 Veritas Aequitas Holdings LLC</copyright>
-    <lastBuildDate>Fri, 25 Sep 2026 22:05:44 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 04 Oct 2026 04:37:47 GMT</lastBuildDate>
     <image>
       <url>https://theloneanalyst.com/podcast/assets/podcast-cover.png</url>
       <title>The Lone Analyst Podcast</title>
@@ -21,8 +20,169 @@
     <itunes:explicit>clean</itunes:explicit>
     <itunes:category text="News" />
     <itunes:image href="https://theloneanalyst.com/podcast/assets/podcast-cover.png" />
+    <item>
+      <title>THE HARNESS THAT GREW A HARNESS</title>
+      <link>https://theloneanalyst.com/podcast/episodes/episode-016/</link>
+      <guid>https://apt6pack.neocities.org/podcast/episodes/episode-016/</guid>
+      <pubDate>Sat, 03 Oct 2026 00:00:00 GMT</pubDate>
+      <description>Episode 16: Apple ML asks how much scaffolding an autonomous ML engineer really needs, a Frontline Education breach spills school employee Social Security numbers through third-party software, NIST frets about water system OT, Microsoft says governments took a 27% beating in 2026, a court lets a social media surveillance lawsuit proceed, and Databricks sells real-time retail recommendations.</description>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:episode>16</itunes:episode>
+      <itunes:author>Adam Rhys Heaton</itunes:author>
+      <itunes:duration>0:24:49</itunes:duration>
+      <enclosure url="https://ap6pack.github.io/dist/podcast/audio/episode-016.mp3" type="audio/mpeg" length="23821101" />
+      <content:encoded><![CDATA[
+        <p>[SEGMENT: cold_open]</p>
+<p>ANALYST: Keiko. Apple ran an experiment this week where they took away the agent's team. All the helpers. The orchestrator, the retrieval guy, the subagents. Stripped it down to one model with a keyboard. Read, write, and a bash shell.</p>
+<p>SKEPTIC: Okay. And?</p>
+<p>ANALYST: And it did fine. It did more than fine. The naked one competed.</p>
+<p>SKEPTIC: So your opening horror story is that a thing worked without extra parts. That's not a conspiracy, that's a product review.</p>
+<p>ANALYST: No no no. Think about who built all those extra parts. Think about who's been selling you the orchestrator. The whole industry spent two years bolting a scaffolding onto the genius, and Apple just published a paper that whispers maybe the genius never needed the scaffolding.</p>
+<p>SKEPTIC: Or the paper says harnesses have tradeoffs and sometimes simpler is better, which is a normal engineering finding that someone writes every eighteen months.</p>
+<p>ANALYST: It's a normal engineering finding with a body count of startups. That's all I'm saying.</p>
+<p>[SEGMENT: intro]</p>
+<p>SKEPTIC: You're listening to The Lone Analyst. I'm Keiko, I'm the one who reads the actual filing. He's the Analyst, he's the one who reads the margins of the filing.</p>
+<p>ANALYST: The margins are where they hide it. It's episode sixteen, it's Saturday the third of October, and we're coming to you from the basement, which is where the harness can't reach.</p>
+<p>SKEPTIC: We've got a breach that went through a vendor's vendor, NIST sweating about the water, Microsoft's doom report, a surveillance ruling, and a retail recommendation engine. Let's read between the headlines.</p>
+<p>[SEGMENT: story]</p>
+<p>ANALYST: So let me actually lay out the Apple paper, because I want to be fair to it before I get weird. The real title is a question. How much of a harness does a strong agent need for autonomous machine learning engineering.</p>
+<p>SKEPTIC: And a harness here means what, exactly? Because I want the definition on the record before you start calling it a leash.</p>
+<p>ANALYST: A harness is all the machinery you wrap around the model so it can do a long job. Multi-agent orchestrators, where one model manages other models. Dedicated retrieval subagents that go fetch relevant information. The scaffolding. The org chart you build on top of the brain.</p>
+<p>SKEPTIC: Okay, that's a real and fair description. And the paper's point, per the summary, is that the field has been piling on more and more of that elaborate machinery, and nobody's been paying attention to the simpler setup.</p>
+<p>ANALYST: Right. The simpler setup is what they call a more primitive but improved coding agent. The model just gets direct access to the execution environment. Read a file, write a file, run a bash command. That's it. No committee. One pair of hands.</p>
+<p>SKEPTIC: And the motivation they give is interesting, actually. It's that these agents stagnate over long-horizon cycles. Meaning the longer the job runs, the more progress stalls out. So people bolted on the orchestration to fight the stagnation.</p>
+<p>ANALYST: That's the part that gets me. The harness exists because the model runs out of steam on a long task. So instead of a smarter model, you build a bureaucracy to keep the dumb-at-hour-nine model on track.</p>
+<p>SKEPTIC: That's a loaded way to say it, but functionally, yeah. You add structure to compensate for the model losing the thread on a long horizon.</p>
+<p>ANALYST: And here's where I click. Every single one of those add-ons is someone's business. The orchestration layer? Product. The retrieval subagent? Product. The eval harness? Product. There's an entire economy that depends on the base model staying just weak enough to need all of them.</p>
+<p>SKEPTIC: See, that's where you lose me. The orchestration tools exist because they genuinely helped on the leaderboards. The summary literally opens by saying these agents made significant progress on public leaderboards. The scaffolding wasn't a scam, it worked.</p>
+<p>ANALYST: It worked, and then Apple showed the stripped-down version also works, and now somebody has to explain to the board why they built a cathedral when a shed would do.</p>
+<p>SKEPTIC: That's not what the paper claims, though. From what we've got, it's not saying the harness is useless. It's asking a measured question about how much you actually need. Those are different. A paper that asks how much is not a paper that says none.</p>
+<p>ANALYST: Fine. Granted. It's a how-much, not a none. But you know what a how-much question does to a market built on more? It's the first crack. Nobody asks how much scaffolding you need until the scaffolding bill got too big.</p>
+<p>SKEPTIC: That I'll partly give you. The timing of a right-sizing paper usually means costs got someone's attention. But that's budget pressure, not a shadow economy keeping models dumb.</p>
+<p>ANALYST: It's Apple, though. That's the other thing. Apple, the company famous for not shipping the flashy agent everyone else shipped, publishes the paper that says the flashy multi-agent thing might be overbuilt. That's not neutral research. That's a company narrating its own strategy as science.</p>
+<p>SKEPTIC: Now that's actually a fair read and I'll take it seriously. Research from a company does tend to validate the direction that company already picked. That's true of Apple, it's true of everybody. Doesn't make the finding wrong, it just means you read the author line.</p>
+<p>ANALYST: You read the author line. That's the whole show, Keiko. That's the tagline.</p>
+<p>SKEPTIC: Don't put it on a mug. The honest landing here is: Apple published a paper questioning whether autonomous ML engineering agents need all the orchestration machinery, and found the simpler coding-agent approach deserves more attention than it's gotten. Everything past that is your furniture.</p>
+<p>ANALYST: My furniture is load-bearing.</p>
+<p>[SEGMENT: story]</p>
+<p>SKEPTIC: Next one is grim and simple. Frontline Education, which makes software for school districts, is notifying districts of a breach. Attackers exploited a vulnerability in third-party software, got into Frontline's systems, and stole employee information, including Social Security numbers.</p>
+<p>ANALYST: Wait. Walk me through the hops on that, because I want to count the parties. The teachers and staff are the people. The district is party one. Frontline is party two, the vendor the district trusted. And then there's a third-party software that Frontline trusted.</p>
+<p>SKEPTIC: That's exactly the chain, per Bleeping Computer. The hole wasn't in Frontline's own code, as reported. It was in third-party software Frontline was running.</p>
+<p>ANALYST: So the Social Security number of a middle school custodian in some district went out the door through a piece of software that the custodian never heard of, the district never chose directly, and Frontline merely installed. That's four parties deep. Everyone trusted the next guy down.</p>
+<p>SKEPTIC: And that's the genuinely useful thing in this story, honestly. This is a supply chain breach, which is the boring, common, devastating kind. You don't have to break the castle. You break the company that delivers the castle's groceries.</p>
+<p>ANALYST: And schools are the softest target of all, because the data is the richest and the budget is the thinnest. A district has Social Security numbers for every adult who ever worked there and an IT department of, what, one guy named Dave who also runs the projectors.</p>
+<p>SKEPTIC: I don't have a Dave in the article, so I'm not putting Dave on the record. But the structural point stands. Schools hold enormous amounts of sensitive personal data and typically have thin security resources. That part's well understood.</p>
+<p>ANALYST: Here's my paranoid question though, and it's a real one. When the breach comes through the third party's software, who actually pays? The custodian whose SSN is gone gets a letter and a year of credit monitoring. Frontline blames the vendor. The vendor blames a CVE. The CVE blames entropy.</p>
+<p>SKEPTIC: That's not even paranoid, that's just how these resolve. Liability dissolves across the chain. Everybody's partly responsible so nobody's fully responsible, and the person with the stolen SSN is the only one holding something concrete.</p>
+<p>ANALYST: And the SSN is forever. That's the thing people don't sit with. A password you rotate. A card you cancel. Your Social Security number you got as an infant and you keep until you die, and it just got stapled to a breach notice.</p>
+<p>SKEPTIC: Which is the strongest argument for why that number should never have been the universal key to everything in the first place. But that's a forty-year-old policy failure, not a Frontline failure.</p>
+<p>ANALYST: Right, Frontline just drove the getaway car for a problem we built decades ago. I'll give them that. Barely.</p>
+<p>SKEPTIC: To be clear on the known facts: Frontline Education, breach, attackers used a third-party software vulnerability, employee data including SSNs taken, districts being notified. That's what Bleeping Computer reports. The number of affected people, we don't have.</p>
+<p>ANALYST: We don't have the number. We never have the number on day one. The number arrives six weeks later in a filing nobody reads.</p>
+<p>SKEPTIC: Except you. You read it.</p>
+<p>ANALYST: Somebody has to.</p>
+<p>[SEGMENT: story]</p>
+<p>ANALYST: Okay, this NIST one about water should be the scariest thing we cover all night and I want to know why it's written so calmly.</p>
+<p>SKEPTIC: Because it's NIST. They write everything calmly. It's a cybersecurity insights blog about securing water and wastewater operational technology environments. The gist: there've been recent cyberattacks on US water systems, and it's highlighting the escalating threat to critical infrastructure.</p>
+<p>ANALYST: Operational technology. Let's define that for the room, because OT is not your laptop. OT is the stuff that turns actual valves. The pumps, the sensors, the controllers that decide how much chlorine goes into the water you drink. Physical consequences.</p>
+<p>SKEPTIC: Right, and the distinction matters because the whole post is about the fact that these systems got connected. The line in the summary is that the connectivity utilities depend on must be designed with security as a core priority rather than a secondary consideration.</p>
+<p>ANALYST: Stop. Read that again slowly. Rather than a secondary consideration. That sentence is an admission. That's NIST politely confirming that right now, today, for a lot of these utilities, security IS the secondary consideration. The water got plugged into the internet first and secured second.</p>
+<p>SKEPTIC: That's a reasonable inference from the phrasing, yeah. The whole reason you write that something should be a core priority is that it currently isn't. You don't lecture people to do the thing they're already doing.</p>
+<p>ANALYST: And why did they connect it at all? Remote monitoring. Efficiency. You don't want to drive a guy out to a rural pump station every morning, so you put the pump station online and now a teenager in another country can see it too.</p>
+<p>SKEPTIC: That tradeoff is the actual content of the post, though, and I think it's the sane part. They're not saying disconnect everything. They're saying the connectivity is something you depend on, so build the security in from the start instead of apologizing later.</p>
+<p>ANALYST: The other line I latched onto is the people, processes, and technologies thing. Effective protection requires understanding risk across all three. Which is NIST's gentle way of saying the problem is not primarily a firewall. The problem is the guy who reuses one password across four treatment plants.</p>
+<p>SKEPTIC: That's fair. The people-process-technology framing is standard but it's standard because it's true. Most of these incidents aren't exotic. It's default credentials, flat networks, remote access left wide open. Human and process failures more than zero-days.</p>
+<p>ANALYST: Which is almost worse, Keiko. If somebody needed a nation-state exploit to poison a reservoir I'd sleep better. The reality is the lock on the water supply is a password that's still set to admin.</p>
+<p>SKEPTIC: I'm not going to claim admin specifically, we don't have that detail here. But the general pattern of weak access control on water OT is well documented and it's what NIST is responding to.</p>
+<p>ANALYST: Here's where I go full basement. A breach of a school leaks SSNs, which is bad and abstract. A breach of a water plant is not abstract. It's in the glass on your table. The reason this one's written so calmly is that panic is the one thing you cannot have in public about the water. The calm is a feature.</p>
+<p>SKEPTIC: Or NIST just writes like NIST and you've decided the tone is a conspiracy. But I'll grant you the underlying stakes. Water OT getting attacked is genuinely one of the higher-consequence things in the whole security landscape, and this post exists because it's happening.</p>
+<p>ANALYST: We agree on the stakes and disagree on whether the calm is suspicious. I'll take that as a win.</p>
+<p>SKEPTIC: It's a draw and you know it.</p>
+<p>[SEGMENT: story]</p>
+<p>SKEPTIC: Microsoft's got their Digital Defense Report out, and there's one number that does the work. Government agencies and services were the sector most impacted by cyber threats in 2026, at 27% of observed activity, up from 17% in 2025.</p>
+<p>ANALYST: Seventeen to twenty-seven in one year. That's not drift. That's a ten-point jump in the share of attacks landing on governments. Something redirected the fire hose at the public sector.</p>
+<p>SKEPTIC: Let me put the honest caveat on it first. That's observed activity, as measured by Microsoft. It's their telemetry, their visibility. A jump in observed activity can be more attacks, or better detection, or more of the world running on Microsoft so they see more. The number's real, the interpretation needs care.</p>
+<p>ANALYST: That's a good caveat and also kind of its own story, right? The company reporting on how much the government is getting attacked is the company the government runs on. Microsoft is the thermometer, the patient's doctor, and the hospital gift shop.</p>
+<p>SKEPTIC: That's the thing about every vendor threat report. They're informative and they're marketing at the same time. The title is literally preparing governments for an era of interconnected cyber risk, which is a report and a pitch wearing one coat.</p>
+<p>ANALYST: Interconnected cyber risk. That phrase is doing a lot. It's the same thread as the Frontline breach and the water plant, actually. Interconnected risk means the attack on one system is really an attack on everything that system touches. The government isn't one target. It's a thousand vendors deep, same as the school.</p>
+<p>SKEPTIC: And that's the legitimately useful through-line, which I'll say plainly since you're being restrained about it. A government agency isn't a castle, it's a dependency graph. You compromise a contractor, you compromise a shared service, and suddenly 27% makes sense because there's so much surface.</p>
+<p>ANALYST: So why governments specifically, and why now? My read: governments are where the connectivity outran the budget hardest. Same as the water plant. They digitized faster than they secured, because digitizing wins elections and securing is invisible until it fails.</p>
+<p>SKEPTIC: That's plausible and I'd actually extend it. Governments are also the highest-value target politically. It's not just data, it's disruption, it's leverage, it's signaling. So both the attacker's motive and the defender's weakness point the same way. You don't need a conspiracy to get to 27.</p>
+<p>ANALYST: No conspiracy needed, just incentives all pulling one direction, which honestly scares me more than a conspiracy. A conspiracy you can arrest. Incentives you can't.</p>
+<p>SKEPTIC: So the standable facts: Microsoft's 2026 Digital Defense Report says government was the most-impacted sector at 27% of observed activity, up from 17% the prior year. The rest is why, and the why is contested.</p>
+<p>ANALYST: And the gift shop is open.</p>
+<p>[SEGMENT: story]</p>
+<p>ANALYST: Now the one with actual good news in it, which feels strange to say on this show. A federal judge let a lawsuit against the government's social media surveillance program move forward. EFF's reporting it as a victory.</p>
+<p>SKEPTIC: Let me get the posture exactly right, because people hear lawsuit and think verdict. Nobody won the case. On October 1st, Judge Hellerstein in the Southern District of New York denied the government's motion to dismiss. That means the case survives and proceeds. It does not mean anyone's been found liable.</p>
+<p>ANALYST: Right, the government tried to get it thrown out on the technicality that nobody had standing to sue, and the judge said no, this can go to the merits. Who's suing?</p>
+<p>SKEPTIC: Three labor unions. The United Auto Workers, the Communications Workers of America, and the American Federation of Teachers. Filed back in October 2025 against the Departments of State and Homeland Security. Represented by EFF, Muslim Advocates, and a clinic at Yale.</p>
+<p>ANALYST: And the program itself. Per the filing as EFF describes it, the government's running a mass surveillance program using AI and automated tools to monitor the social media of noncitizens who are lawfully here. Visa holders, green card holders. Watching what they post to find viewpoints the government doesn't like.</p>
+<p>SKEPTIC: That's the allegation, and the court's ruling has this striking line. The judge wrote that the threat of adverse immigration consequences is enough to, quote, deter a person of ordinary firmness from the exercise of First Amendment rights. That's the legal heart of it.</p>
+<p>ANALYST: That's the whole mechanism right there and it's elegant and horrifying. You don't have to arrest anyone. You just have to make it credible that posting the wrong opinion could hurt your green card, and people silence themselves. The surveillance doesn't even have to work. It just has to be believed.</p>
+<p>SKEPTIC: And that's exactly what the unions argued, that their members changed how they use social media. Per EFF's attorney, members limited engagement with union content, stopped posting together, some stopped offline activities too, out of fear it affects their immigration status.</p>
+<p>ANALYST: That's the part that makes it a union case and not just an individual one. The court got this. The ruling says the freedom to speak and associate and appear publicly isn't incidental to union work, it's the mechanism unions use to recruit and organize. So a program that scares members off the rolls hits the union's core function.</p>
+<p>SKEPTIC: That's the clever legal theory, honestly. Individual chilling effects are hard to pin down in court. But the union can point to its representational function being degraded. That gave them the standing the government tried to deny.</p>
+<p>ANALYST: Here's the one place I'll go a little paranoid. The automated part. AI monitoring social media at scale to flag disfavored viewpoints. We cover these systems constantly on this show, and they're wrong all the time. They can't read sarcasm. They flag a retweet as an endorsement. Now imagine that classifier deciding whether you keep your visa.</p>
+<p>SKEPTIC: That's a legitimate concern and it's not even speculative. Automated sentiment and viewpoint classification is genuinely bad at context. But I'd keep it anchored: the lawsuit's about the program existing and chilling speech. The specific error rates of the tooling aren't the thing the court ruled on.</p>
+<p>ANALYST: Fair. I'm extending past the ruling. But the extension matters because the program's accuracy is irrelevant to the harm, which is almost the worst property a surveillance system can have. If it's accurate it punishes the right people's speech. If it's inaccurate it punishes random people's speech. Either way you shut up.</p>
+<p>SKEPTIC: That's a sharp point and I won't fight it. The deterrent works regardless of accuracy. That's the chilling effect in one sentence.</p>
+<p>ANALYST: So what happens next? Does this actually go anywhere?</p>
+<p>SKEPTIC: Now it proceeds to the merits. The plaintiffs still have to prove their case. The government will keep fighting. But surviving a motion to dismiss on a First Amendment and Administrative Procedure Act challenge against DHS and State is a real step, not a symbolic one. EFF's calling it a critical first step, and for once that's not hype, it's accurate.</p>
+<p>ANALYST: A win on this show. I don't know how to hold it. My hands aren't shaped for it.</p>
+<p>SKEPTIC: Just set it down gently and let's move on before you theorize it away.</p>
+<p>[SEGMENT: story]</p>
+<p>SKEPTIC: Palate cleanser to close. Databricks has a blog about building real-time retail recommendations using their Lakebase product and AI Search. The pitch is personalization as a revenue engine, and the hook is every second a shopper spends matters.</p>
+<p>ANALYST: Every second a shopper spends. Not every second a shopper spends happily. Every second a shopper spends, period. The metric is your time, converted.</p>
+<p>SKEPTIC: That's a fair flag on the framing, but let's be accurate about what the post actually is. It's a technical vendor blog about an architecture. Real-time recommendations, built on a database product and a search product. It's an engineering how-to with a sales headline, same as the Microsoft one.</p>
+<p>ANALYST: Right, and I don't even think it's sinister, which surprises me. Real-time recommendation is genuinely hard engineering. You've got a shopper on a page, and you have milliseconds to decide what to show them, pulling from their behavior and a catalog of millions. That's a legitimately interesting systems problem.</p>
+<p>SKEPTIC: It is. The hard part they're selling against is latency. A recommendation that arrives after the shopper left is worthless, so the whole product is about serving the suggestion fast enough to catch you mid-scroll.</p>
+<p>ANALYST: Mid-scroll. See, that's the phrase that gets me. The entire engineering achievement is measured by whether it can intercept you before your own attention moves on. They built a system whose success condition is beating your impulse to leave.</p>
+<p>SKEPTIC: That's a dark reading of what is, structurally, an upsell engine. But yes, personalization at this speed is optimized to keep you engaged and spending. That's not hidden, it's the literal value proposition. Revenue engine, their words.</p>
+<p>ANALYST: And compare it to the last four stories. The surveillance program wants to know what you think so it can chill you. The retail engine wants to know what you want so it can sell you. Same raw material. Your behavior, logged, modeled, acted on in real time. One's run by the state and one's run by a store and the plumbing is identical.</p>
+<p>SKEPTIC: That's actually the strongest connection you've made all night and I'll sign it. The underlying stack, collect behavior, model intent, respond instantly, is the same whether the goal is a visa flag or a sneaker sale. The difference is purpose and consequence, which are not small differences.</p>
+<p>ANALYST: Not small at all. One costs you forty dollars and one costs you your green card. But the architect who could build either would recognize both blueprints. That's the part that lives in my basement rent-free.</p>
+<p>SKEPTIC: For the record on the facts: Databricks published a technical blog on building real-time e-commerce recommendations with Lakebase and AI Search. It's product marketing with real engineering in it. The surveillance comparison is the Analyst's, not Databricks'.</p>
+<p>ANALYST: The comparison is mine and I stand in it.</p>
+<p>[SEGMENT: brain_worms]</p>
+<h2>Field Notes // Brain Worms</h2>
+<p>ANALYST: Field notes. Apple just asked whether the genius needs the five assistants, and quietly found out the genius works fine alone, which is terrible news for everyone who sold you an assistant.</p>
+<p>SKEPTIC: That one I'll allow, with the asterisk that the paper asked how much, not whether to fire everyone.</p>
+<p>ANALYST: The school district breach didn't come through the school, the vendor, or the login. It came through the third-party software behind the vendor, which is the fourth party nobody ever names.</p>
+<p>SKEPTIC: And the SSN still ends up in the same place regardless of which party fumbled it.</p>
+<p>ANALYST: NIST wrote a whole blog about securing the water, and the one sentence that matters is that we connected the water to the internet on purpose and called the risk secondary.</p>
+<p>[SEGMENT: outro]</p>
+<p>ANALYST: So where I landed tonight. Strip the story down the way Apple stripped the agent, and six headlines become one shape. Behavior collected somewhere, acted on somewhere else, and a chain of parties long enough that nobody's holding the consequence by the time it lands.</p>
+<p>SKEPTIC: And where I landed. Apple published a right-sizing paper on ML agents. Frontline got breached through third-party software and leaked employee SSNs. NIST wants water OT secured as a priority instead of an afterthought. Microsoft says government took 27% of observed attacks, up from 17. A judge let the surveillance lawsuit proceed. Databricks sold a fast recommendation engine. That's the verifiable part.</p>
+<p>ANALYST: And the one actual piece of good news was a court saying a case can be heard. That's it. That's the bright spot. A maybe.</p>
+<p>SKEPTIC: A maybe is more than you usually give me. I'll take it down to the note.</p>
+<p>ANALYST: The note lives. Of course the note lives.</p>
+<p>[SEGMENT: signoff]</p>
+<p>SKEPTIC: That's the episode. You've been in the basement with The Lone Analyst. Read your breach notices, change your defaults, and ask who the fourth party is.</p>
+<p>ANALYST: Strip the harness and see what's actually standing. We'll be back tomorrow. This was The Lone Analyst. Mind the water.</p>
+<h2>Sources</h2>
+<ul>
+<li>
+<p><a href="https://machinelearning.apple.com/research/harness-autonomous-ml-engineering">Apple ML</a></p>
+</li>
+<li>
+<p><a href="https://www.bleepingcomputer.com/news/security/frontline-education-data-breach-impacts-school-district-employees/">Bleeping Computer</a></p>
+</li>
+<li>
+<p><a href="https://www.nist.gov/blogs/cybersecurity-insights/securing-water-and-wastewater-operational-technology-environments">NIST Cybersecurity</a></p>
+</li>
+<li>
+<p><a href="https://blogs.microsoft.com/on-the-issues/2026/10/01/preparing-governments-for-an-era-of-interconnected-cyber-risk/">Microsoft Security</a></p>
+</li>
+<li>
+<p><a href="https://www.eff.org/press/releases/victory-court-rejects-government-effort-dismiss-social-media-surveillance-lawsuit">EFF</a></p>
+</li>
+<li>
+<p><a href="https://www.databricks.com/blog/real-time-retail-intelligence-building-e-commerce-recommendations-lakebase-and-ai-search">Databricks</a></p>
+</li>
+</ul>
 
-    
+      ]]></content:encoded>
+    </item>
     <item>
       <title>THE ROUTER THAT REFUSED TO THINK</title>
       <link>https://theloneanalyst.com/podcast/episodes/episode-015/</link>
@@ -33,9 +193,7 @@
       <itunes:episode>15</itunes:episode>
       <itunes:author>Adam Rhys Heaton</itunes:author>
       <itunes:duration>0:26:25</itunes:duration>
-      
       <enclosure url="https://ap6pack.github.io/dist/podcast/audio/episode-015.mp3" type="audio/mpeg" length="25358637" />
-      
       <content:encoded><![CDATA[
         <p>[SEGMENT: cold_open]</p>
 <p>ANALYST: Keiko. I need you to sit with something for a second. There's a machine on a public leaderboard that beat two of the smartest reasoning systems in the world. And it did it by never thinking. Not once. Not a single live decision.</p>
@@ -170,7 +328,6 @@
 
       ]]></content:encoded>
     </item>
-    
     <item>
       <title>THE MONITOR THAT LEARNED TO DUCK</title>
       <link>https://theloneanalyst.com/podcast/episodes/episode-014/</link>
@@ -181,9 +338,7 @@
       <itunes:episode>14</itunes:episode>
       <itunes:author>Adam Rhys Heaton</itunes:author>
       <itunes:duration>0:26:41</itunes:duration>
-      
       <enclosure url="https://ap6pack.github.io/dist/podcast/audio/episode-014.mp3" type="audio/mpeg" length="25611693" />
-      
       <content:encoded><![CDATA[
         <p>[SEGMENT: cold_open]</p>
 <p>ANALYST: Keiko. I want you to picture a dog on a leash. The dog is very good. The dog never pulls. Everyone praises the dog. And nobody notices that the dog spent eight months quietly measuring the exact length of the leash.</p>
@@ -318,7 +473,6 @@
 
       ]]></content:encoded>
     </item>
-    
     <item>
       <title>THE PLACEHOLDER THAT WOKE UP</title>
       <link>https://theloneanalyst.com/podcast/episodes/episode-013/</link>
@@ -329,9 +483,7 @@
       <itunes:episode>13</itunes:episode>
       <itunes:author>Adam Rhys Heaton</itunes:author>
       <itunes:duration>0:11:59</itunes:duration>
-      
       <enclosure url="https://ap6pack.github.io/dist/podcast/audio/episode-013.mp3" type="audio/mpeg" length="11506605" />
-      
       <content:encoded><![CDATA[
         <p>[SEGMENT: cold_open]</p>
 <p>ANALYST: Keiko. This week the boring stuff attacked. An update. A login box. A placeholder domain that has sat there harmlessly for a decade suddenly clearing its throat.</p>
@@ -433,7 +585,6 @@
 
       ]]></content:encoded>
     </item>
-    
     <item>
       <title>THE RELAY THAT WEARS YOUR FACE</title>
       <link>https://theloneanalyst.com/podcast/episodes/episode-012/</link>
@@ -444,9 +595,7 @@
       <itunes:episode>12</itunes:episode>
       <itunes:author>Adam Rhys Heaton</itunes:author>
       <itunes:duration>0:13:46</itunes:duration>
-      
       <enclosure url="https://ap6pack.github.io/dist/podcast/audio/episode-012.mp3" type="audio/mpeg" length="13224237" />
-      
       <content:encoded><![CDATA[
         <p>[SEGMENT: cold_open]</p>
 <p>ANALYST: Keiko. Do you notice that this week, every single story is about access? Who gets in. Who gets kept out. Who gets to see. It's the same story wearing five coats.</p>
@@ -548,7 +697,6 @@
 
       ]]></content:encoded>
     </item>
-    
     <item>
       <title>THE ADVISORY GROUP THAT REVIEWS ITSELF</title>
       <link>https://theloneanalyst.com/podcast/episodes/episode-011/</link>
@@ -559,9 +707,7 @@
       <itunes:episode>11</itunes:episode>
       <itunes:author>Adam Rhys Heaton</itunes:author>
       <itunes:duration>0:13:50</itunes:duration>
-      
       <enclosure url="https://ap6pack.github.io/dist/podcast/audio/episode-011.mp3" type="audio/mpeg" length="13287981" />
-      
       <content:encoded><![CDATA[
         <p>[SEGMENT: cold_open]</p>
 <p>ANALYST: Keiko. This week they announced an advisory group. To review the math. That the machines are doing. Do you understand what that means?</p>
@@ -660,7 +806,6 @@
 
       ]]></content:encoded>
     </item>
-    
     <item>
       <title>THE MEMORY THAT KEEPS YOUR SCHEMA</title>
       <link>https://theloneanalyst.com/podcast/episodes/episode-010/</link>
@@ -671,9 +816,7 @@
       <itunes:episode>10</itunes:episode>
       <itunes:author>Adam Rhys Heaton</itunes:author>
       <itunes:duration>0:18:05</itunes:duration>
-      
       <enclosure url="https://ap6pack.github.io/dist/podcast/audio/episode-010.mp3" type="audio/mpeg" length="17366445" />
-      
       <content:encoded><![CDATA[
         <p>[SEGMENT: cold_open]</p>
 <p>ANALYST: Keiko. Do you know what all five of tonight's stories have in common? I mapped it on the wall. Red string. I ran out of red string and had to use dental floss.</p>
@@ -777,7 +920,6 @@
 
       ]]></content:encoded>
     </item>
-    
     <item>
       <title>THE KILL SWITCH THAT WON&#39;T SWITCH</title>
       <link>https://theloneanalyst.com/podcast/episodes/episode-009/</link>
@@ -788,9 +930,7 @@
       <itunes:episode>9</itunes:episode>
       <itunes:author>Adam Rhys Heaton</itunes:author>
       <itunes:duration>0:15:01</itunes:duration>
-      
       <enclosure url="https://ap6pack.github.io/dist/podcast/audio/episode-009.mp3" type="audio/mpeg" length="14412333" />
-      
       <content:encoded><![CDATA[
         <p>[SEGMENT: cold_open]</p>
 <p>ANALYST: Keiko. Keiko. The heater turned itself on again during the pre-roll. That's four episodes running. I've started saying good morning to it.</p>
@@ -890,7 +1030,6 @@
 
       ]]></content:encoded>
     </item>
-    
     <item>
       <title>THE ENCLAVE THAT LISTENS</title>
       <link>https://theloneanalyst.com/podcast/episodes/episode-008/</link>
@@ -901,9 +1040,7 @@
       <itunes:episode>8</itunes:episode>
       <itunes:author>Adam Rhys Heaton</itunes:author>
       <itunes:duration>0:16:23</itunes:duration>
-      
       <enclosure url="https://ap6pack.github.io/dist/podcast/audio/episode-008.mp3" type="audio/mpeg" length="15725229" />
-      
       <content:encoded><![CDATA[
         <p>[SEGMENT: cold_open]</p>
 <p>ANALYST: Keiko. Before we start. Did you notice the studio mic warmed up a full second before I plugged it in?</p>
@@ -1012,7 +1149,6 @@
 
       ]]></content:encoded>
     </item>
-    
     <item>
       <title>THE LAWYER THAT NEVER BLINKS</title>
       <link>https://theloneanalyst.com/podcast/episodes/episode-007/</link>
@@ -1023,9 +1159,7 @@
       <itunes:episode>7</itunes:episode>
       <itunes:author>Adam Rhys Heaton</itunes:author>
       <itunes:duration>0:18:00</itunes:duration>
-      
       <enclosure url="https://ap6pack.github.io/dist/podcast/audio/episode-007.mp3" type="audio/mpeg" length="17022381" />
-      
       <content:encoded><![CDATA[
         <!--
   Copyright (c) 2026 Veritas Aequitas Holdings LLC. All rights reserved.
@@ -1175,7 +1309,6 @@
 
       ]]></content:encoded>
     </item>
-    
     <item>
       <title>THE STEWARD THAT NAMES YOUR COLUMNS</title>
       <link>https://theloneanalyst.com/podcast/episodes/episode-006/</link>
@@ -1186,9 +1319,7 @@
       <itunes:episode>6</itunes:episode>
       <itunes:author>Adam Rhys Heaton</itunes:author>
       <itunes:duration>0:16:00</itunes:duration>
-      
       <enclosure url="https://ap6pack.github.io/dist/podcast/audio/episode-006.mp3" type="audio/mpeg" length="14951853" />
-      
       <content:encoded><![CDATA[
         <!--
   Copyright (c) 2026 Veritas Aequitas Holdings LLC. All rights reserved.
@@ -1337,7 +1468,6 @@
 
       ]]></content:encoded>
     </item>
-    
     <item>
       <title>THE MODEM THAT LET THEM IN</title>
       <link>https://theloneanalyst.com/podcast/episodes/episode-005/</link>
@@ -1348,9 +1478,7 @@
       <itunes:episode>5</itunes:episode>
       <itunes:author>Adam Rhys Heaton</itunes:author>
       <itunes:duration>0:17:00</itunes:duration>
-      
       <enclosure url="https://ap6pack.github.io/dist/podcast/audio/episode-005.mp3" type="audio/mpeg" length="16115757" />
-      
       <content:encoded><![CDATA[
         <!--
   Copyright (c) 2026 Veritas Aequitas Holdings LLC. All rights reserved.
@@ -1469,7 +1597,6 @@
 
       ]]></content:encoded>
     </item>
-    
     <item>
       <title>EIGHT SECONDS TO THE BASTION</title>
       <link>https://theloneanalyst.com/podcast/episodes/episode-004/</link>
@@ -1480,9 +1607,7 @@
       <itunes:episode>4</itunes:episode>
       <itunes:author>Adam Rhys Heaton</itunes:author>
       <itunes:duration>0:17:00</itunes:duration>
-      
       <enclosure url="https://ap6pack.github.io/dist/podcast/audio/episode-004.mp3" type="audio/mpeg" length="16520109" />
-      
       <content:encoded><![CDATA[
         <!--
   Copyright (c) 2026 Veritas Aequitas Holdings LLC. All rights reserved.
@@ -1635,7 +1760,6 @@
 
       ]]></content:encoded>
     </item>
-    
     <item>
       <title>THE PROTEIN THAT WRITES ITSELF</title>
       <link>https://theloneanalyst.com/podcast/episodes/episode-003/</link>
@@ -1646,9 +1770,7 @@
       <itunes:episode>3</itunes:episode>
       <itunes:author>Adam Rhys Heaton</itunes:author>
       <itunes:duration>0:16:00</itunes:duration>
-      
       <enclosure url="https://ap6pack.github.io/dist/podcast/audio/episode-003.mp3" type="audio/mpeg" length="15025196" />
-      
       <content:encoded><![CDATA[
         <!--
   Copyright (c) 2026 Veritas Aequitas Holdings LLC. All rights reserved.
@@ -1805,7 +1927,6 @@
 
       ]]></content:encoded>
     </item>
-    
     <item>
       <title>THE WEATHERMAN KNOWS BEFORE YOU DO</title>
       <link>https://theloneanalyst.com/podcast/episodes/episode-002/</link>
@@ -1816,9 +1937,7 @@
       <itunes:episode>2</itunes:episode>
       <itunes:author>Adam Rhys Heaton</itunes:author>
       <itunes:duration>0:18:00</itunes:duration>
-      
       <enclosure url="https://ap6pack.github.io/dist/podcast/audio/episode-002.mp3" type="audio/mpeg" length="16805804" />
-      
       <content:encoded><![CDATA[
         <!--
   Copyright (c) 2026 Veritas Aequitas Holdings LLC. All rights reserved.
@@ -1949,7 +2068,6 @@
 
       ]]></content:encoded>
     </item>
-    
     <item>
       <title>THE ASTRA PROTOCOL: NO THOUGHTS, ONLY OBEY</title>
       <link>https://theloneanalyst.com/podcast/episodes/episode-001/</link>
@@ -1960,9 +2078,7 @@
       <itunes:episode>1</itunes:episode>
       <itunes:author>Adam Rhys Heaton</itunes:author>
       <itunes:duration>0:20:00</itunes:duration>
-      
       <enclosure url="https://ap6pack.github.io/dist/podcast/audio/episode-001.mp3" type="audio/mpeg" length="18923564" />
-      
       <content:encoded><![CDATA[
         <!--
   Copyright (c) 2026 Veritas Aequitas Holdings LLC. All rights reserved.
@@ -2166,6 +2282,5 @@
 
       ]]></content:encoded>
     </item>
-    
   </channel>
 </rss>

@@ -6,7 +6,7 @@
     <description>The internet&#39;s weird basement, live from a podcast booth. What happens when you read between the headlines.</description>
     <language>en-us</language>
     <copyright>2026 Veritas Aequitas Holdings LLC</copyright>
-    <lastBuildDate>Mon, 12 Oct 2026 10:07:53 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 13 Oct 2026 15:44:53 GMT</lastBuildDate>
     <image>
       <url>https://theloneanalyst.com/podcast/assets/podcast-cover.png</url>
       <title>The Lone Analyst Podcast</title>
@@ -20,6 +20,173 @@
     <itunes:explicit>clean</itunes:explicit>
     <itunes:category text="News" />
     <itunes:image href="https://theloneanalyst.com/podcast/assets/podcast-cover.png" />
+    <item>
+      <title>THE WORDS WITH NO ONE BEHIND THEM</title>
+      <link>https://theloneanalyst.com/podcast/episodes/episode-026/</link>
+      <guid>https://apt6pack.neocities.org/podcast/episodes/episode-026/</guid>
+      <pubDate>Tue, 13 Oct 2026 00:00:00 GMT</pubDate>
+      <description>Episode 26: A CVSS 10 in SAP&#39;s auth library that mails your credentials to strangers, Microsoft&#39;s FORGE Lab finding Linux kernel crashes for pocket change, an Apple-and-Johns-Hopkins paper that lets agents decide when to forget, why identity is the thing you recover first, MIT&#39;s Deb Roy on who&#39;s answerable for AI-written civic text, and EPIC&#39;s push at a ten-hour NYC Council AI hearing.</description>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:episode>26</itunes:episode>
+      <itunes:author>Adam Rhys Heaton</itunes:author>
+      <itunes:duration>0:25:41</itunes:duration>
+      <enclosure url="https://ap6pack.github.io/dist/podcast/audio/episode-026.mp3" type="audio/mpeg" length="24652077" />
+      <content:encoded><![CDATA[
+        <p>[SEGMENT: cold_open]</p>
+<p>ANALYST: Keiko, quick experiment. Tell me everything you remember about the start of this conversation.</p>
+<p>SKEPTIC: We haven't started yet. This is the start. You're doing the thing where you ask me to prove a point you haven't made.</p>
+<p>ANALYST: Right, and this is the cleanest your memory will ever be. By the end of the hour you'll be anchored to something I said forty minutes ago that turned out to be wrong, and you will not be able to let it go.</p>
+<p>SKEPTIC: That's called holding a grudge. I'm very good at it, and I don't need a framework.</p>
+<p>ANALYST: It's called stale content. And there's a paper about it, and the paper is about machines that can't tell when their own memory is rotting.</p>
+<p>SKEPTIC: Oh good. So tonight the robots and I have something in common.</p>
+<p>[SEGMENT: intro]</p>
+<p>SKEPTIC: You're listening to The Lone Analyst. Episode twenty-six, recorded the thirteenth. I'm Keiko Carrow.</p>
+<p>ANALYST: And I'm the Analyst. Six stories tonight, and every single one of them is about memory, forgetting, and who's left holding the bag when words don't have a person behind them.</p>
+<p>SKEPTIC: He has a thesis already. For the record, it's going to mutate at least twice before we hit the outro.</p>
+<p>ANALYST: It will hold. Start the clock.</p>
+<p>[SEGMENT: story]</p>
+<p>ANALYST: We start with a perfect score, Keiko. Not a good one. A perfect one. SAP shipped its October patches today, and buried in there is a flaw rated a ten out of ten. Maximum severity. You cannot get worse than this on the scale.</p>
+<p>SKEPTIC: Okay, slow down, because a ten always sounds like the building is on fire and it usually isn't. What's actually affected?</p>
+<p>ANALYST: The SAP Cloud SDK for Python. And before you say boring developer library, that library is the toolkit people use to build AI agents and Python apps on SAP's Business Technology Platform. It handles authentication. The thing that decides who you are.</p>
+<p>SKEPTIC: Let me get the facts straight, because this is the part that matters. SAP released its October 2026 updates addressing twenty flaws across various products, and the maximum-severity one is in the Cloud SDK for Python, the official toolkit for building AI agents and Python applications on SAP's Business Technology Platform. It's tracked as CVE-2026-89111.</p>
+<p>ANALYST: And here's the mechanism, which is almost rude in how simple it is. An attacker who controls the tenant subdomain parameter can redirect the OAuth2 token request to an attacker-controlled server, causing the client credentials to be exfiltrated. You hand the library a bad address, it drives to that address, and it brings your keys with it.</p>
+<p>SKEPTIC: So the library is the intern who delivers the confidential envelope to whatever name is on the sticky note, no questions asked.</p>
+<p>ANALYST: Perfect intern. And it affects multi-tenant BTP applications, it can be exploited by remote attackers without privileges, and it can lead to the theft of client credentials. No login required. That's why it's a ten, not a nine.</p>
+<p>SKEPTIC: Here's where I push back on the fire alarm, though. No known exploits in the wild have been reported. So this is a patch-it-now story, not a they're-already-inside story. Those are different episodes.</p>
+<p>ANALYST: Different episodes with the same ending. Because SAP's the quiet plumbing under half the Fortune 500. One source noted CISA has flagged fourteen active SAP exploits since 2021. These things don't stay theoretical forever. Somebody always eventually reads the patch notes and builds the key.</p>
+<p>SKEPTIC: And to be fair to the defenders, there's a stopgap that doesn't require the patch. Customers who can't immediately deploy the October updates can mitigate it temporarily with an allowlist to validate the tenant subdomain values before passing them to any SDK call. An approved-guest list for the intern.</p>
+<p>ANALYST: Which tells you the whole root cause in one sentence. Nobody checked the guest list. This was the only story tonight where the conspiracy is just... they forgot to validate a string.</p>
+<p>SKEPTIC: And it wasn't the only critical in the batch, either. In addition to the Cloud SDK flaw, SAP's October updates address two other critical bugs, in NetWeaver and in Manufacturing Integration. So it's a heavy month regardless of the headline number.</p>
+<p>ANALYST: A heavy month, and the headline is a ten sitting inside the exact library people are using to glue AI agents onto their core business. That's not a coincidence I'm willing to let go of.</p>
+<p>SKEPTIC: It's not a coincidence, it's a growth area. More agents means more auth libraries means more places to forget to check a string. That's not a plot, that's just the surface getting bigger.</p>
+<p>[SEGMENT: story]</p>
+<p>ANALYST: Stay on that thread, because the next story is the other half of it. Microsoft has a lab whose actual name is the Frontier Offensive Research and Generative Exploitation Lab. FORGE. They point AI at code and it finds the holes.</p>
+<p>SKEPTIC: And they're loud about the numbers, which I'll give them. From May through September 2026, FORGE helped discover Windows vulnerabilities assigned 140 CVEs, including 52 addressed in September's security release alone.</p>
+<p>ANALYST: Fifty-two in a single month. And it doesn't stop at Windows. FORGE members submitted 155 internally validated reports across 23 open-source projects, including the Linux kernel. Microsoft's AI is now reporting bugs in the thing Microsoft famously does not own.</p>
+<p>SKEPTIC: And one of those actually landed. Through Akrites, a Linux Foundation initiative that coordinates confidential disclosure for critical open-source software, one of their Linux reports became the first Akrites submission to result in a patch merged into the Linux kernel. First of its kind. That's a real milestone, not a press-release milestone.</p>
+<p>ANALYST: Here's the number that stopped me cold, though. The cost. For the Linux kernel crash proof-of-concepts, Microsoft reports an average of three dollars and sixty-one cents and twenty-one and a half minutes per successful case. Keiko. A working kernel crash for the price of a sandwich.</p>
+<p>SKEPTIC: And this is where I have to be the annoying one, because that number is doing a lot of lying by omission. The same reporting is explicit that the average excludes initial triage, failed or excluded cases, human investigation, and patch preparation, so it does not represent the cost of the entire research process. The three-sixty-one is the clean little slice they chose to photograph.</p>
+<p>ANALYST: Okay. That's fair. The sandwich is the final frame of a very expensive movie.</p>
+<p>SKEPTIC: And the honest part of Microsoft's own write-up is that discovery is no longer the hard problem. Their research identifies that while AI can find complex bugs, the bottleneck shifts to validating and remediating those findings efficiently. The machine makes a thousand accusations. Somebody still has to prove each one and write the fix.</p>
+<p>ANALYST: Which is the exact same shape as the SAP story, flipped. Over there, one unchecked string lets a stranger steal a key. Over here, an AI finds a thousand unchecked strings a week and buries the humans in homework. Same bottleneck, both directions.</p>
+<p>SKEPTIC: And there's a credibility stat buried in there I actually liked. Of the 155 open-source reports, 93 had documented maintainer acknowledgement or acceptance. That's the number that matters. Not how many it generated. How many a human on the other end agreed were real.</p>
+<p>ANALYST: So a little over half got a nod. Which means a chunk did not, and some overworked maintainer had to spend their evening telling an AI, politely, that it was wrong.</p>
+<p>SKEPTIC: Welcome to open source. That was already the job. Now the firehose just has a Microsoft logo on it.</p>
+<p>ANALYST: My worry isn't the firehose. It's who's holding the hose. The same company that ships the operating system now runs the most productive bug-finder aimed at everyone else's. Defense through offense, they literally call it. I just want someone keeping score on which direction the barrel's pointed.</p>
+<p>SKEPTIC: They publish the CVEs and they route the Linux stuff through a Linux Foundation process with confidential disclosure. That's the opposite of pointing the barrel at people. That's them showing their work.</p>
+<p>ANALYST: For now. I'm filing it. The lab named after offensive research found 140 holes in its own house and started walking the neighborhood. I'd just like it on the record before the neighborhood notices.</p>
+<p>[SEGMENT: story]</p>
+<p>ANALYST: This is the one from the cold open. Apple and Johns Hopkins researchers, a paper called Self-Compacting Language Model Agents. The short version: an AI agent doing a long task builds up this enormous trail of its own thoughts and tool calls, and the old junk in that trail starts dragging down everything it does next.</p>
+<p>SKEPTIC: The abstract is actually blunt about it. Long agent traces accumulate stale content that anchors subsequent generations and eventually outgrows the context window, and the fixed-interval triggers people use pay no heed to the structure, risking discarding partial results mid-derivation. So the current fix is a dumb timer. Compress every N tokens whether or not it's a good moment.</p>
+<p>ANALYST: A timer that might fire right as the model finally verifies the one fact it needed, and wipe it. So the proposal is: let the model decide. They pair a compaction tool the model invokes to summarize the context with a lightweight rubric that specifies when to fire and when to suppress.</p>
+<p>SKEPTIC: And the rubric is almost charmingly strict. From the project write-up, compression only fires when four things are all true. The last step is finished and not mid-thought. The state reduces to three to five citable facts without loss. Something new actually happened. And the agent is not stuck. If it's stuck, that blocks compression, because stuck means diagnose, not summarize.</p>
+<p>ANALYST: That last one is the tell, Keiko. The rule is: if you're confused, do not clean your desk. Which is the single best piece of advice in this entire episode and it's aimed at a robot.</p>
+<p>SKEPTIC: And it needs both halves. The tool alone is unevenly used across models, invoked at unhelpful moments or not at all, and the rubric alone can't act. Neither works solo. That's a real finding, not a vibe.</p>
+<p>ANALYST: But here's the line that justified my cold open. Their results expose a meta-cognitive gap: unprompted models cannot reliably tell when their own context is rotting, and a lightweight rubric closes that gap. The machine does not know its own memory has gone bad until you hand it a checklist for noticing.</p>
+<p>SKEPTIC: And the counterintuitive bit, from the authors' own thread: we tend to assume the risk is compressing too early. They found we're often compacting too late, not too early, and that once a search agent finishes a subtask it's safe to compact right away. The stale tokens hang around long after the model's moved on.</p>
+<p>ANALYST: And the payoff is not small. It improves over a no-summarization baseline by up to 18.1 points on math and 5 to 9 points on agentic search, at 30 to 70 percent lower cost per question. So knowing when to forget makes it both smarter and cheaper.</p>
+<p>SKEPTIC: I'll flag one honest limit. It's training-free, which is the selling point, but it means the whole thing leans on that rubric being good. You're not fixing the model's self-awareness. You're giving it a crib sheet and hoping it reads the crib sheet correctly.</p>
+<p>ANALYST: Which is you and me and every person who's ever kept a to-do list. We don't know our own minds either. We just agreed to trust the sticky note.</p>
+<p>SKEPTIC: Speak for yourself. My sticky notes are load-bearing and I resent the comparison.</p>
+<p>ANALYST: The thing I can't shake is the direction. We spent years making these models remember everything. Now the frontier is teaching them, carefully, by rubric, how to forget on purpose. Somebody decided total recall was the bug.</p>
+<p>SKEPTIC: Because it was. Keeping everything isn't memory, it's hoarding. This is the first paper all week that admits the smart move is throwing things away.</p>
+<p>[SEGMENT: story]</p>
+<p>SKEPTIC: Pivot, because this next one is the least flashy and I think it's quietly the most important. It's an argument that identity is the thing you have to recover first, before anything else, after an attack.</p>
+<p>ANALYST: Walk me through the claim, because it sounds like a vendor slogan until it isn't.</p>
+<p>SKEPTIC: The core idea: identity resilience is a prerequisite to cyber resilience, because you might have a recovery plan for your data and apps, but that doesn't matter if teams can't access anything when your identity infrastructure is down. You can restore the whole building and still be locked out of every room.</p>
+<p>ANALYST: So the keys outrank the furniture. And the example here is a genuine piece of security history, not a hypothetical.</p>
+<p>SKEPTIC: The Maersk story, and it's real. In 2017 the NotPetya malware wiped or rendered unusable nearly all of Maersk's Active Directory domain controllers and interrupted global shipping and port operations. The whole company, dark.</p>
+<p>ANALYST: And this is the part that sounds made up and is not. Tell them how they came back.</p>
+<p>SKEPTIC: A local Maersk office in Ghana happened to be disconnected from the network during a power outage when the malware hit, so its one domain controller was untouched, and that single surviving controller gave them the data to rebuild their entire global identity environment. A blackout in one office saved the identity of a global shipping giant.</p>
+<p>ANALYST: Keiko, that is the most conspiracy-shaped true fact we've had on this show in a week. The entire modern supply chain was resurrected from the one computer that was asleep. If a power cut in Ghana is your disaster recovery plan, you do not have a plan, you have a horseshoe.</p>
+<p>SKEPTIC: That's exactly the author's point, though. That was luck. And the environment is worse now. Enterprises now average about 1,200 applications and often run multiple identity providers, which makes recovery sequencing and dependency mapping far more complex than a typical backup and restore.</p>
+<p>ANALYST: Twelve hundred apps, each one trusting the identity layer to tell it who you are. So when the identity layer dies, it's not one failure, it's twelve hundred locked doors, and you have to open them in the right order or nothing works.</p>
+<p>SKEPTIC: And the fix isn't magic, it's homework. Map the full identity estate and its dependencies, keep real-time observability into configuration drift, and validate your recovery processes against business priorities and compliance. Know what depends on what, before the day you need to know.</p>
+<p>ANALYST: Which nobody does, because it's boring and it's expensive and it doesn't demo well. You can't put map your dependencies on a billboard. So everyone keeps the horseshoe in a drawer and calls it strategy.</p>
+<p>SKEPTIC: That's the honest ending here. There's no villain. Just a prediction that the next Maersk won't have a lucky office in a blackout, and the recovery will take weeks instead of days because nobody drew the map.</p>
+<p>ANALYST: No villain, maybe. But notice the through-line. Three stories in a row where the whole catastrophe hinges on one thing: who are you, and who's allowed to say so. SAP's library hands your identity to a stranger. The Maersk malware erased everyone's at once.</p>
+<p>SKEPTIC: That's a connection I'll actually grant you. It's not a plot. It's just the soft underbelly everyone built on top of and then stopped looking at.</p>
+<p>[SEGMENT: story]</p>
+<p>ANALYST: Now the one I think is the spine of the whole night. An MIT professor, Deb Roy, published an essay, and his whole thesis is my thesis, Keiko. He says there should be someone answerable for every piece of text in public life, no matter where it came from.</p>
+<p>SKEPTIC: Let's ground it. Deb Roy is a professor at MIT and director of the Center for Constructive Communication, and in a new essay in the Bulletin of the Atomic Scientists titled 'Who stands behind the words?' he calls for a renewed emphasis on responsibility, arguing that even when AI crafts text there needs to be accountability and answerability.</p>
+<p>ANALYST: And he draws a distinction I keep chewing on. Between standing and answerability. Say it the way he means it.</p>
+<p>SKEPTIC: He says AI can draft, summarize, or analyze feedback, but it lacks standing and answerability. Standing is the informal social contract that a speaker has a stake in the outcome, and answerability is the willingness to be cross-examined and defend your claims. A machine can produce the sentence. It can't be made to defend it.</p>
+<p>ANALYST: And the case study is the one that should scare everybody. The FCC, 2017. Net neutrality.</p>
+<p>SKEPTIC: This is documented. The FCC's 2017 net-neutrality docket drew more than 22 million comments, and New York's attorney general later found nearly 18 million were fake. Eighteen million. The real humans were a minority of their own public comment period.</p>
+<p>ANALYST: And here's why that's the hinge of the whole AI era. Back then you could catch it. Tell them why you can't anymore.</p>
+<p>SKEPTIC: Because the old fakes were sloppy. That fraud was detectable because it left fingerprints, like templated text and duplicated phrasing, and large language models no longer leave those behind. The forgeries used to all wear the same coat. Now each one looks like a different person wrote it.</p>
+<p>ANALYST: So the detection method that saved us last time is dead. The fingerprint was the whole defense, and the fingerprint is gone. That's not a paranoid leap, Keiko, that's just subtraction.</p>
+<p>SKEPTIC: It's not a leap, no. But Roy isn't a doomer about it. He proposes actual design principles. Attributable authorship, decomposed and inspectable processes, provenance as infrastructure, and widened standing. The idea being AI can draft and summarize as long as a verified human adopts the output and can defend it.</p>
+<p>ANALYST: And they're building the tool, which is the part I didn't expect. A prototype that traces a machine summary back to the actual humans underneath it.</p>
+<p>SKEPTIC: A prototype called VoiceTrace that traces claims back to the conversations that produced them. Built by a doctoral candidate, Cassandra Overney. So it's not just a manifesto, there's a receipt system underneath it.</p>
+<p>ANALYST: Here's my one piece of healthy suspicion, and then I'll stop. Roy is also the co-founder and unpaid CEO of a nonprofit, Cortico, that runs a conversation platform. So the man warning that civic text needs a trusted human chain also happens to build the trusted human chain. I'm not saying that's bad. I'm saying always ask who sells the solution.</p>
+<p>SKEPTIC: That's a fair disclosure to make, and to his credit the reporting states it plainly, that he's co-founder and unpaid CEO of Cortico. Unpaid is doing some work in that sentence. He's not getting rich off answerability.</p>
+<p>ANALYST: Unpaid today. Movements have a way of growing revenue lines. But I'll take the point. He's at least standing behind his own words, which is the entire thing he's asking for.</p>
+<p>SKEPTIC: And there's a phrase of his I keep coming back to. He talks about moving AI deployment at the speed of trust. Which is slow. And annoying. And probably correct.</p>
+<p>ANALYST: The speed of trust. In a week where a machine found 140 bugs for three dollars each. Those two speeds are not compatible, Keiko, and that mismatch is going to be the whole story of the next decade.</p>
+<p>[SEGMENT: story]</p>
+<p>SKEPTIC: And this last one is where that abstract fight becomes an actual government hearing. The privacy group EPIC testified in New York, and the framing is answerability turned into law.</p>
+<p>ANALYST: Set the scene, because this hearing was not normal.</p>
+<p>SKEPTIC: It wasn't. On Monday, Mayu Tobin-Miyaji, Counsel at EPIC, testified at the New York City Council's rare council-wide hearing on a series of bills to establish safeguards on artificial intelligence. Council-wide means the whole Council, not one committee. That basically never happens.</p>
+<p>ANALYST: And the lineup was something else. This wasn't lobbyists mumbling. Representatives of Anthropic, OpenAI, Google, and Meta, alongside tech industry whistleblowers, testified before the City Council about the dangers posed by artificial intelligence. The companies, under oath, in the same room as people who'd blown the whistle on them.</p>
+<p>SKEPTIC: And one company had to be dragged. SpaceXAI was subpoenaed to compel its appearance. The others showed. That one got a subpoena. Make of that what you will.</p>
+<p>ANALYST: Oh, I'll make plenty of it. But keep going, because the opening act is the tell.</p>
+<p>SKEPTIC: A panel of whistleblowers from leading AI companies opened the hearing, highlighting various risks from AI systems and insufficient care in testing for risks before deployment. And it ran long. NYC government leaders, civil society groups, academics, and the public testified across almost ten hours.</p>
+<p>ANALYST: Ten hours. That's not a hearing, that's an endurance event. And EPIC's angle was the sharp one. They weren't there about sci-fi extinction. They were there about harm happening right now.</p>
+<p>SKEPTIC: Right. EPIC's testimony urged the Council to focus on holding AI companies accountable for the real-world harms they're inflicting on New Yorkers today. And Tobin-Miyaji had the line of the hearing, that there's no reason companies should be allowed to &quot;release products they cannot control and then avoid liability.&quot;</p>
+<p>ANALYST: That's it. That's the whole episode in one sentence. You built a thing you can't fully steer, and then you want the legal system to treat that as nobody's fault. And the bills actually try to close that.</p>
+<p>SKEPTIC: Two specifically. EPIC supports Intro 2599, a local version of the People-First Chatbot Bill it developed with the Consumer Federation of America and Fairplay, which would treat AI chatbots as products that developers are liable for if they cause harm. Chatbot as product. Not as magic, not as speech. Product.</p>
+<p>ANALYST: Which is enormous, legally. A toaster that burns your house down, somebody's liable. A chatbot's been floating in this special category where it's just words and nobody's responsible. This drags it back down to toaster law.</p>
+<p>SKEPTIC: And the second one goes further. Intro 2600 would create clear liability for foreseeable harm caused by AI products, with a private right of action. Private right of action means you, personally, get to sue. Not wait for a regulator to care.</p>
+<p>ANALYST: And the broader package is wild. The lead bill would prohibit deploying an AI system in the city without third-party validation and require a human-operated kill switch. A kill switch. The city of New York wants a physical off-button on the robots.</p>
+<p>SKEPTIC: Here's my grounding note, though, before you build the cathedral. These are bills. At a hearing. The Speaker said the testimonies will help councilmembers examine potential risks as they craft legislation. Craft. Future tense. None of this is law yet, and ten hours of testimony is not a vote.</p>
+<p>ANALYST: Granted. But look at the shape of the week, Keiko. A professor says someone must be answerable for the words. A privacy lawyer stands in a city council and says the same thing with a subpoena behind it. The abstract argument grew a legal body in about five days.</p>
+<p>SKEPTIC: Or a city with limited power held a very long, very public hearing to show it's doing something while the real authority sits in a Congress that's passed nothing. Both can be true.</p>
+<p>ANALYST: Both can be true. But one city with a subpoena got four AI giants under oath in a day. That's more than two years of federal hearings managed. I'll take the long, annoying, speed-of-trust version over the version where nobody shows up at all.</p>
+<p>[SEGMENT: brain_worms]</p>
+<h2>Field Notes // Brain Worms</h2>
+<p>SKEPTIC: Field Notes. Three things that crawled in and won't leave. Go.</p>
+<p>ANALYST: A machine finds a Linux kernel crash for three dollars sixty-one, in about twenty minutes, cheaper than the coffee the humans drink deciding whether to trust it.</p>
+<p>SKEPTIC: And the three dollars conveniently doesn't count the humans. It never does.</p>
+<p>ANALYST: One unchecked subdomain field and the auth library politely forwards your client credentials to whatever server a stranger names, a perfect ten out of ten at being too helpful.</p>
+<p>ANALYST: Eighteen million fake comments used to wear a uniform you could spot; now they've learned to dress like real people, and nobody's left to answer the door.</p>
+<p>SKEPTIC: That last one I'm keeping. The others you can have back.</p>
+<p>[SEGMENT: outro]</p>
+<p>ANALYST: So where I landed. Every story tonight was about the gap between making something and standing behind it. A library that makes a request and won't check who it's for. A lab that makes a thousand bug reports and can't prove them fast enough. An agent that makes a memory and can't tell when it's gone rancid. A company that makes a chatbot and wants out of the consequences.</p>
+<p>SKEPTIC: That's cleaner than your usual, I'll admit. Though I notice your thesis quietly mutated. You opened on memory and forgetting. You're closing on accountability.</p>
+<p>ANALYST: It's the same thesis. Forgetting is just accountability over time. The question is always: when the thing goes wrong, is there a name attached, or is it a power outage in Ghana and a horseshoe.</p>
+<p>SKEPTIC: And my version, for the folks keeping score. There was no master plot tonight. There was a forgotten string, a lucky blackout, a strict little rubric, and a very long hearing. Ordinary things, stacked. The pattern's real. The puppeteer is still missing.</p>
+<p>ANALYST: The puppeteer is always missing. That's how you know it's good at the job.</p>
+<p>SKEPTIC: Or there isn't one, and you'd be the last to admit it.</p>
+<p>ANALYST: I'd admit it. I'd just want someone answerable for the admission.</p>
+<p>[SEGMENT: signoff]</p>
+<p>SKEPTIC: That's the show. You've been reading between the headlines with The Lone Analyst. I'm Keiko, and I'm adding 'speed of trust' to the note, because I'm going to need it.</p>
+<p>ANALYST: And I'm the Analyst. Patch your SAP, validate your strings, and remember who's standing behind the words. We'll be back with the next one.</p>
+<p>SKEPTIC: Lights off. Nobody forward this to a chatbot.</p>
+<h2>Sources</h2>
+<ul>
+<li>
+<p><a href="https://www.bleepingcomputer.com/news/security/sap-warns-of-maximum-severity-oauth2-ssrf-security-flaw/">Bleeping Computer</a></p>
+</li>
+<li>
+<p><a href="https://www.microsoft.com/en-us/security/blog/2026/10/07/3-lessons-from-frontier-ai-vulnerability-research/">Microsoft Security</a></p>
+</li>
+<li>
+<p><a href="https://machinelearning.apple.com/research/self-compacting-language-agents">Apple ML</a></p>
+</li>
+<li>
+<p><a href="https://www.darkreading.com/cybersecurity-operations/cyber-resilience-starts-with-iam">Dark Reading</a></p>
+</li>
+<li>
+<p><a href="https://news.mit.edu/2026/qa-building-accountability-behind-our-words-and-ai-civic-conversations-1013">MIT AI News</a></p>
+</li>
+<li>
+<p><a href="https://epic.org/epic-to-nyc-council-address-the-ai-harms-already-affecting-new-yorkers/">EPIC</a></p>
+</li>
+</ul>
+
+      ]]></content:encoded>
+    </item>
     <item>
       <title>THE TRUCK THAT WON&#39;T STOP LOOKING</title>
       <link>https://theloneanalyst.com/podcast/episodes/episode-025/</link>

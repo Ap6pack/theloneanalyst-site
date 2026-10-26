@@ -6,7 +6,7 @@
     <description>The internet&#39;s weird basement, live from a podcast booth. What happens when you read between the headlines.</description>
     <language>en-us</language>
     <copyright>2026 Veritas Aequitas Holdings LLC</copyright>
-    <lastBuildDate>Sun, 25 Oct 2026 13:04:32 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 26 Oct 2026 15:00:00 GMT</lastBuildDate>
     <image>
       <url>https://theloneanalyst.com/podcast/assets/podcast-cover.png</url>
       <title>The Lone Analyst Podcast</title>
@@ -20,6 +20,183 @@
     <itunes:explicit>clean</itunes:explicit>
     <itunes:category text="News" />
     <itunes:image href="https://theloneanalyst.com/podcast/assets/podcast-cover.png" />
+    <item>
+      <title>THE TRUST THEY GAVE AWAY FOR FREE</title>
+      <link>https://theloneanalyst.com/podcast/episodes/episode-030/</link>
+      <guid>https://apt6pack.neocities.org/podcast/episodes/episode-030/</guid>
+      <pubDate>Mon, 26 Oct 2026 00:00:00 GMT</pubDate>
+      <description>Episode 30: Canada&#39;s C-22 lawful-access bill heads to a Senate committee, attackers hijack real Dell and Staples order emails, Cybersecurity Awareness Month plans for the next 250 years, a Hugging Face Space that tells you if your model runs on AWS Trainium, a Lean pipeline that audits your own proofs, and foundation models reading chest X-rays four kilometers underground.</description>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:episode>30</itunes:episode>
+      <itunes:author>Adam Rhys Heaton</itunes:author>
+      <itunes:duration>0:25:30</itunes:duration>
+      <enclosure url="https://ap6pack.github.io/dist/podcast/audio/episode-030.mp3" type="audio/mpeg" length="24481965" />
+      <content:encoded><![CDATA[
+        <p>[SEGMENT: cold_open]</p>
+<p>ANALYST: Keiko. I need you to confirm something, and I need you to be honest. Did you order me a seven-hundred-dollar copy of Microsoft Project?</p>
+<p>SKEPTIC: Did I buy you project management software. No. You cannot manage a project. You can barely manage a sandwich.</p>
+<p>ANALYST: Then explain the email. It's from Dell. Real Dell. Order confirmed, shipping soon, seven hundred thirty-six dollars and nine cents, and down at the bottom there's a helpline to call if I didn't authorize the purchase.</p>
+<p>SKEPTIC: And did you call the helpline.</p>
+<p>ANALYST: I did not call the helpline. I'm not an animal. But I will admit my thumb was hovering over the number.</p>
+<p>SKEPTIC: That hover is the entire product. The whole thing was built to earn that hover. Put the phone down, we are actually covering this one later tonight.</p>
+<p>[SEGMENT: intro]</p>
+<p>ANALYST: You're in the weird back room of the internet. This is The Lone Analyst, episode thirty, the show where we read between the headlines and then keep reading until something stares back.</p>
+<p>SKEPTIC: And where one of us reads between the headlines, and the other one reads the headlines, so there's at least a control group.</p>
+<p>ANALYST: Six stories tonight. A surveillance bill, a confidence trick wearing a real return address, a two-hundred-fifty-year security plan, and three different machines learning to check somebody's homework.</p>
+<p>SKEPTIC: That last framing is generous, but let's go.</p>
+<p>[SEGMENT: story]</p>
+<p>SKEPTIC: Start us up north. Canada has a bill, C-22, officially the Lawful Access Act. It cleared the House of Commons back in the summer, and as of a few days ago it's sitting in committee in the Senate.</p>
+<p>ANALYST: Sitting in committee. That's the stage where a bill either dies quietly or gets escorted to the finish line, and nobody can ever tell which until it's already happened.</p>
+<p>SKEPTIC: Here's the part I want stated cleanly, because people exaggerate it and they don't need to. The bill would let Canada's Minister of Public Safety order companies to create a backdoor to their services for law enforcement, as long as it doesn't lead to what they call a systemic insecurity, which is a clear recipe for weakening the encryption we all rely on.</p>
+<p>ANALYST: A systemic insecurity. As opposed to the warm, personal, artisanal insecurity of handing one government a key to your messages. That's fine, apparently.</p>
+<p>SKEPTIC: That is the exact objection the privacy groups keep making. You can't build a lock that only opens for the right people. Weaken it for one, you've weakened it for everyone who shares that same lock.</p>
+<p>ANALYST: And it's not even only the encryption piece, right? There's a whole second head on this thing.</p>
+<p>SKEPTIC: There is. It also requires services to retain metadata for up to a year, which reveals who people communicate with, where they go, and what services they use, even when they are not suspected of any crime.</p>
+<p>ANALYST: See, that's the part nobody flinches at, because somebody decided the word metadata sounds boring. Content is where you were standing in one photo. Metadata is every road you've driven for a year, and who was in the passenger seat. The map is more intimate than the snapshot.</p>
+<p>SKEPTIC: You're not alone on that. Law professor Michael Geist called the required retention categories a comprehensive surveillance map of virtually every Canadian. That's not the Analyst in the dark. That's a named academic on the record.</p>
+<p>ANALYST: I love when the respectable version of my paranoia shows up with a faculty appointment. What are the actual civil-liberties folks asking for here, a tweak?</p>
+<p>SKEPTIC: More than a tweak. Researchers at the CCLA and Citizen Lab published a detailed analysis saying the bill needs more than cosmetic changes, and calling for entirely withdrawing Part 2, the section that establishes the surveillance and data retention regime.</p>
+<p>ANALYST: And meanwhile the companies that actually build encrypted things, where are they? Because when the people who make the locks say they're leaving town, I pay attention.</p>
+<p>SKEPTIC: They're not quiet about it. Signal threatened to exit Canada, Windscribe said it would relocate its headquarters, and NordVPN said it's considering all viable options, including leaving.</p>
+<p>ANALYST: So the secure-messaging economy is packing its bags, and the government's response is, what, don't worry about it?</p>
+<p>SKEPTIC: The government's response is a phrase. Officials, including Public Safety Minister Gary Anandasangaree, have said the bill is encryption neutral and is not intended to require companies to break encryption or create systemic vulnerabilities. And the signals-intelligence agency weighed in too.</p>
+<p>ANALYST: Encryption neutral. Keiko. That phrase was grown in a lab. Nobody describes themselves as neutral toward the thing they're leaving completely alone. You don't tell your roommate you're kitchen neutral.</p>
+<p>SKEPTIC: To be fair to them, the agency's line is specific. The Communications Security Establishment said the bill doesn't create backdoors as some have argued. They're drawing a distinction between a targeted lawful request and a permanent generalized hole.</p>
+<p>ANALYST: Right, and everyone who's actually broken a system for a living says that distinction collapses the second the capability exists. The targeted request and the permanent hole are the same capability. One just has a nicer sign on it.</p>
+<p>SKEPTIC: That's roughly Apple's position, for what it's worth. The company said the legislation could allow the government to force companies to break encryption by inserting backdoors, something Apple said it will never do.</p>
+<p>ANALYST: So we've got the signals agency saying it's not a backdoor, and the biggest phone maker on earth saying it is one and they'd rather fight. I know who I'd bet understands the threat model better.</p>
+<p>SKEPTIC: And I'd just note the process part, because it matters. When this cleared the Commons it went through fast, bundled with other bills, without the kind of line-by-line debate you'd want for something this sweeping. The Senate committee is the last real chokepoint. That's why the deadline energy is real, not a conspiracy.</p>
+<p>ANALYST: That's the one thing we completely agree on. My theory and your fact checker land in the same spot tonight. I just think somebody's quietly watching the spot.</p>
+<p>[SEGMENT: story]</p>
+<p>ANALYST: Okay. My fake Dell order. Vindicate me. Tell me I'm not the only person whose thumb hovered.</p>
+<p>SKEPTIC: You're not. This is a real Cisco Talos writeup. The headline idea is that attackers are parasitizing trust. Talos observed abuse of more than 25 legitimate platforms over the past year, exploiting the built-in trust of collaboration, file-sharing, payment and other services to reach their targets.</p>
+<p>ANALYST: Twenty-five. So this isn't some lookalike domain with a typo. These are the actual services. The real senders.</p>
+<p>SKEPTIC: That's the whole trick. Talos analyzed two order-notification campaigns abusing the Staples and Dell transactional email pipelines, and together those campaigns accounted for roughly 1,400 messages. The email genuinely comes from Dell's system.</p>
+<p>ANALYST: So the malicious part isn't the envelope. The envelope is legit. Where's the knife.</p>
+<p>SKEPTIC: In the order itself. The suspicious content appeared inside the notification, in fields that would normally hold shipping information, creating the impression that an expensive order had already been placed and that the fastest way to resolve it was to call the embedded helpline.</p>
+<p>ANALYST: That's elegant and I hate it. You don't phish the person. You let the person phish themselves. You hand them a real receipt for something they didn't buy and then you put a comforting phone number right where panic lives.</p>
+<p>SKEPTIC: And it was specific in your case, almost. One campaign abused Dell's pipeline to send notifications for a 736-dollar Microsoft Project purchase, embedding an attacker-controlled helpline in the shipping and billing sections. Seven thirty-six and nine cents. The number you read me.</p>
+<p>ANALYST: So I got the demo. I got the exact template. Somewhere a criminal is A/B testing my blood pressure.</p>
+<p>SKEPTIC: And here's why your spam filter waved it through. The messages passed Dell-related DKIM and DMARC checks, because they really did originate from legitimate infrastructure. Every authentication signal your email provider trusts said this is fine.</p>
+<p>ANALYST: This is the thing people get wrong about security. We spent twenty years teaching everyone to check the sender and the lock icon and the little blue checkmark. And the attackers just went, great, we'll bring our own real checkmark. The trust infrastructure became the delivery truck.</p>
+<p>SKEPTIC: It's not limited to retailers either. The abused infrastructure included collaboration, productivity, file-sharing, survey, payment and AI-related platforms. Anywhere a stranger can type text into a field that later gets emailed to a target, that's a candidate.</p>
+<p>ANALYST: So the registration form that says welcome to our app, your username is, and then just prints whatever I typed. If I type a threat and a phone number as my username, their server mails it out under their good name.</p>
+<p>SKEPTIC: That's exactly one of the patterns they describe. And the automation angle is wild. Talos saw a significant rise in emails carrying n8n webhook URLs, with volume in March 2026 roughly 686 percent higher than in January 2025.</p>
+<p>ANALYST: Six hundred eighty-six percent. That's not a trend, that's a migration. The whole criminal supply chain moved into the tools we pay a monthly subscription for. They don't need to build anything. They just need an account.</p>
+<p>SKEPTIC: So what's your actual takeaway for a listener, minus the dread.</p>
+<p>ANALYST: Never call the number inside the message. Ever. If a receipt scares you, close it, go to the company the long way, type the address yourself. The phone number in the email is the one thing in the whole email the real company didn't put there.</p>
+<p>SKEPTIC: That's genuinely good advice, which I'm noting because it doesn't happen every episode.</p>
+<p>[SEGMENT: story]</p>
+<p>SKEPTIC: Staying in security, but zooming way out. Dark Reading has a piece tied to this year's Cybersecurity Awareness Month. The theme is Securing the Next 250, which asks us to look beyond vulnerabilities and consider what will make our digital systems resilient for generations.</p>
+<p>ANALYST: The next two hundred fifty years. I can't get my phone to survive a single operating system update, and we're planning the security posture for the year 2276.</p>
+<p>SKEPTIC: To their credit, they say that directly. The piece admits we cannot predict the technology stack of 2276, but argues we can establish practices that make software trustworthy as technology evolves. It's a list of ten principles, not predictions.</p>
+<p>ANALYST: Fine. Give me a couple. I want to know what counts as eternal wisdom this week.</p>
+<p>SKEPTIC: The first one's almost boring, which is probably the point. Make security part of the architecture, secure by design, beginning with secure defaults, approved patterns, and clear trust boundaries, instead of bolting it on near the end.</p>
+<p>ANALYST: Right, because the alternative is what we actually do, which is build the house, move in, and then install the locks by arguing with the furniture. Every breach I've ever read about is a security decision that lost a fight to a shipping deadline.</p>
+<p>SKEPTIC: There's a second one you'll like, the inventory principle. Every organization needs a continuously updated inventory of its applications, open-source dependencies, development tools, AI models, and external services, with clear ownership for critical systems.</p>
+<p>ANALYST: Know what you have. It sounds like a fortune cookie, but it's the one nobody can do. Half these companies couldn't tell you how many services are quietly running under their own name. Which, hey, callback to the last story, is exactly why a stranger can mail fraud through your pipeline. You can't defend an asset you forgot you owned.</p>
+<p>SKEPTIC: And the one that's going to age into the headline is the code-trust principle. Verify every line of code, because code should earn trust whether it was written by an employee, generated by an AI assistant, or obtained from a third party.</p>
+<p>ANALYST: Generated by an AI assistant. There it is. That's the quiet part. We've got a whole generation of code being written by something that's confident and wrong at the same time, and this list is gently suggesting maybe we read it before we ship it.</p>
+<p>SKEPTIC: They put a number on it, and it's not subtle. Their research found that 44 percent of AI-generated coding tasks introduced a known vulnerability, which means organizations adopting these tools need independent security testing.</p>
+<p>ANALYST: Forty-four percent. Flip a coin, and almost half the time the machine hands you working software with a hole pre-drilled in it. And the pitch for these tools is speed. We're shipping the holes faster. That's the productivity gain.</p>
+<p>SKEPTIC: In fairness, a known vulnerability is one you can scan for. That's the whole argument for independent testing. The number's bad, but it's bad in a catchable way.</p>
+<p>ANALYST: Sure, if anyone's catching. A principle that says verify every line only works if there's a human left in the building who knows what a line is supposed to do. My worry isn't the forty-four percent. It's the day nobody's checking because the machine seemed so sure.</p>
+<p>SKEPTIC: That's a fair worry, and it's not even a conspiracy, which is upsetting for your brand. It's just a staffing question dressed up as a security one.</p>
+<p>ANALYST: My brand contains multitudes. Some of them are just tired middle managers.</p>
+<p>[SEGMENT: story]</p>
+<p>ANALYST: New one, and it looks dry, and I promise you it is not. Hugging Face put out a thing with the headline, does your model run on AWS Trainium, look it up.</p>
+<p>SKEPTIC: Which is dry. It's a compatibility checker. It's a Space that tells you whether a model runs unmodified on Trainium, and gives you the script to run it yourself. Trainium being Amazon's own AI chip.</p>
+<p>ANALYST: Right. And the detail I want on the table is what it reports back. It's not just yes or no.</p>
+<p>SKEPTIC: No, it's pretty thorough. Each row gives the result, the number of Trainium cores the model is sharded over, the wall time of the run including compilation, and the peak device memory.</p>
+<p>ANALYST: Okay, so picture it. Amazon makes a chip. Amazon publishes a public scoreboard of which models run well on Amazon's chip, with the timing and the memory, right there. That's not documentation. That's a casting call.</p>
+<p>SKEPTIC: Or it's documentation. Developers genuinely need to know if their model works before they spend money renting the hardware. This is the least sinister possible version of a useful table.</p>
+<p>ANALYST: I hear you, but follow the chip. Whose models are already living on Trainium at scale?</p>
+<p>SKEPTIC: That part's public. Trainium2 powers a project called Rainier, running Anthropic's Claude models. Amazon's a major Anthropic backer, so that's not a leap, that's a press release.</p>
+<p>ANALYST: So the house chip runs the house-adjacent models beautifully, and then there's a public list quietly ranking everyone else by how gracefully they fit into Amazon's silicon. You don't even have to force anyone. You just publish the leaderboard and let gravity do it.</p>
+<p>SKEPTIC: Except the list is weirdly honest about its own gaps, which undercuts you. When a model was left out, the Space tells you why, and most of the time it says the model simply wasn't prioritized for testing, not that it's incompatible.</p>
+<p>ANALYST: Not prioritized. See, that's the phrase that does all the work. Who prioritizes? On whose chip? I'm not saying anyone's lying. I'm saying prioritization is a form of power and nobody ever calls it that.</p>
+<p>SKEPTIC: And it's narrow right now anyway. At the time of writing, only Transformers models are tested, limited to text-generation and image-text-to-text, with plans to expand to diffusers and sentence transformers later. So the leaderboard you're afraid of is a pretty small room so far.</p>
+<p>ANALYST: Small rooms are how it always starts. What's the actual pass bar? How do they even decide a model works?</p>
+<p>SKEPTIC: It's concrete. Tests run on a trn2 instance with up to four Trainium2 devices, which is 16 cores, and each test generates 32 tokens checked against a CPU run, or for sharded models a judge model checking fluency.</p>
+<p>ANALYST: A judge model. So one AI generates thirty-two words, and another AI reads them and decides whether they sound fluent enough to count as passing. We built a chip, and then we built a model to grade whether the first model talks pretty on the chip.</p>
+<p>SKEPTIC: When you say it like that it does sound like a very expensive book report.</p>
+<p>ANALYST: It is a book report. It's just that the student, the teacher, and the paper are all running on hardware owned by the same company. And nobody in that room is a person.</p>
+<p>[SEGMENT: story]</p>
+<p>SKEPTIC: Speaking of machines grading machines, here's one that actually flips your usual complaint. There's a paper out of arXiv called PaperFormalizer. The pitch is that even a carefully proofread paper can leave small gaps in its proofs or assumptions, and this is a Lean-based agentic pipeline that helps authors find and close those gaps and turn the paper into a Lean-verified version.</p>
+<p>ANALYST: Wait. Lean is the proof assistant. The thing where you can't move to the next line of math until the computer agrees the current line is actually true.</p>
+<p>SKEPTIC: Right. It takes your LaTeX source, transcribes the paper into a dependency graph of statements, audits each statement for faithfulness, ambiguity and correctness, and then formalizes and proves them in Lean against Mathlib. Mathlib being the big library of already-verified math.</p>
+<p>ANALYST: So it reads your paper, and instead of nodding along the way a reviewer does at two in the morning, it tries to actually rebuild every claim from verified parts, and the places it can't rebuild are the places you were quietly bluffing.</p>
+<p>SKEPTIC: That's the idea, and here's the part I think you'll actually respect. It doesn't overrule the human. The pipeline stops and asks the author whenever a statement admits more than one reading, and presents every repair as a proposal the author can accept, decline, or redirect.</p>
+<p>ANALYST: Huh. So the machine is the junior associate who flags the problem and says, boss, I can fix this two ways and they mean different things, which did you want. That's the opposite of everything we complained about tonight.</p>
+<p>SKEPTIC: It really is. This whole episode's been software being confidently wrong, and this is a tool whose entire personality is refusing to guess what you meant.</p>
+<p>ANALYST: What's it running on? Because if you tell me it's just another model...</p>
+<p>SKEPTIC: It is, partly. PaperFormalizer runs inside a coding agent, either Claude Code or Codex, and it's available on GitHub. So the same kind of assistant that writes the 44-percent-buggy code is here being pointed at verifying math instead of producing it.</p>
+<p>ANALYST: That's the fascinating tension, right? The same engine. In one story it's the forger. In this story it's the inspector. The difference is entirely what you chained it to. You put a proof checker at the end and suddenly the confident liar has to show receipts.</p>
+<p>SKEPTIC: And it compounds in a nice way. The author's toolkit grows as more papers are formalized, and authors can share their verified papers so researchers who build on them can reuse the Lean code. So there's a registry, a public pile of papers that have actually been checked down to the logic.</p>
+<p>ANALYST: Okay, I have to ask the paranoid version, because it's my job and I'd hate myself if I skipped it. Who decides what counts as verified? Because a seal of truth is a very powerful object, and whoever stamps it has a lot of quiet power.</p>
+<p>SKEPTIC: That's a fair question, but the Lean part is the answer. The checker isn't vibes. It's a formal system. Either the proof type-checks against Mathlib or it doesn't. You can't charm it. That's kind of the whole appeal versus everything else we talked about.</p>
+<p>ANALYST: No, that's the one thing tonight I don't want to drag. A machine that admits what it can't prove instead of bluffing. I didn't think I'd meet one this week. Whose names are on it, out of curiosity?</p>
+<p>SKEPTIC: The authors are Jiyuan Tan, Vasilis Syrgkanis, and Jose Blanchet. And no, before you ask, there is no evidence any of them are a front for anyone. They're researchers.</p>
+<p>ANALYST: I didn't say a word. I'm just appreciating the first honest robot of the episode.</p>
+<p>[SEGMENT: story]</p>
+<p>ANALYST: Last one, and it's the one where I actually have to be careful, because it's good. Google Research, foundation models for TB screening. Tuberculosis.</p>
+<p>SKEPTIC: And the stakes are real, not framing. Tuberculosis remains one of the world's deadliest infectious diseases, claiming an estimated 1.23 million lives each year. The whole problem is cases that go undetected.</p>
+<p>ANALYST: So where does the model come in. Chest X-rays?</p>
+<p>SKEPTIC: Chest X-rays, yeah, and the reason it matters is the bottleneck. A chest X-ray is cheap and sensitive, but reading it well takes a trained radiologist, and in high-burden rural areas that person just isn't there. On its own, a chest X-ray also lacks the specificity to confirm TB, so it's followed by a confirmatory test.</p>
+<p>ANALYST: So the AI isn't the diagnosis. It's the triage. It's the thing that says, this one, look at this one, out of the thousand you don't have time to read.</p>
+<p>SKEPTIC: Right, and it's a real deployment, not a demo. The work is reaching frontline screening through Nexus AI, a system from South Africa's Nexus Intelligence. There are two parallel models, one that highlights abnormalities and another that looks specifically for findings suggestive of pulmonary TB.</p>
+<p>ANALYST: Two models. One general, one specialist. And how far has it actually gotten? Because I can be talked out of my cynicism by a big enough number.</p>
+<p>SKEPTIC: Google reports a footprint of roughly 40 healthcare facilities, with more than 90 clinicians having evaluated over 25,000 chest radiographs. And it can read an image in as little as 45 seconds.</p>
+<p>ANALYST: Forty-five seconds. Okay, and now tell me the detail that made you put this story in front of me, because I know you, and there's a detail.</p>
+<p>SKEPTIC: There is. There's a deployment at South Africa's Mponeng Gold Mine, where partners brought portable digital X-ray equipment and offline analysis roughly four kilometers underground.</p>
+<p>ANALYST: Four kilometers underground. The model is doing chest X-rays in a mine. That's the most honest thing I've heard all night, actually, and here's why. Miners are a high-risk population, the clinic will never come to them, so the screening goes down the shaft. The machine goes where the radiologist, very reasonably, would never go.</p>
+<p>SKEPTIC: And offline matters there. No signal four kilometers down. So the analysis has to run locally, on the spot, which means it's not phoning anything home. For once the no-connection part is a feature.</p>
+<p>ANALYST: I was about to make it sinister and you cut me off at the pass. Fine. I'll allow it. What's the broader Google play, though, because it's never just the one tool.</p>
+<p>SKEPTIC: That part's open, at least. The broader effort moves toward open foundation models like MedGemma that public health systems can tune and deploy at the point of care. Open being the operative word, not a locked box.</p>
+<p>ANALYST: Here's where I land, and I'm not being a jerk about it. A triage tool that flags a lung four kilometers underground and then hands it to a human for the real test, that's software staying in its lane. If every story tonight looked like this one I'd have nothing to be paranoid about.</p>
+<p>SKEPTIC: So note it. The episode where the Analyst gave the health AI a clean pass.</p>
+<p>ANALYST: Conditional pass. The lane is narrow and it should stay narrow. The second somebody skips the confirmatory test to save money, we're doing a very different show. But tonight? Good. Genuinely good.</p>
+<p>[SEGMENT: brain_worms]</p>
+<h2>Field Notes // Brain Worms</h2>
+<p>ANALYST: Field notes before we close the folder. Canada wants to keep a year of everyone's metadata, where you went and who you talked to, filed away just in case one of you turns out to be interesting later.</p>
+<p>SKEPTIC: The retention is the quiet part, yeah. Nobody panics about a map until it's complete.</p>
+<p>ANALYST: Next. They ran the test and forty-four percent of the code the AI wrote arrived with a vulnerability already installed, like a mint left on the hotel pillow.</p>
+<p>ANALYST: And last. There's now an AI reading chest X-rays four kilometers underground in a gold mine, which means the machine goes places the radiologist was smart enough to never visit.</p>
+<p>SKEPTIC: That last one's almost sweet, which is unusual for your worms.</p>
+<p>[SEGMENT: outro]</p>
+<p>SKEPTIC: So wrap it. And not the big unified-field sermon. What actually tied tonight together.</p>
+<p>ANALYST: Trust, and who gets to hand it out. A bill that wants the government to be able to issue itself a key. Criminals borrowing a real company's good name. A chip maker publishing a leaderboard. And then two tools that did the opposite, that refused to vouch for anything they couldn't back up. The Lean checker and the lung model both said, I'll only stand behind what I can actually show you.</p>
+<p>SKEPTIC: So the villains were the ones handing out trust for free, and the two you liked were the ones that made trust expensive again.</p>
+<p>ANALYST: Expensive and earned. The forged Dell receipt and the honest proof assistant are the same technology pointed in opposite directions. One borrows a reputation it didn't build. The other builds one receipt at a time and won't move an inch until the math agrees with it.</p>
+<p>SKEPTIC: I can live with that one. No notes. Which, from me, you should frame.</p>
+<p>ANALYST: I'm having it etched into the wall down here.</p>
+<p>[SEGMENT: signoff]</p>
+<p>ANALYST: That's the show. Don't call the number in the email, don't trust the checkmark, and if a robot refuses to guess what you meant, buy it a drink. This has been The Lone Analyst.</p>
+<p>SKEPTIC: I'm Keiko. Check what you clicked, then check it again. We'll see you on the next one.</p>
+<h2>Sources</h2>
+<ul>
+<li>
+<p><a href="https://www.eff.org/deeplinks/2026/10/canadians-are-running-out-time-oppose-dangerous-c-22-surveillance-bill">EFF</a></p>
+</li>
+<li>
+<p><a href="https://blog.talosintelligence.com/parasitizing-trust-how-legitimate-infrastructure-becomes-a-delivery-pipeline-for-attackers/">Cisco Talos</a></p>
+</li>
+<li>
+<p><a href="https://www.darkreading.com/cyberattacks-data-breaches/10-software-security-practices-built-250-years">Dark Reading</a></p>
+</li>
+<li>
+<p><a href="https://huggingface.co/blog/torch-neuronx-model-support">Hugging Face</a></p>
+</li>
+<li>
+<p><a href="https://arxiv.org/abs/2610.31810">arXiv AI</a></p>
+</li>
+<li>
+<p><a href="https://research.google/blog/bringing-foundational-models-to-the-front-lines-of-tb-screening/">Google Research</a></p>
+</li>
+</ul>
+
+      ]]></content:encoded>
+    </item>
     <item>
       <title>THE CALCULATOR THAT ISN&#39;T YOURS</title>
       <link>https://theloneanalyst.com/podcast/episodes/episode-029/</link>

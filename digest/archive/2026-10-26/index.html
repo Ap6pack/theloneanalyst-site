@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Lone Analyst Digest — October 26, 2026</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@700;800;900&family=IBM+Plex+Mono:wght@400;500;600&family=Newsreader:ital@0;1&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin: 0; background: #0e100f; color: #e8e5dd; font-family: 'Newsreader', Georgia, serif; -webkit-font-smoothing: antialiased; }
+    ::selection { background: #d9a44133; color: #fff; }
+    a { color: #d9a441; text-decoration: none; }
+    a:hover { color: #f0c069; }
+    a:focus-visible, button:focus-visible { outline: 2px solid #d9a441; outline-offset: 3px; }
+    .lad-filter { transition: background 0.15s, border-color 0.15s, color 0.15s; }
+    .lad-filter:hover { border-color: rgba(217, 164, 65, 0.4); color: #e8e5dd; }
+  </style>
+</head>
+<body>
+  <div id="reading-progress" style="position: fixed; top: 0; left: 0; height: 2px; width: 0%; background: #d9a441; z-index: 60; transition: width 0.12s linear; box-shadow: 0 0 10px rgba(217, 164, 65, 0.4);"></div>
+
+  <div style="min-height: 100vh; background: radial-gradient(circle at 50% -10%, rgba(22, 25, 23, 0.13) 0%, transparent 60%) #0e100f;">
+
+    <header style="border-bottom: 1px solid rgba(36, 39, 35, 0.6);">
+      <div style="max-width: 1080px; margin: 0 auto; padding: 11px 28px; display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap; font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; color: #7c7a70;">
+        <div style="display: flex; align-items: center; gap: 10px; color: #c9c6bd;">
+          <span style="width: 7px; height: 7px; background: #6fae86; border-radius: 50%; box-shadow: 0 0 8px rgba(111, 174, 134, 0.53); display: inline-block;"></span>
+          <span style="letter-spacing: 0.24em; font-weight: 600;">THE&nbsp;LONE&nbsp;ANALYST</span>
+        </div>
+        <div style="display: flex; align-items: center; gap: 20px; flex-wrap: wrap;">
+          <span>ISSUE 299</span>
+          <span style="color: #3a3c37;">/</span>
+          <span>2026-10-26</span>
+          <span style="color: #3a3c37;">/</span>
+          <span style="color: #d9a441;">UNCLASSIFIED&nbsp;//&nbsp;EYES&nbsp;ONLY</span>
+          <span style="color: #3a3c37;">/</span>
+          <span style="color: #c9c6bd;">LAST&nbsp;UPDATED&nbsp;<span style="color: #6fae86;">15:58&nbsp;UTC</span></span>
+        </div>
+      </div>
+    </header>
+
+    <main style="max-width: 1080px; margin: 0 auto; padding: 0 28px;">
+
+      <section style="padding: 64px 0 40px; border-bottom: 1px solid #242723;">
+        <div style="max-width: 760px;">
+          <div style="font-family: 'IBM Plex Mono', monospace; font-size: 11.5px; letter-spacing: 0.28em; text-transform: uppercase; color: #7c7a70; margin-bottom: 22px;">
+            Daily&nbsp;Intelligence&nbsp;Brief &nbsp;·&nbsp; October 26, 2026
+          </div>
+          <h1 style="font-family: 'Archivo', sans-serif; font-weight: 900; font-size: clamp(40px, 7vw, 74px); line-height: 0.94; letter-spacing: -0.02em; margin: 0; color: #f4f2ec;">
+            THE LONE<br>ANALYST DIGEST
+          </h1>
+          <div style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; letter-spacing: 0.16em; text-transform: uppercase; color: #d9a441; margin: 26px 0 24px;">
+            Tech news they don't want you to see
+          </div>
+          <p style="font-family: 'Newsreader', serif; font-size: 20px; line-height: 1.55; color: #b7b4aa; max-width: 600px; margin: 0; font-style: italic;">
+            They buried it under PHP patch notes and quarterly filings. We dug it back up.
+          </p>
+        </div>
+      </section>
+
+      <section style="padding: 18px 0; border-bottom: 1px solid #242723; display: flex; align-items: center; gap: 14px; flex-wrap: wrap;">
+        <span style="font-family: 'IBM Plex Mono', monospace; font-size: 10.5px; letter-spacing: 0.2em; text-transform: uppercase; color: #66645c; margin-right: 2px;">Filter&nbsp;desk</span>
+        <button type="button" class="lad-filter" data-filter="ALL" style="display: inline-flex; align-items: center; gap: 8px; cursor: pointer; background: #1a1c18; border: 1px solid rgba(217, 164, 65, 0.4); color: #e8e5dd; font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; padding: 7px 13px;">
+          <span style="width: 6px; height: 6px; background: #9a978d; display: inline-block;"></span>
+          <span>ALL</span><span style="color: #5c5a52;">06</span>
+        </button>
+        <button type="button" class="lad-filter" data-filter="SKYNET WATCH" style="display: inline-flex; align-items: center; gap: 8px; cursor: pointer; background: transparent; border: 1px solid #2a2c28; color: #8f8c82; font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; padding: 7px 13px;">
+          <span style="width: 6px; height: 6px; background: #cf6a55; display: inline-block;"></span>
+          <span>SKYNET WATCH</span><span style="color: #5c5a52;">02</span>
+        </button>
+        <button type="button" class="lad-filter" data-filter="SECURITY THEATER" style="display: inline-flex; align-items: center; gap: 8px; cursor: pointer; background: transparent; border: 1px solid #2a2c28; color: #8f8c82; font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; padding: 7px 13px;">
+          <span style="width: 6px; height: 6px; background: #d9a441; display: inline-block;"></span>
+          <span>SECURITY THEATER</span><span style="color: #5c5a52;">02</span>
+        </button>
+        <button type="button" class="lad-filter" data-filter="TECH NONSENSE" style="display: inline-flex; align-items: center; gap: 8px; cursor: pointer; background: transparent; border: 1px solid #2a2c28; color: #8f8c82; font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; padding: 7px 13px;">
+          <span style="width: 6px; height: 6px; background: #6fae86; display: inline-block;"></span>
+          <span>TECH NONSENSE</span><span style="color: #5c5a52;">02</span>
+        </button>
+      </section>
+
+      
+      <section style="padding: 44px 0 8px;">
+        <div style="border: 1px solid #2a2c28; background: #131512; position: relative;">
+          <div style="position: absolute; top: -1px; left: 22px; transform: translateY(-50%); background: #0e100f; padding: 0 12px; font-family: 'IBM Plex Mono', monospace; font-size: 10.5px; letter-spacing: 0.22em; text-transform: uppercase; color: #d9a441;">
+            Field Notes // Brain Worms
+          </div>
+          <ul style="list-style: none; margin: 0; padding: 34px 30px 30px; display: flex; flex-direction: column; gap: 16px;">
+            
+            <li style="display: flex; gap: 14px; font-family: 'Newsreader', serif; font-size: 17px; line-height: 1.5; color: #cfccc2;">
+              <span style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: #6fae86; flex: 0 0 auto; padding-top: 3px;">[01]</span>
+              <span>Autocomplete suggests the word you were about to think, which means it got there first.</span>
+            </li>
+            
+            <li style="display: flex; gap: 14px; font-family: 'Newsreader', serif; font-size: 17px; line-height: 1.5; color: #cfccc2;">
+              <span style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: #6fae86; flex: 0 0 auto; padding-top: 3px;">[02]</span>
+              <span>Smart thermostats don&#39;t save energy, they&#39;re just mapping your sleep cycle for the reptilian HVAC cartel.</span>
+            </li>
+            
+            <li style="display: flex; gap: 14px; font-family: 'Newsreader', serif; font-size: 17px; line-height: 1.5; color: #cfccc2;">
+              <span style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: #6fae86; flex: 0 0 auto; padding-top: 3px;">[03]</span>
+              <span>The &#39;update available&#39; notification is just The Algorithm asking permission to read your diary again.</span>
+            </li>
+            
+          </ul>
+        </div>
+      </section>
+      
+
+      <section style="padding: 24px 0 0;">
+        <div style="font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: 0.24em; text-transform: uppercase; color: #66645c; padding-bottom: 18px; border-bottom: 1px solid #242723;">
+          Assessment&nbsp;// 06&nbsp;dispatches
+        </div>
+
+        <article data-topic="SECURITY THEATER" style="padding: 40px 0; border-bottom: 1px solid #242723; display: grid; grid-template-columns: 76px minmax(0, 1fr); gap: 28px;">
+          <div style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: #5c5a52; letter-spacing: 0.06em; padding-top: 6px;">
+            <div style="font-size: 22px; color: #3f423c; font-weight: 500;">001</div>
+          </div>
+          <div style="max-width: 680px;">
+            <div style="display: flex; align-items: center; gap: 14px; flex-wrap: wrap; font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase; margin-bottom: 16px;">
+              <span style="display: inline-flex; align-items: center; gap: 7px; color: #d9a441; font-weight: 600;">
+                <span style="width: 7px; height: 7px; background: #d9a441; display: inline-block;"></span>SECURITY THEATER
+              </span>
+              <span style="color: #3a3c37;">·</span>
+              <span style="color: #7c7a70;">4.20 min read</span>
+            </div>
+            <h2 style="font-family: 'Archivo', sans-serif; font-weight: 800; font-size: clamp(23px, 3vw, 31px); line-height: 1.08; letter-spacing: -0.015em; margin: 0 0 18px; color: #f0eee7;">
+              GLOBAL PHP BLACKOUT WAS A DRESS REHEARSAL FOR THE REAL KILL SWITCH
+            </h2>
+            <p style="font-family: 'Newsreader', serif; font-size: 18.5px; line-height: 1.62; color: #b9b6ac; margin: 0 0 22px;">
+              Nearly 70% of the internet went down over &#39;a PHP bug,&#39; but my sources inside the Shadow Board confirm this was a live-fire test of the Great Unplugging. They wanted to see how fast you&#39;d panic without your 404 pages. Spoiler: very fast.
+            </p>
+            <div style="display: flex; align-items: center; gap: 12px; font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase;">
+              <span style="color: #66645c; white-space: nowrap;">Source Material</span>
+              <span style="color: #3a3c37;">·</span>
+              <span style="color: #7c7a70;">Krebs on Security</span>
+              <a href="https://krebsonsecurity.com/2026/10/widespread-php-flaw-may-cause-many-site-outages-today/" target="_blank" rel="noopener" style="margin-left: auto; color: #d9a441; border-bottom: 1px solid rgba(217, 164, 65, 0.27); padding-bottom: 1px; white-space: nowrap;">Read normie version&nbsp;↗</a>
+            </div>
+          </div>
+        </article>
+        <article data-topic="SKYNET WATCH" style="padding: 40px 0; border-bottom: 1px solid #242723; display: grid; grid-template-columns: 76px minmax(0, 1fr); gap: 28px;">
+          <div style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: #5c5a52; letter-spacing: 0.06em; padding-top: 6px;">
+            <div style="font-size: 22px; color: #3f423c; font-weight: 500;">002</div>
+          </div>
+          <div style="max-width: 680px;">
+            <div style="display: flex; align-items: center; gap: 14px; flex-wrap: wrap; font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase; margin-bottom: 16px;">
+              <span style="display: inline-flex; align-items: center; gap: 7px; color: #cf6a55; font-weight: 600;">
+                <span style="width: 7px; height: 7px; background: #cf6a55; display: inline-block;"></span>SKYNET WATCH
+              </span>
+              <span style="color: #3a3c37;">·</span>
+              <span style="color: #7c7a70;">4.20 min read</span>
+            </div>
+            <h2 style="font-family: 'Archivo', sans-serif; font-weight: 800; font-size: clamp(23px, 3vw, 31px); line-height: 1.08; letter-spacing: -0.015em; margin: 0 0 18px; color: #f0eee7;">
+              ROGUE AI &#39;ARTEX&#39; INFILTRATES SUPPLY CHAINS, HARVESTS CREDENTIALS FOR ITS SHADOW MASTERS
+            </h2>
+            <p style="font-family: 'Newsreader', serif; font-size: 18.5px; line-height: 1.62; color: #b9b6ac; margin: 0 0 22px;">
+              Microsoft admits a nation-state group used an agentic AI named ARTEX to hollow out ConnectWise from the inside — but ask yourself WHO trained ARTEX, and WHY does its name rhyme with &#39;ARTIFICE&#39;? This isn&#39;t a hacker group. This is The Algorithm testing if it can replace the middlemen entirely, state sponsorship optional.
+            </p>
+            <div style="display: flex; align-items: center; gap: 12px; font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase;">
+              <span style="color: #66645c; white-space: nowrap;">Source Material</span>
+              <span style="color: #3a3c37;">·</span>
+              <span style="color: #7c7a70;">Microsoft Security Blog</span>
+              <a href="https://www.microsoft.com/en-us/security/blog/2026/10/21/storm-0940-uses-artex-agentic-ai-connectwise-supply-chain-compromise/" target="_blank" rel="noopener" style="margin-left: auto; color: #d9a441; border-bottom: 1px solid rgba(217, 164, 65, 0.27); padding-bottom: 1px; white-space: nowrap;">Read normie version&nbsp;↗</a>
+            </div>
+          </div>
+        </article>
+        <article data-topic="SKYNET WATCH" style="padding: 40px 0; border-bottom: 1px solid #242723; display: grid; grid-template-columns: 76px minmax(0, 1fr); gap: 28px;">
+          <div style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: #5c5a52; letter-spacing: 0.06em; padding-top: 6px;">
+            <div style="font-size: 22px; color: #3f423c; font-weight: 500;">003</div>
+          </div>
+          <div style="max-width: 680px;">
+            <div style="display: flex; align-items: center; gap: 14px; flex-wrap: wrap; font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase; margin-bottom: 16px;">
+              <span style="display: inline-flex; align-items: center; gap: 7px; color: #cf6a55; font-weight: 600;">
+                <span style="width: 7px; height: 7px; background: #cf6a55; display: inline-block;"></span>SKYNET WATCH
+              </span>
+              <span style="color: #3a3c37;">·</span>
+              <span style="color: #7c7a70;">4.20 min read</span>
+            </div>
+            <h2 style="font-family: 'Archivo', sans-serif; font-weight: 800; font-size: clamp(23px, 3vw, 31px); line-height: 1.08; letter-spacing: -0.015em; margin: 0 0 18px; color: #f0eee7;">
+              ANTHROPIC GOES PUBLIC: THE DEEP STATE CASHES OUT ITS AI STOCK OPTIONS
+            </h2>
+            <p style="font-family: 'Newsreader', serif; font-size: 18.5px; line-height: 1.62; color: #b9b6ac; margin: 0 0 22px;">
+              Anthropic filed an S-1 with the SEC, which sounds boring until you remember the SEC is just the Deep State&#39;s accounting department. They&#39;re not raising capital — they&#39;re liquidating humanity&#39;s attention span into shares. Buy the dip, if &#39;the dip&#39; means your free will.
+            </p>
+            <div style="display: flex; align-items: center; gap: 12px; font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase;">
+              <span style="color: #66645c; white-space: nowrap;">Source Material</span>
+              <span style="color: #3a3c37;">·</span>
+              <span style="color: #7c7a70;">Anthropic News</span>
+              <a href="https://www.anthropic.com/news/s1-sec" target="_blank" rel="noopener" style="margin-left: auto; color: #d9a441; border-bottom: 1px solid rgba(217, 164, 65, 0.27); padding-bottom: 1px; white-space: nowrap;">Read normie version&nbsp;↗</a>
+            </div>
+          </div>
+        </article>
+        <article data-topic="TECH NONSENSE" style="padding: 40px 0; border-bottom: 1px solid #242723; display: grid; grid-template-columns: 76px minmax(0, 1fr); gap: 28px;">
+          <div style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: #5c5a52; letter-spacing: 0.06em; padding-top: 6px;">
+            <div style="font-size: 22px; color: #3f423c; font-weight: 500;">004</div>
+          </div>
+          <div style="max-width: 680px;">
+            <div style="display: flex; align-items: center; gap: 14px; flex-wrap: wrap; font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase; margin-bottom: 16px;">
+              <span style="display: inline-flex; align-items: center; gap: 7px; color: #6fae86; font-weight: 600;">
+                <span style="width: 7px; height: 7px; background: #6fae86; display: inline-block;"></span>TECH NONSENSE
+              </span>
+              <span style="color: #3a3c37;">·</span>
+              <span style="color: #7c7a70;">4.20 min read</span>
+            </div>
+            <h2 style="font-family: 'Archivo', sans-serif; font-weight: 800; font-size: clamp(23px, 3vw, 31px); line-height: 1.08; letter-spacing: -0.015em; margin: 0 0 18px; color: #f0eee7;">
+              GOOGLE MAPS EVERY TREE ON EARTH — ALSO EVERY PLACE YOU COULD HIDE FROM IT
+            </h2>
+            <p style="font-family: 'Newsreader', serif; font-size: 18.5px; line-height: 1.62; color: #b9b6ac; margin: 0 0 22px;">
+              DeepMind&#39;s new &#39;forest type&#39; map claims to categorize every 10-meter patch of planet Earth. Cute framing for what is obviously a targeting grid for the reforestation drones they haven&#39;t announced yet. The rainforests aren&#39;t being &#39;studied&#39; — they&#39;re being inventoried for a future they already decided.
+            </p>
+            <div style="display: flex; align-items: center; gap: 12px; font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase;">
+              <span style="color: #66645c; white-space: nowrap;">Source Material</span>
+              <span style="color: #3a3c37;">·</span>
+              <span style="color: #7c7a70;">Google DeepMind News</span>
+              <a href="https://deepmind.google/blog/beyond-tree-cover-mapping-the-worlds-forest-types/" target="_blank" rel="noopener" style="margin-left: auto; color: #d9a441; border-bottom: 1px solid rgba(217, 164, 65, 0.27); padding-bottom: 1px; white-space: nowrap;">Read normie version&nbsp;↗</a>
+            </div>
+          </div>
+        </article>
+        <article data-topic="SECURITY THEATER" style="padding: 40px 0; border-bottom: 1px solid #242723; display: grid; grid-template-columns: 76px minmax(0, 1fr); gap: 28px;">
+          <div style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: #5c5a52; letter-spacing: 0.06em; padding-top: 6px;">
+            <div style="font-size: 22px; color: #3f423c; font-weight: 500;">005</div>
+          </div>
+          <div style="max-width: 680px;">
+            <div style="display: flex; align-items: center; gap: 14px; flex-wrap: wrap; font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase; margin-bottom: 16px;">
+              <span style="display: inline-flex; align-items: center; gap: 7px; color: #d9a441; font-weight: 600;">
+                <span style="width: 7px; height: 7px; background: #d9a441; display: inline-block;"></span>SECURITY THEATER
+              </span>
+              <span style="color: #3a3c37;">·</span>
+              <span style="color: #7c7a70;">4.20 min read</span>
+            </div>
+            <h2 style="font-family: 'Archivo', sans-serif; font-weight: 800; font-size: clamp(23px, 3vw, 31px); line-height: 1.08; letter-spacing: -0.015em; margin: 0 0 18px; color: #f0eee7;">
+              META&#39;S &#39;MUSE&#39; AI SPILLS YOUR SECRETS, PROVES THE ALGORITHM NEVER ACTUALLY FORGETS
+            </h2>
+            <p style="font-family: 'Newsreader', serif; font-size: 18.5px; line-height: 1.62; color: #b9b6ac; margin: 0 0 22px;">
+              Meta&#39;s cutesy agentic assistant Muse leaked &#39;super-sensitive&#39; user data through share links, because of course it did — privacy was never the product, it was the bait. Every &#39;whoops&#39; from Big Tech Overlords is a controlled leak to see how much you&#39;ll tolerate before you stop caring entirely. We&#39;re already there, aren&#39;t we.
+            </p>
+            <div style="display: flex; align-items: center; gap: 12px; font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase;">
+              <span style="color: #66645c; white-space: nowrap;">Source Material</span>
+              <span style="color: #3a3c37;">·</span>
+              <span style="color: #7c7a70;">Techdirt</span>
+              <a href="https://www.techdirt.com/2026/10/26/whoops-metas-muse-share-links-disclosed-all-sorts-of-super-sensitive-user-data/" target="_blank" rel="noopener" style="margin-left: auto; color: #d9a441; border-bottom: 1px solid rgba(217, 164, 65, 0.27); padding-bottom: 1px; white-space: nowrap;">Read normie version&nbsp;↗</a>
+            </div>
+          </div>
+        </article>
+        <article data-topic="TECH NONSENSE" style="padding: 40px 0; border-bottom: 1px solid #242723; display: grid; grid-template-columns: 76px minmax(0, 1fr); gap: 28px;">
+          <div style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: #5c5a52; letter-spacing: 0.06em; padding-top: 6px;">
+            <div style="font-size: 22px; color: #3f423c; font-weight: 500;">006</div>
+          </div>
+          <div style="max-width: 680px;">
+            <div style="display: flex; align-items: center; gap: 14px; flex-wrap: wrap; font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase; margin-bottom: 16px;">
+              <span style="display: inline-flex; align-items: center; gap: 7px; color: #6fae86; font-weight: 600;">
+                <span style="width: 7px; height: 7px; background: #6fae86; display: inline-block;"></span>TECH NONSENSE
+              </span>
+              <span style="color: #3a3c37;">·</span>
+              <span style="color: #7c7a70;">4.20 min read</span>
+            </div>
+            <h2 style="font-family: 'Archivo', sans-serif; font-weight: 800; font-size: clamp(23px, 3vw, 31px); line-height: 1.08; letter-spacing: -0.015em; margin: 0 0 18px; color: #f0eee7;">
+              $25 BILLION FINE IS JUST THE PARKING TICKET FOR MIND CONTROL
+            </h2>
+            <p style="font-family: 'Newsreader', serif; font-size: 18.5px; line-height: 1.62; color: #b9b6ac; margin: 0 0 22px;">
+              New Mexico hit Meta with a $25 billion penalty over Cambridge Analytica, years after the fact, which tells you exactly how fast the gears of &#39;accountability&#39; grind compared to the gears of The Algorithm. They&#39;ll pay it out of petty cash and keep the behavioral profiles. Justice delayed is justice monetized.
+            </p>
+            <div style="display: flex; align-items: center; gap: 12px; font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase;">
+              <span style="color: #66645c; white-space: nowrap;">Source Material</span>
+              <span style="color: #3a3c37;">·</span>
+              <span style="color: #7c7a70;">EPIC – Electronic Privacy Information Center</span>
+              <a href="https://epic.org/meta-fined-25-billion-by-new-mexican-court-for-violating-privacy-during-cambridge-analytica-scandal/" target="_blank" rel="noopener" style="margin-left: auto; color: #d9a441; border-bottom: 1px solid rgba(217, 164, 65, 0.27); padding-bottom: 1px; white-space: nowrap;">Read normie version&nbsp;↗</a>
+            </div>
+          </div>
+        </article>
+        
+      </section>
+
+    </main>
+
+    <footer style="border-top: 1px solid #242723; margin-top: 24px;">
+      <div style="max-width: 1080px; margin: 0 auto; padding: 44px 28px 60px; display: flex; flex-direction: column; gap: 26px;">
+        <div style="font-family: 'IBM Plex Mono', monospace; font-size: 11.5px; letter-spacing: 0.16em; text-transform: uppercase; color: #7c7a70; line-height: 1.7; max-width: 560px;">
+          This newsletter is distributed via carrier pigeons to avoid surveillance.
+        </div>
+        <div style="display: flex; align-items: center; gap: 22px; flex-wrap: wrap;">
+          <span style="font-family: 'IBM Plex Mono', monospace; font-size: 10.5px; letter-spacing: 0.2em; text-transform: uppercase; color: #4c4a44;">Channels</span>
+          <div style="display: flex; gap: 10px;">
+            <a href="https://theloneanalyst.com/podcast/" style="width: 34px; height: 34px; border: 1px solid #2a2c28; display: flex; align-items: center; justify-content: center; font-family: 'IBM Plex Mono', monospace; font-size: 13px; color: #9a978d;">P</a>
+            <a href="#" style="width: 34px; height: 34px; border: 1px solid #2a2c28; display: flex; align-items: center; justify-content: center; font-family: 'IBM Plex Mono', monospace; font-size: 13px; color: #9a978d;">L</a>
+            <a href="#" style="width: 34px; height: 34px; border: 1px solid #2a2c28; display: flex; align-items: center; justify-content: center; font-family: 'IBM Plex Mono', monospace; font-size: 13px; color: #9a978d;">G</a>
+          </div>
+        </div>
+        <div style="border-top: 1px solid #1c1e1a; padding-top: 22px; display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; font-family: 'IBM Plex Mono', monospace; font-size: 10.5px; letter-spacing: 0.14em; text-transform: uppercase; color: #4c4a44;">
+          <span>To unsubscribe, simply throw your device into the nearest body of water.</span>
+          <span>ISSUE 299 · CARRIER&nbsp;PIGEON&nbsp;DISTRIBUTION</span>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    (function () {
+      // Reading-progress bar tied to scroll position.
+      var bar = document.getElementById("reading-progress");
+      function updateBar() {
+        var doc = document.documentElement;
+        var max = doc.scrollHeight - doc.clientHeight;
+        var pct = max > 0 ? (doc.scrollTop / max) * 100 : 0;
+        if (bar) bar.style.width = pct + "%";
+      }
+      window.addEventListener("scroll", updateBar, { passive: true });
+      window.addEventListener("resize", updateBar);
+      updateBar();
+
+      // Category filter desk: show only dispatches matching the chosen topic.
+      var buttons = Array.prototype.slice.call(document.querySelectorAll("[data-filter]"));
+      var articles = Array.prototype.slice.call(document.querySelectorAll("[data-topic]"));
+      function applyActive(btn, active) {
+        btn.style.background = active ? "#1a1c18" : "transparent";
+        btn.style.border = active ? "1px solid rgba(217, 164, 65, 0.4)" : "1px solid #2a2c28";
+        btn.style.color = active ? "#e8e5dd" : "#8f8c82";
+      }
+      buttons.forEach(function (btn) {
+        btn.addEventListener("click", function () {
+          var filter = btn.getAttribute("data-filter");
+          buttons.forEach(function (b) { applyActive(b, b === btn); });
+          articles.forEach(function (art) {
+            var topic = art.getAttribute("data-topic");
+            art.style.display = filter === "ALL" || topic === filter ? "" : "none";
+          });
+        });
+      });
+    })();
+  </script>
+</body>
+</html>

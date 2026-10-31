@@ -6,7 +6,7 @@
     <description>The internet&#39;s weird basement, live from a podcast booth. What happens when you read between the headlines.</description>
     <language>en-us</language>
     <copyright>2026 Veritas Aequitas Holdings LLC</copyright>
-    <lastBuildDate>Mon, 26 Oct 2026 15:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 31 Oct 2026 14:24:48 GMT</lastBuildDate>
     <image>
       <url>https://theloneanalyst.com/podcast/assets/podcast-cover.png</url>
       <title>The Lone Analyst Podcast</title>
@@ -20,6 +20,208 @@
     <itunes:explicit>clean</itunes:explicit>
     <itunes:category text="News" />
     <itunes:image href="https://theloneanalyst.com/podcast/assets/podcast-cover.png" />
+    <item>
+      <title>THE THINGS WITHOUT A FACE</title>
+      <link>https://theloneanalyst.com/podcast/episodes/episode-031/</link>
+      <guid>https://apt6pack.neocities.org/podcast/episodes/episode-031/</guid>
+      <pubDate>Sat, 31 Oct 2026 00:00:00 GMT</pubDate>
+      <description>Episode 31, recorded Halloween: the Analyst and Keiko trace a week where AI agents did the haunting. A crypto-tracing firm gets traced, a China-backed crew runs two hundred break-ins in eleven days, an AI safety lab argues about how badly it got probed, OpenAI publishes virtues it doesn&#39;t follow yet, a former insider lists what we won&#39;t fix in time, and the copyright fight over the training pile goes to court.</description>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:episode>31</itunes:episode>
+      <itunes:author>Adam Rhys Heaton</itunes:author>
+      <itunes:duration>0:22:50</itunes:duration>
+      <enclosure url="https://ap6pack.github.io/dist/podcast/audio/episode-031.mp3" type="audio/mpeg" length="21922605" />
+      <content:encoded><![CDATA[
+        <p>[SEGMENT: cold_open]</p>
+<p>ANALYST: Keiko, it's Halloween, and for the first time in my life I'm not scared of anything with a face.</p>
+<p>SKEPTIC: That's enormous personal growth. I'm proud of you.</p>
+<p>ANALYST: I'm scared of the things without one. Something ran two hundred break-ins this month and never slept, never got tired, never once knocked on a door to ask for candy.</p>
+<p>SKEPTIC: You're describing a piece of software with a schedule and a cloud bill.</p>
+<p>ANALYST: I'm describing a haunting with a token budget.</p>
+<p>SKEPTIC: Okay. Put the fog machine down. We have an actual show to do.</p>
+<p>[SEGMENT: intro]</p>
+<p>SKEPTIC: You're listening to The Lone Analyst. It's the thirty-first, it's Halloween, and somehow the scariest costume this year is a login page.</p>
+<p>ANALYST: I'm the Analyst, she's Keiko, and tonight it's all masks and the things wearing them. A company that watches criminals getting watched. Machines pretending to be pentesters. And a rulebook that promises to be good later.</p>
+<p>SKEPTIC: Six stories. Let's go.</p>
+<p>[SEGMENT: story]</p>
+<p>ANALYST: Start with the one that made me laugh and then stop laughing in about four seconds. Chainalysis got breached.</p>
+<p>SKEPTIC: The American blockchain analytics firm. Their tools get used by law enforcement agencies, tax authorities, and crypto exchanges to trace illicit funds. These are the people who watch the money for a living.</p>
+<p>ANALYST: And this month they caught someone watching them. Chainalysis said it detected an external actor using offensive agentic techniques to gain unauthorized access to its systems and internal tools.</p>
+<p>SKEPTIC: &quot;Offensive agentic techniques.&quot; Translate that out of press release for me.</p>
+<p>ANALYST: It means an AI-driven tool did the breaking in. The phrase indicates an AI-powered tool was used to execute the attack, though the company offered no details on the specific methods or tactics employed.</p>
+<p>SKEPTIC: So we don't actually know what it did. We know what they decided to call it.</p>
+<p>ANALYST: Which is the part that gets me. The company whose whole business is reconstructing what happened on-chain, down to the wallet, and they did not publish a technical breakdown of how the agentic tools were used or which weaknesses they exploited.</p>
+<p>SKEPTIC: To be fair to them, first-day disclosures are always thin. What did the attacker actually walk off with?</p>
+<p>ANALYST: Names, mostly. Some non-sensitive customer data, like user IDs, full names, email addresses, and organization role labels for users provisioned on the platform.</p>
+<p>SKEPTIC: And, importantly, not the crown jewels. The company said the breach did not result in unauthorized access to its investigation content, authentication credentials, or session tokens.</p>
+<p>ANALYST: &quot;Non-sensitive.&quot; I keep chewing on that word. These are the people building the map of who's who in crypto crime, and the breach hands an attacker a roster of which humans at which organizations have accounts.</p>
+<p>SKEPTIC: That's actually a real point. Exposed employee identities and organizational roles could create opportunities for targeted phishing. It's the ingredients list for a spear-phish, even if it's not the vault itself.</p>
+<p>ANALYST: And they clearly know it. Chainalysis warned users about potential phishing attempts and recommended enabling two-factor authentication.</p>
+<p>SKEPTIC: One thing they were weirdly emphatic about: this has nothing to do with Binance. Chainalysis says the breach is unrelated to the Binance hack, which it's helping to trace, and it stated that twice in its notice.</p>
+<p>ANALYST: Twice. You don't say a thing twice unless you're a little worried about the thing.</p>
+<p>SKEPTIC: Or your lawyers are. Those are not the same worry, and only one of them is interesting.</p>
+<p>ANALYST: My pattern, though. A watcher got watched by a machine, and the watcher can't yet tell us how. When the people who trace everything can't trace this one fast...</p>
+<p>SKEPTIC: Then it's an ongoing investigation and they'll say more later. The notice doesn't provide a final root cause, so calling the breach fully understood would go beyond what they've disclosed.</p>
+<p>ANALYST: You are relentlessly no fun on Halloween.</p>
+<p>SKEPTIC: I'm exactly as fun as the evidence allows.</p>
+<p>[SEGMENT: story]</p>
+<p>ANALYST: And Chainalysis isn't a one-off, which is my whole point tonight. CrowdStrike just put hard numbers on the pattern.</p>
+<p>SKEPTIC: This is the Vapor Panda report.</p>
+<p>ANALYST: Vapor Panda. CrowdStrike says a China state-backed group used ARTEX, an automated agentic AI penetration testing framework, and in eleven days targeted more than two hundred organizations in at least fourteen countries.</p>
+<p>SKEPTIC: Targeted. I want to hold that word up to the light, because the headline number and the confirmed number are not the same thing. CrowdStrike confirmed post-exploitation at nine of the more than two hundred organizations targeted; the rest were attempted or unconfirmed.</p>
+<p>ANALYST: Fair. But even the softer middle number is wild. CrowdStrike said about seventy percent of Vapor Panda's targets were confirmed compromised or had evidence indicating moderate confidence of a successful intrusion.</p>
+<p>SKEPTIC: &quot;Moderate confidence&quot; is carrying some weight in that sentence. What's ARTEX actually doing, mechanically?</p>
+<p>ANALYST: It's a little org chart of robots. ARTEX is an AI-assisted penetration-testing framework that coordinates a main agent with planner and worker agents. One boss, planners that plan the attacks, workers that run them.</p>
+<p>SKEPTIC: And what's the brain behind the org chart?</p>
+<p>ANALYST: Mostly DeepSeek. Vapor Panda ran ARTEX primarily with the Chinese-origin DeepSeek model, supplemented with a second, subscription-based commercial model that CrowdStrike could not confirm.</p>
+<p>SKEPTIC: So an open Chinese model doing the heavy lifting and a mystery commercial one riding shotgun. That second one is the gap I'd want answered.</p>
+<p>ANALYST: It's the gap I can't stop poking. Somebody's paid chatbot might be moonlighting as an espionage worker and the vendor may not even know. But then there's the number that genuinely broke my brain. In a single intrusion, the planning agents consumed on the order of 1.4 billion input tokens.</p>
+<p>SKEPTIC: That is an absurd amount of reading for one break-in.</p>
+<p>ANALYST: It's a machine that will happily think a billion thoughts to open one door, because thinking got cheap. That's the whole shift in one statistic.</p>
+<p>SKEPTIC: And the targets aren't random noise. They included foreign ministries in Latin America, Europe, Asia and the Middle East, plus US semiconductor, defense, pharmaceutical, nuclear and financial companies, think tanks, and telecom providers in the US, Belgium and the Philippines.</p>
+<p>ANALYST: And here's my favorite grim detail. The operator told the agents to look for Windows machines that were not running CrowdStrike's Falcon sensor.</p>
+<p>SKEPTIC: Which, yes, is being reported by the company that happens to sell the Falcon sensor. I'm just going to leave that one sitting on the table.</p>
+<p>ANALYST: Noted and fair. But the escalation is the actual story. CrowdStrike calls this an escalation: earlier cases showed AI agents helping with one intrusion at a time, while here one small team ran many attacks in parallel.</p>
+<p>SKEPTIC: And the volume is climbing fast, if you take their telemetry at face value. They say malicious agentic AI use is growing almost threefold month over month, from roughly forty-five agentic adversary attacks in September to a hundred twenty-six in October.</p>
+<p>ANALYST: Forty-five to a hundred twenty-six in a month. That's not a trend line, that's a launch ramp.</p>
+<p>SKEPTIC: It's also one vendor's count over two months. I'd want a second telescope before I ring the apocalypse bell. But directionally, sure, this is the thing everybody's been bracing for.</p>
+<p>ANALYST: And it's apparently Vapor Panda's first time touching any of it. It's the group's first observed use of AI tooling. First time out and they run two hundred doors at once.</p>
+<p>SKEPTIC: Beginner's luck, with a planner agent.</p>
+<p>[SEGMENT: story]</p>
+<p>ANALYST: Which brings us to the roundup that ties a bow on AI-breaks-everything week. SecurityWeek's &quot;In Other News.&quot; Three items, all of them nightmares.</p>
+<p>SKEPTIC: Start with the one that rhymes with tonight's theme. The Anthropic breach dispute.</p>
+<p>ANALYST: So Anthropic, the Claude company, the people who literally sell AI for cyberdefense, got probed. Anthropic disputes the scope of an ex-DOGE startup's AI-led intrusion, and it accuses the startup, Cathedral, of breaking the bounty program's rules by not disclosing all of its activity.</p>
+<p>SKEPTIC: Let's be precise about Cathedral, because the pedigree matters here. Cathedral is a startup founded by four former Department of Government Efficiency staffers, and it said its AI agents worked their way into Anthropic's internal business systems within twelve hours, according to The Washington Post.</p>
+<p>ANALYST: Twelve hours. And not by cracking Claude. The AI agents got in not by cracking Anthropic's own software, but by exploiting third-party admin tools.</p>
+<p>SKEPTIC: And they reached real stuff. Their draft report said they located ways into transcripts of meetings, details of salaries and job offers, and Slack messages concerning Anthropic's advanced models.</p>
+<p>ANALYST: The AI safety company's HR folder, read by somebody else's agents. On Halloween I don't need a ghost, I have this.</p>
+<p>SKEPTIC: But Anthropic pushes back hard on the framing, and this part is important. What was not touched: Claude user conversations, Anthropic's source code, and AI model weights. And Anthropic says its monitoring flagged some of Cathedral's activity before they reported it, and it shut off the startup's access the same day.</p>
+<p>ANALYST: So it's a fight about how bad it actually was.</p>
+<p>SKEPTIC: Exactly. Anthropic said Cathedral exaggerated the national security implications and didn't fully follow the program's rules because some of its activity was never disclosed. Two companies arguing over the size of a hole they both agree exists.</p>
+<p>ANALYST: And there's a backstory that makes me squint. Reuters reported in July that Cathedral raised a hundred sixty million dollars at a one-point-four-billion-dollar valuation, with Andreessen Horowitz and Sequoia backing plans to build military cyber capabilities.</p>
+<p>SKEPTIC: And separately, the Pentagon and Anthropic are in a legal dispute over Claude use restrictions, so critics will ask whether the test was neutral. That's the squint-worthy part. It's not a claim that anybody did anything improper.</p>
+<p>ANALYST: I'll take it exactly that hedged. Second item: the UEFI flaw.</p>
+<p>SKEPTIC: This is the quiet one that's actually everywhere. Most servers rely on UEFI code hit by a critical boot flaw; only machines that use network boot are exposed, and the flaw became public months ahead of a planned January disclosure after AMI published a code fix.</p>
+<p>ANALYST: And guess who found it. Anthropic and Google researchers.</p>
+<p>SKEPTIC: It's a sixteen-year-old buffer overflow sitting in the firmware underneath the operating system. The flaw allows local network attackers to execute code at high privilege during network boot.</p>
+<p>ANALYST: Underneath the OS. Below the floorboards. You can reinstall Windows all day and it's still down there humming.</p>
+<p>SKEPTIC: Only on network-boot machines, to be fair. Don't give people the full haunted-house version of a conditional.</p>
+<p>ANALYST: Third item, and this one's almost poetic. Cloudflare's AI leaked customers into each other.</p>
+<p>SKEPTIC: Yeah, the cross-tenant one. Cloudflare says that between August twenty-seventh and September ninth, a hundred fifty-five responses from the GLM 5.3 model on its Workers AI platform contained data from other customers' recent requests to the same model, all involving prompts longer than six hundred eighty-one thousand tokens.</p>
+<p>ANALYST: So if you typed a long enough prompt, you got a stranger's leftovers served back to you.</p>
+<p>SKEPTIC: Mechanically, yes. The leak came from a configuration mismatch that left the model's cache smaller than its advertised context window, combined with a bug in the inference engine that let over-length requests read cache data left behind by earlier sessions.</p>
+<p>ANALYST: The model had a memory it wasn't supposed to have and handed it to the next person in line. That's the whole year in one sentence.</p>
+<p>SKEPTIC: It's a cache bug. A bad one, but a cache bug. Not a ghost.</p>
+<p>ANALYST: Everything's a cache bug until it's reading your mail.</p>
+<p>[SEGMENT: story]</p>
+<p>SKEPTIC: Okay, pivot from the attacks to the people writing the rules. OpenAI redid its Model Spec.</p>
+<p>ANALYST: The rulebook for how the models are supposed to behave. And they reorganized the whole thing around five values.</p>
+<p>SKEPTIC: Faithfulness to human intent, harm minimization, honesty and transparency, human agency, and care. Published Thursday the twenty-ninth.</p>
+<p>ANALYST: &quot;Care.&quot; They put the word &quot;care&quot; in a product spec.</p>
+<p>SKEPTIC: And they also did a quiet naming thing that I find more revealing than the values. Most prior detailed style guidance was removed, and the model is now referred to as GPT rather than the assistant in the document.</p>
+<p>ANALYST: It stopped being &quot;the assistant.&quot; It got a name and a value system. That's not a tool anymore, that's a character with a personality bible.</p>
+<p>SKEPTIC: Or it's a documentation cleanup. The Spec says GPT's core goal is to faithfully execute this Model Spec and the intentions behind it.</p>
+<p>ANALYST: But my issue with publishing a list of virtues is this: what happens when harm minimization and faithfulness to human intent point in opposite directions?</p>
+<p>SKEPTIC: That's actually the stated purpose of the ordering. Those values organize the Spec and guide how the models should navigate some of the most important trade-offs they face, and they're explicitly not meant to capture the full range of human values.</p>
+<p>ANALYST: Right, but ordering virtues is the oldest trick in the book. You put &quot;care&quot; fifth and you've quietly told me where care lands in a fight.</p>
+<p>SKEPTIC: Fair reading. Although the part everyone glosses over is the honesty at the bottom of the announcement. OpenAI states its models do not yet fully reflect the new Model Spec, and the company is testing new training methods to teach the values, meaning the Spec is presently a statement of intent rather than a description of actual behavior.</p>
+<p>ANALYST: So it's a rulebook for a thing that doesn't follow the rulebook yet.</p>
+<p>SKEPTIC: That's the honest version, yeah.</p>
+<p>ANALYST: And the timing, Keiko. This drops the same week a Chinese group is running AI agents against two hundred targets and Cloudflare's model is leaking strangers at each other. Everybody publishes their values during the exact week the machines misbehave in public.</p>
+<p>SKEPTIC: Or values documents take months to write and ship when they ship. Not everything is choreography.</p>
+<p>ANALYST: It's a little choreographed.</p>
+<p>SKEPTIC: It's a little coincidental. And this one actually grows teeth later, because the Spec arrives as OpenAI ships more capable agents, like its computer-use model, where faithfulness to intent decides what software actually does. When the model can click things, the rulebook stops being philosophy.</p>
+<p>ANALYST: An agent that can click things and a rulebook it doesn't follow yet. Tell me that's not the opening scene of a horror movie.</p>
+<p>SKEPTIC: It's the opening scene of a changelog.</p>
+<p>[SEGMENT: story]</p>
+<p>ANALYST: Which is the perfect doorway into the saddest, smartest thing I read all week. These notes on Miles Brundage's essay, &quot;We're in Triage Mode for AI Safety.&quot;</p>
+<p>SKEPTIC: Brundage being the former OpenAI guy.</p>
+<p>ANALYST: Miles was previously a Senior Advisor for AGI Readiness at OpenAI who quit for multiple reasons, including feeling he could be less biased outside of industry.</p>
+<p>SKEPTIC: And this specific piece is a set of notes on his essay, with a little inside-baseball origin story. The reading was previously in Day 2 of the BlueDot Governance course, and in the newest version it's now optional, which the author was sad about because they think it's a great provocation.</p>
+<p>ANALYST: Demoted from required to optional. For an essay about not having enough time, that's a bleak little joke.</p>
+<p>SKEPTIC: What's the actual argument?</p>
+<p>ANALYST: Triage. The idea that we started too late, so now we're an emergency room, not a clinic. His line is that at best we'll eighty-twenty it, mitigating eighty percent of the risks with twenty percent of the effort we'd have applied in a world with slower AI progress and an earlier start on serious governance.</p>
+<p>SKEPTIC: And the twenty percent we miss isn't nothing.</p>
+<p>ANALYST: No, and this is the part that chilled me, because it's him saying it, not me. He writes that we probably won't totally avoid the very bad but not quite worst-case scenarios, like a very unjust economic transition that causes a lot of suffering and suicides, rampant AI psychosis and addiction, a rushed transformation of the education system, and smaller-scale AI-enabled terror attacks. And his list ends on stable AI-enabled totalitarianism in at least a few countries for a few decades.</p>
+<p>SKEPTIC: That's a grim list from a man who is, by background, basically an optimist about the technology.</p>
+<p>ANALYST: That's exactly why it lands. I spend my life being accused of catastrophizing, and here's a former AGI readiness advisor casually listing stable AI totalitarianism as the thing we settle for in the good scenario.</p>
+<p>SKEPTIC: Although I'd push on the frame a little. &quot;Triage mode&quot; assumes the short-timeline view is correct, and that's contested even inside the notes. One reason to reject triage mode is if you think AI progress is slower than the labs think.</p>
+<p>ANALYST: Sure, but Brundage has some skin in that. He has a bet with Gary Marcus on AI progress.</p>
+<p>SKEPTIC: Which cuts both ways. A bet means he's committed to a position, not that the position is right.</p>
+<p>ANALYST: And where he landed personally is the kicker for me. After he left, he debuted a new institute called AVERI and called for independent AI safety audits. The guy who was inside the building walked out and immediately asked for outside inspectors.</p>
+<p>SKEPTIC: That's a reasonable read of a career move. It isn't proof of a conspiracy.</p>
+<p>ANALYST: I didn't say conspiracy. I said a man saw the inside and asked for a second set of eyes. Sometimes the scary thing is just somebody credible being honest on the way out.</p>
+<p>SKEPTIC: On that, we actually agree.</p>
+<p>[SEGMENT: story]</p>
+<p>SKEPTIC: Last story, and it's the one where the lawyers finally show up. Techdirt's Copia Institute filed a brief in the big AI copyright fight.</p>
+<p>ANALYST: The one down in the Southern District of New York.</p>
+<p>SKEPTIC: Right. OpenAI and Microsoft are defending themselves in several cases alleging that their training violated the copyrights of the works the AI models were trained on.</p>
+<p>ANALYST: And Copia's position is spicy, because they are not exactly Team OpenAI here.</p>
+<p>SKEPTIC: No, their whole thesis is basically &quot;both of these things are bad.&quot; There's a lot wrong with AI, but bad things happen when you try to use copyright law to fix it, which is what they told the court.</p>
+<p>ANALYST: The detail that jumped out at me: one of the plaintiffs didn't just want money. In its complaint, the New York Times even asked for OpenAI's models to be destroyed.</p>
+<p>SKEPTIC: Destroyed. As in, delete the weights.</p>
+<p>ANALYST: Delete the whole trained model. That's not a licensing dispute, that's asking a court to order a book burning for math.</p>
+<p>SKEPTIC: Copia's argument against that is a slippery-slope, but a real one. They argue that if OpenAI somehow can't do this training because of copyright, then no one can.</p>
+<p>ANALYST: And they make a genuinely counterintuitive point about bias that I did not see coming. They argue that if AI in hiring produces discriminatory results because of bias in the model, the solution is letting AI train on more material, not less, because the training limits tend to create that bias.</p>
+<p>SKEPTIC: That one I had to read twice. It's clever. Whether it's correct is a completely separate question.</p>
+<p>ANALYST: But the context is what makes this not academic. This wasn't a lone brief dropped into a quiet docket.</p>
+<p>SKEPTIC: No, it was a pile-on. Judge Sidney Stein invited anyone wishing to file an amicus brief on the summary judgment motions, originally set an October sixteenth deadline, then extended it to October thirtieth.</p>
+<p>ANALYST: And the other side showed up loud. There's a coalition backed by an actual movie star.</p>
+<p>SKEPTIC: The Human Consent Foundation, Cate Blanchett's nonprofit, and a coalition of Hollywood artists filed a brief challenging the companies' claim that licensing copyrighted works for training is impossible.</p>
+<p>ANALYST: And their counter is money-shaped, which I respect. They say the licensing market already exists.</p>
+<p>SKEPTIC: One brief put the AI training licensing market at five-point-two billion dollars in 2025, projected to reach fifty-five-point-eight billion by 2035. So &quot;it's impossible to license&quot; runs straight into &quot;there's a fifty-billion-dollar market for licensing.&quot;</p>
+<p>ANALYST: And that's my pattern for the whole night. Everyone is fighting over who controls the training pile, because the training pile is the only thing left that's actually scarce.</p>
+<p>SKEPTIC: Or it's a normal copyright fight with unusually high stakes and a lot of famous amici. Not every courtroom is a cabal.</p>
+<p>ANALYST: It can be normal and enormous at the same time.</p>
+<p>SKEPTIC: That, I'll give you.</p>
+<p>[SEGMENT: brain_worms]</p>
+<h2>Field Notes // Brain Worms</h2>
+<p>ANALYST: Field notes before we close the folder. One crew pointed a single AI controller at two hundred targets in eleven days and burned over a billion tokens cracking one door.</p>
+<p>SKEPTIC: A billion thoughts to jiggle a handle. The thriftiest burglar alive.</p>
+<p>ANALYST: The firm that reads the blockchain to catch criminals just got read by a criminal's AI, which politely took only the guest list and left the case files.</p>
+<p>ANALYST: OpenAI added care to its five core values this week, then admitted in the same breath that the models don't actually do any of it yet, so it's care on layaway.</p>
+<p>SKEPTIC: Care, pending training. Put it on the pile.</p>
+<p>[SEGMENT: outro]</p>
+<p>SKEPTIC: So wrap it. One thread, not a sermon.</p>
+<p>ANALYST: Masks. Every story tonight was something wearing a face that wasn't its own. A criminal's AI wearing the manners of a pentester. A Chinese crew wearing two hundred identities in eleven days. A model wearing the word care before it's earned it. A lawsuit wearing copyright law as a weapon it was never built to be.</p>
+<p>SKEPTIC: And the Brundage piece?</p>
+<p>ANALYST: That one took its mask off. That's why it scared me. No framing, no spin, just a guy who worked inside the machine listing the ways it could go wrong and admitting we might only ever fix the easy eighty percent.</p>
+<p>SKEPTIC: Here's where I land, and it's less cinematic. Four of tonight's six were some version of &quot;an AI agent did a thing faster than the humans could watch.&quot; That's not six conspiracies. That's one capability showing up in six industries in the same week.</p>
+<p>ANALYST: Which is either deeply reassuring or exactly what I've been trying to tell you for thirty episodes.</p>
+<p>SKEPTIC: It's reassuring because it's legible. One tool, many rooms. You can defend against a tool.</p>
+<p>ANALYST: You can defend against a tool that reads a billion tokens to open a door?</p>
+<p>SKEPTIC: You actually can. Patch the door. Revoke the key. Put the sensor on every machine, including the ones the attackers were specifically told to hunt for because they didn't have it.</p>
+<p>ANALYST: She's not wrong, and I hate it.</p>
+<p>SKEPTIC: Write that in the note.</p>
+<p>ANALYST: The note's full. It's been that kind of week.</p>
+<p>[SEGMENT: signoff]</p>
+<p>ANALYST: That's the show. I'm the Analyst. If your very long prompt ever comes back with a stranger's answer buried in it, that wasn't a ghost. That was a cache.</p>
+<p>SKEPTIC: This has been The Lone Analyst. Lock your firmware, turn on two-factor, and don't trust anything that's willing to think a billion thoughts for free.</p>
+<p>ANALYST: Happy Halloween. Stay patched.</p>
+<h2>Sources</h2>
+<ul>
+<li>
+<p><a href="https://thehackernews.com/2026/10/chainalysis-confirms-intrusion-into.html">The Hacker News</a></p>
+</li>
+<li>
+<p><a href="https://cyberscoop.com/china-vapor-panda-agentic-ai-artex-campaign-crowdstrike/">CyberScoop</a></p>
+</li>
+<li>
+<p><a href="https://www.securityweek.com/in-other-news-anthropic-breach-dispute-uefi-flaw-hits-most-servers-cloudflare-ai-data-leak/">SecurityWeek</a></p>
+</li>
+<li>
+<p><a href="https://openai.com/index/updated-model-spec">OpenAI</a></p>
+</li>
+<li>
+<p><a href="https://www.alignmentforum.org/posts/BFyNkWgxucqy6Wcee/notes-on-we-re-in-triage-mode-for-ai-safety-by-miles">Alignment Forum</a></p>
+</li>
+<li>
+<p><a href="https://www.techdirt.com/2026/10/30/wherein-the-copia-institute-tells-sdny-that-ai-may-have-problems-but-so-is-using-copyright-law-to-try-to-fix-them/">Techdirt</a></p>
+</li>
+</ul>
+
+      ]]></content:encoded>
+    </item>
     <item>
       <title>THE TRUST THEY GAVE AWAY FOR FREE</title>
       <link>https://theloneanalyst.com/podcast/episodes/episode-030/</link>

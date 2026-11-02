@@ -6,7 +6,7 @@
     <description>The internet&#39;s weird basement, live from a podcast booth. What happens when you read between the headlines.</description>
     <language>en-us</language>
     <copyright>2026 Veritas Aequitas Holdings LLC</copyright>
-    <lastBuildDate>Sun, 01 Nov 2026 14:51:28 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 02 Nov 2026 18:02:02 GMT</lastBuildDate>
     <image>
       <url>https://theloneanalyst.com/podcast/assets/podcast-cover.png</url>
       <title>The Lone Analyst Podcast</title>
@@ -20,6 +20,188 @@
     <itunes:explicit>clean</itunes:explicit>
     <itunes:category text="News" />
     <itunes:image href="https://theloneanalyst.com/podcast/assets/podcast-cover.png" />
+    <item>
+      <title>THE LICENSE THEY NEVER APPROVED</title>
+      <link>https://theloneanalyst.com/podcast/episodes/episode-033/</link>
+      <guid>https://apt6pack.neocities.org/podcast/episodes/episode-033/</guid>
+      <pubDate>Mon, 02 Nov 2026 00:00:00 GMT</pubDate>
+      <description>Episode 33: Two unauthenticated PHP flaws that pop the plumbing of the web, a Microsoft threat report that forgets to mention Microsoft, DeepMind&#39;s planning robot rubber-stamped by councils, an LLM that keeps beating celebrated deep-learning papers with a plain model, a Pritzker Prize for AI-made antibiotics, and the shutdown of Egypt&#39;s Mada Masr.</description>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:episode>33</itunes:episode>
+      <itunes:author>Adam Rhys Heaton</itunes:author>
+      <itunes:duration>0:22:53</itunes:duration>
+      <enclosure url="https://ap6pack.github.io/dist/podcast/audio/episode-033.mp3" type="audio/mpeg" length="21963309" />
+      <content:encoded><![CDATA[
+        <p>[SEGMENT: cold_open]</p>
+<p>ANALYST: Keiko. How many websites do you think you handed a trusting little request to before lunch today?</p>
+<p>SKEPTIC: I don't know. Dozens. The number of websites is not the number I'm worried about with you right now.</p>
+<p>ANALYST: Picture twenty-two million machines out there that will run absolutely anything a stranger whispers at them. Not after you log in. Before. Before a single line of the site's own code runs.</p>
+<p>SKEPTIC: You're describing the PHP thing from last week.</p>
+<p>ANALYST: I'm describing the fact that a huge slice of the visible internet is held together by one scripting language that, for a window of time, would just hand over the keys to whoever knocked wrong.</p>
+<p>SKEPTIC: It's patched. There are releases. People can fix this today.</p>
+<p>ANALYST: People can. Whether people do is a whole different episode. And honestly, half of tonight.</p>
+<p>SKEPTIC: Then stop teasing it and let's start.</p>
+<p>[SEGMENT: intro]</p>
+<p>SKEPTIC: You're listening to The Lone Analyst. Episode thirty-three. I'm Keiko Carrow, and across the desk is the man who still won't tell me his name.</p>
+<p>ANALYST: The Analyst. That's the whole name. Using the real one is how they find you.</p>
+<p>SKEPTIC: It's Monday, November second. Six stories tonight, and they keep circling the same drain. Who gets to run code on your server, who gets to make a decision about your house, and who gets to decide a newsroom isn't allowed to exist.</p>
+<p>ANALYST: Read between the headlines with us.</p>
+<p>[SEGMENT: story]</p>
+<p>ANALYST: Start with the plumbing. PHP. Not glamorous, not an AI, it's the thing quietly running under an enormous number of content management systems. And two vulnerabilities dropped that let someone execute code on your server with no login at all.</p>
+<p>SKEPTIC: Right. The security researchers at Unit 42 flagged the pair. Two critical vulnerabilities in PHP, both remote code execution, both rated 9.2 on the CVSS scale. Someone nicknamed the pair PHP2Shell.</p>
+<p>ANALYST: Say that score out loud again for me.</p>
+<p>SKEPTIC: Nine point two. Out of ten.</p>
+<p>ANALYST: Out of ten, for the language under half the web's front doors. And the terrifying part isn't the score. It's how little you have to do to pull the trigger.</p>
+<p>SKEPTIC: That's the part that actually got me. A working exploit showed that a single unauthenticated request can trigger the attack before any application code runs. You don't need an account. You don't need the app to cooperate.</p>
+<p>ANALYST: And who's exposed? Basically everyone who serves a page.</p>
+<p>SKEPTIC: More or less. Every PHP install that serves web requests is affected, including PHP-FPM, Apache with mod_php, php-cgi, FrankenPHP and LiteSpeed. The teams running old mod_php setups are in the worst spot.</p>
+<p>ANALYST: Give me the scale. The number that made me close my eyes.</p>
+<p>SKEPTIC: Palo Alto's own scanning. At the time of publication they identified over 22.6 million exposed instances potentially vulnerable to these two bugs.</p>
+<p>ANALYST: Twenty-two million. That is not a vulnerability, that's a weather system. And here's where my paranoia earns its keep, because the researchers had a wobble. They put out a report, then pulled part of it back.</p>
+<p>SKEPTIC: They did, and I'll give you the honest version, not your version. On October 25 Unit 42 retracted an October 23 report that attributed a European government agency intrusion to PHP2Shell, saying they couldn't confirm the initial access came from these flaws. That's a correction. That's what good disclosure looks like.</p>
+<p>ANALYST: Or that's what it looks like when the first draft of history is too embarrassing to keep.</p>
+<p>SKEPTIC: Or a careful team said the thing we can't prove yet and then unsaid it. Both can be true, and the scary reality didn't need the retraction. By a few days later, a campaign was reported chaining PHP2Shell with a Linux kernel privilege-escalation bug to get root, and Unit 42 said it independently verified the same attacker's tooling.</p>
+<p>ANALYST: So the chain exists. Front door, then the whole house.</p>
+<p>SKEPTIC: And the regulators moved. CISA added both of these to its Known Exploited Vulnerabilities catalog on October 26. That's the government saying this is not theoretical, go patch.</p>
+<p>ANALYST: And the fix. Tell them the uncomfortable part about the fix.</p>
+<p>SKEPTIC: The uncomfortable part is there's no clever workaround that fully saves you. The releases fix two critical vulnerabilities that can allow unauthenticated remote code execution, and the project says there are no complete mitigations, updating is the only safe choice.</p>
+<p>ANALYST: So the entire defensive strategy for a fifth of the web is please, everyone, at the same time, go upgrade a thing you forgot you were running.</p>
+<p>SKEPTIC: Yes. And some won't, because they inherited a server from a contractor who left in 2019.</p>
+<p>ANALYST: That's not a conspiracy. That's just sad. I almost prefer the conspiracies.</p>
+<p>[SEGMENT: story]</p>
+<p>ANALYST: Stay right there on the word patch, because Microsoft put out its big annual threat report, and the headline finding is about who keeps getting hit.</p>
+<p>SKEPTIC: The Digital Defense Report. Government agencies and services were the sector most impacted by cyber threats in 2026, accounting for 27% of observed activity, up from 17% in 2025.</p>
+<p>ANALYST: Government, number one target, big jump. Fine. But Dark Reading ran a piece arguing the report has a convenient blind spot, and the blind spot is shaped exactly like the company that wrote it.</p>
+<p>SKEPTIC: This is Andrew Grotto's argument, and I want to state it precisely. The report highlights government agencies as top targets for AI-driven attacks, but omits Microsoft's own role in that exposure.</p>
+<p>ANALYST: The report talks a lot about AI. Agentic attackers, novel malware, phishing at scale. All real. But a government doesn't get breached by a vibe. It gets breached through a bug in software it already runs.</p>
+<p>SKEPTIC: And the market concentration is the thing that makes that pointed. Microsoft holds about 85% market share in US public sector productivity software, and accounts for nearly 23% of known exploited vulnerabilities tracked by CISA since November 2021, far more than runner-up Cisco's 6%.</p>
+<p>ANALYST: So one vendor is nearly a quarter of all the actually-exploited bugs on the government's radar, and the same vendor publishes the report about how the government keeps getting attacked, and somehow its own name doesn't come up.</p>
+<p>SKEPTIC: I'll grant you that's a strange omission. I won't grant you that it's necessarily sinister. Companies don't tend to write their own vulnerabilities into their marketing reports. That's not a plot, that's a press office.</p>
+<p>ANALYST: But it's a plot-shaped press office, Keiko. There's a detail in there about the VA that genuinely bothered me.</p>
+<p>SKEPTIC: That one's grim regardless of framing. The VA dropped its Data Loss Prevention program after bundling security into a Microsoft license, putting 18 million veterans' records at risk.</p>
+<p>ANALYST: So you cancel the thing watching the door because the new landlord says the door comes with a lock. And then eighteen million people are standing behind it.</p>
+<p>SKEPTIC: And the track record isn't abstract. Since 2023, Chinese state-sponsored actors compromised Microsoft products in at least two significant instances, accessing over two dozen US government agencies' emails in one attack and at least seven agencies in another in July 2025.</p>
+<p>ANALYST: So here's the part where I actually agree with the report and that scares me more. The report's own view is that AI isn't the whole monster.</p>
+<p>SKEPTIC: Right. The 2026 report doesn't predict a sudden AI takeover of cybercrime; Microsoft's view is that AI makes familiar attacks faster and cheaper and adds agents as a new, often poorly governed attack surface. Faster, not magical.</p>
+<p>ANALYST: Faster is the whole problem though. Boring bug plus fast AI equals the same break-in on a stopwatch.</p>
+<p>SKEPTIC: That part the report actually owns. AI has let threat actors compress parts of the attack lifecycle from days to minutes. I just don't think naming the AI lets you skip naming the bug.</p>
+<p>ANALYST: See, that's the agreement I didn't want. The flashy AI villain is a great way to not talk about the unpatched server.</p>
+<p>SKEPTIC: We can both be suspicious of the framing and still tell people the fix is unglamorous. Patch your stuff. It's the least cinematic advice on earth.</p>
+<p>[SEGMENT: story]</p>
+<p>SKEPTIC: Different flavor of story. Google DeepMind and the UK government are expanding an AI tool for planning departments. This is the boring bureaucracy of whether you can build a loft conversion, and they think AI can speed it up.</p>
+<p>ANALYST: What's it called and what does it actually touch?</p>
+<p>SKEPTIC: It's called PlanAssist. It was developed by Google DeepMind with the UK government, Google Cloud and the AI consultancy Faculty, aimed at routine residential planning reviews. It targets the document checks and policy reviews behind loft conversions, extensions and conservatories, drafting cited assessments that qualified officers can edit while they keep responsibility for every decision.</p>
+<p>ANALYST: Give me the numbers they're selling it on.</p>
+<p>SKEPTIC: Across the pilot councils, the average time an officer spent on householder assessment tasks fell by 58%. And routine householder applications make up as much as 70% of planning officers' work, even though they're often simple to approve.</p>
+<p>ANALYST: Okay. And then there's the number that made the back of my neck do a thing.</p>
+<p>SKEPTIC: I know which one. More than 70% of the reports the tool generated were approved by officers with no edits.</p>
+<p>ANALYST: Seventy percent. No edits. So the human in the loop reads the robot's homework and goes yep, looks right, seven times out of ten, without touching a word. That's not oversight. That's a signature line.</p>
+<p>SKEPTIC: Or seven times out of ten the robot got a genuinely routine case genuinely right, and the officer's judgment kicked in on the hard three. You're assuming rubber stamp. The design assumes triage.</p>
+<p>ANALYST: The design always assumes triage. Then the backlog shows up, and triage quietly becomes the whole job.</p>
+<p>SKEPTIC: That's a fair worry and I'll say it plainly, because even the coverage flagged it. DeepMind reports the 58% and the 70%, but neither figure establishes faster end-to-end decisions or independently verified accuracy. These are the company's pilot numbers, not an outside audit.</p>
+<p>ANALYST: Thank you. That's the part that matters. The vendor grades its own exam and then scales it.</p>
+<p>SKEPTIC: And it is scaling. On October 31 DeepMind said PlanAssist is moving into a 12-month beta with 12 more English councils, 15 in total, after the Barnet, Camden and Dorset pilots. Subject to successful testing, the plan is to make it available to every English planning authority in 2027.</p>
+<p>ANALYST: And this isn't just a Britain thing, is it. There's a franchise model.</p>
+<p>SKEPTIC: There is. DeepMind has framed this explicitly as a model for other governments, part of what it calls National Partnerships for AI, with similar deals signed with Singapore, South Korea and India.</p>
+<p>ANALYST: So one company's model gets to sit inside the decision about whether your neighbor can build the extension that blocks your light, in four countries, with the officer as the last human whose job is increasingly to agree.</p>
+<p>SKEPTIC: And I'll still defend the part worth defending. A qualified planning officer will continue to review and approve each assessment before a decision is issued. The statutory call stays with a person.</p>
+<p>ANALYST: On paper.</p>
+<p>SKEPTIC: On paper is where accountability lives, Analyst. That's the only place you can actually hold someone to it.</p>
+<p>ANALYST: I'll give you that one. I don't love it, but I'll give it to you.</p>
+<p>[SEGMENT: story]</p>
+<p>ANALYST: Okay, this next one I have been waiting to say out loud, because it's a paper that quietly takes a flamethrower to a pile of celebrated science. The claim is that a lot of fancy deep learning results in big journals weren't actually beating anything.</p>
+<p>SKEPTIC: Slow down. Give me what it actually did. The authors assembled 36 supervised classification and regression tasks from peer-reviewed studies in Nature, Science, and Cell-family journals that investigate novel deep learning methods for scientific applications.</p>
+<p>ANALYST: Thirty-six real, published, peer-reviewed, celebrated results. And then they did the mean thing. They asked an AI to build a dumb version.</p>
+<p>SKEPTIC: A simple baseline, yes. They investigated whether a large language model could automate the construction of baselines. The point isn't that the fancy model is fake. The point is that sometimes nobody checked it against a boring alternative.</p>
+<p>ANALYST: And the boring alternative shows up, cracks its knuckles, and the result is brutal. Hit me with it.</p>
+<p>SKEPTIC: The automatically constructed baselines recovered a median of 95.5%, mean 85.7%, of the gap between a trivial predictor and the score of the deep learning model. And the kicker, the median simple baseline matched or exceeded the deep learning model in 12 of the studies.</p>
+<p>ANALYST: Twelve out of thirty-six. A third of these breakthroughs, matched or beaten, by a model an LLM wrote as a sanity check. That's not an AI story, Keiko, that's an emperor's-new-clothes story with footnotes.</p>
+<p>SKEPTIC: It's a methodology story, and that's actually the more important one. This is an old, boring, true problem. Establishing the value of a novel deep learning method requires appropriate comparison. People skipped the comparison, so progress looked bigger than it was.</p>
+<p>ANALYST: But think about what that does to the whole pipeline. We trust these results. Companies cite them. Funding follows them. And a third of them might just be a complicated way of saying water is wet.</p>
+<p>SKEPTIC: That's the leap I won't fully take. Recovering most of the gap isn't the same as the method being worthless. A fancy model that's barely better than simple can still be better, and the paper's own framing is careful about that. It's a check, not a verdict.</p>
+<p>ANALYST: A check that an AI performs on the AI hype. There's something almost beautiful about using the machine to catch the machine's own press releases.</p>
+<p>SKEPTIC: That part I'll agree with, genuinely. The authors suggest automated baseline construction can provide a useful check on the predictive contributions of supervised deep learning methods. Cheap skepticism, at scale, pointed at your own field. That's good hygiene.</p>
+<p>ANALYST: Cheap skepticism at scale is my entire personality. I feel seen by a preprint.</p>
+<p>SKEPTIC: Don't get attached. It'll match-or-beat you by a median of 95.5% too.</p>
+<p>[SEGMENT: story]</p>
+<p>SKEPTIC: Let me give you a story where the AI genuinely earned the applause. Two MIT professors just won a major prize for using AI to find antibiotics.</p>
+<p>ANALYST: Names, prize, why it matters.</p>
+<p>SKEPTIC: Regina Barzilay and James Collins of MIT are the recipients of the 2026 Pritzker Prize for AI in Science Research Excellence. It was established in 2024 and recognizes work that jointly advances AI and the natural sciences or engineering. For the first time in the prize's history, a team was awarded.</p>
+<p>ANALYST: And the actual breakthrough, not the trophy.</p>
+<p>SKEPTIC: They collaborated to identify the first AI-discovered antibiotic, widely recognized as a milestone in AI-driven drug discovery. A discovery process that once took years was completed in just a few weeks.</p>
+<p>ANALYST: Okay, that's real. Years to weeks. That's the kind of number that's supposed to be a lie and apparently isn't. What's the scope of the hunt?</p>
+<p>SKEPTIC: Enormous. Their Antibiotics-AI Project used AI to screen more than 70 billion molecules and identify or design nine novel antibiotic candidates. And the ambition behind it is specific. The project, with the nonprofit Phare Bio, aims to develop seven new classes of antibiotics targeting seven of the world's deadliest pathogens, against resistance projected to cause 10 million deaths a year by 2050.</p>
+<p>ANALYST: Ten million a year. See, that's the stat that reframes everything. We spend all night being paranoid about machines reading our email, and here's the same technology aimed at the thing that's actually quietly coming for everybody.</p>
+<p>SKEPTIC: And it shifted what AI is even doing in the lab. In a 2025 study in Cell, the researchers moved from filtering known compounds to using generative AI to design new antibiotic structures. From searching to inventing.</p>
+<p>ANALYST: That's the line that should scare people and it won't, because it's wearing a lab coat. A model that designs a molecule that's never existed, that then kills a thing that was killing us. That's a very thin wall between that and designing a molecule you don't want designed.</p>
+<p>SKEPTIC: That's a real dual-use concern and you're allowed to raise it. What you're not allowed to do is pin it on these two, because that's not what the evidence says they did. They built antibiotics.</p>
+<p>ANALYST: I'm not pinning anything on them. I'm genuinely tipping my hat. I'm just noting the tool doesn't care which direction you point it.</p>
+<p>SKEPTIC: Fair. And Collins said the quiet part that's actually the hopeful part. He described a shift from AI being used as a tool for discovery to AI being used as a design tool.</p>
+<p>ANALYST: Design tool. For once I want the conspiracy to be true and the conspiracy is just... scientists did a good thing.</p>
+<p>SKEPTIC: Write it down. Rare sighting.</p>
+<p>[SEGMENT: story]</p>
+<p>SKEPTIC: Last story, and I want us to be careful with this one, because it's not a bit. An Egyptian court shut down one of the country's last independent newsrooms and convicted its editor.</p>
+<p>ANALYST: Mada Masr. Give me what happened, exactly, not my version.</p>
+<p>SKEPTIC: On October 27, Mada Masr editor-in-chief Lina Attalah was fined by the New Cairo court, which convicted her of managing an unlicensed website and ordered the site's closure. The judge handed down the maximum penalty: a 3 million Egyptian pound fine, closure of the website, and confiscation of its property.</p>
+<p>ANALYST: Managing an unlicensed website. Sit with that phrase. That's the charge. Not a lie they printed. Not a fact they got wrong. A license.</p>
+<p>SKEPTIC: And the license is the part that curdles, because they tried. Mada Masr said it repeatedly applied for a license but the applications were ignored or rejected by authorities. You can't comply with a process that refuses to answer you.</p>
+<p>ANALYST: That's the machine I keep describing on this show and nobody believes me until it's on a court docket. You build a permission system. You make the permission impossible to get. Then the lack of permission is the crime.</p>
+<p>SKEPTIC: And the hearing itself was not a normal hearing. By Mada Masr's account, the court rejected the defense's requests to review case documents and hear witnesses before asking the lawyers to give closing arguments, and the defense declined, saying the court hadn't addressed its requests.</p>
+<p>ANALYST: And there's the thing with the lawyer. Tell them that part, because I didn't believe it the first time.</p>
+<p>SKEPTIC: The judge appointed a lawyer to represent Attalah despite her own defense team being present; she objected, and the judge refused to record her objection in the minutes. Then after the verdict, security personnel surrounded her, carried her out of the courtroom, and she was held in custody.</p>
+<p>ANALYST: Carried out. Physically lifted out of the room where they just decided her outlet doesn't exist anymore. And this isn't the end of it, is it. There's more coming.</p>
+<p>SKEPTIC: There is. This conviction was for the unlicensed-site charge. There's a separate track. The original reporting notes she faces a second trial, on a charge of spreading false news, which has become one of the government's go-to tools against journalists.</p>
+<p>ANALYST: Two prosecutions, two weeks. That's not a legal process, that's a schedule.</p>
+<p>SKEPTIC: And the context is damning on its own terms. The ruling follows years of harassment of Attalah, who has faced six criminal investigations in six years over the outlet's reporting. An Egyptian court hadn't ordered the closure of a news site since 2013.</p>
+<p>ANALYST: So the first shutdown in over a decade, aimed at one of the few left standing. And there's a second outlet in this story, right? The crackdown isn't just her.</p>
+<p>SKEPTIC: Right. Attalah was referred to trial shortly after Mada Masr joined other outlets in standing up a solidarity newsroom to fill the gap after the arrest of six Matsadaash journalists. So it widens. Cover for the people who got arrested, and you're next.</p>
+<p>ANALYST: That's the pattern I can't make a joke out of, and I'm not going to. You arrest the fact-checkers, then you arrest the people who stood up for the fact-checkers, and you call all of it a licensing matter.</p>
+<p>SKEPTIC: And the response wasn't quiet. The Committee to Protect Journalists' regional director called the conviction and shutdown order a devastating blow to press freedom and a message aimed at dismantling independent media. Mada Masr's legal team plans to appeal and pursue all available avenues.</p>
+<p>ANALYST: The frame on the original piece is the one I'd leave people with. Independent media is not a privilege a government gets to hand out and take back.</p>
+<p>SKEPTIC: And that's the whole fight in one line. Not a conspiracy. Just a government deciding who's allowed to tell people what's happening to them.</p>
+<p>ANALYST: No clever leap on this one. The facts are the alarming part.</p>
+<p>[SEGMENT: brain_worms]</p>
+<h2>Field Notes // Brain Worms</h2>
+<p>ANALYST: Field notes before we close the folder. Twenty-two million PHP servers can be popped by one web request that lands before the site's own code even wakes up, and the only real fix is to just upgrade.</p>
+<p>SKEPTIC: And nobody's going to.</p>
+<p>ANALYST: Next. An AI drafts the planning report, and officers wave through seven in ten of them without changing a single word, which is a very efficient way to launder a robot's opinion into a public decision.</p>
+<p>ANALYST: And last. Twelve of thirty-six celebrated deep learning breakthroughs got matched or beaten by a plain model a language model threw together as a homework check.</p>
+<p>SKEPTIC: That last one I'm keeping. Taped to the monitor.</p>
+<p>[SEGMENT: outro]</p>
+<p>SKEPTIC: So wrap it. One thread, not a sermon.</p>
+<p>ANALYST: Permission. Every story tonight was about who's allowed, and who gets to decide. A server that lets a stranger run anything because nobody upgraded. A report that decides which attacks count and leaves its own name off the list. A planning tool that quietly decides seventy percent of the routine cases. A paper deciding a third of the celebrated results weren't allowed to skip the test.</p>
+<p>SKEPTIC: And the two at the end, which are the real ones.</p>
+<p>ANALYST: The prize, where permission went the right way. Scientists let a machine design something that keeps ten million people alive. And then Egypt, where permission was the whole weapon. Apply for the license, get ignored, and then the missing license is the crime.</p>
+<p>SKEPTIC: I'll take that. Patch your servers, don't let a draft report become a decision you didn't make, and if an outlet gets shut down for not having a license it was never going to be granted, that's the one that should keep you up.</p>
+<p>ANALYST: That's the one keeping me up.</p>
+<p>[SEGMENT: signoff]</p>
+<p>SKEPTIC: That's the show. You've been listening to The Lone Analyst. I'm Keiko Carrow.</p>
+<p>ANALYST: And I'm the Analyst. Go read between the headlines without us for a bit. We'll be back soon with more of whatever they're pretending isn't happening.</p>
+<p>SKEPTIC: Patch something before then.</p>
+<h2>Sources</h2>
+<ul>
+<li>
+<p><a href="https://unit42.paloaltonetworks.com/cve-2026-109618-cve-2026-109619/">Unit 42</a></p>
+</li>
+<li>
+<p><a href="https://www.darkreading.com/cyberattacks-data-breaches/microsoft-ai-cyber-risk-report-miss">Dark Reading</a></p>
+</li>
+<li>
+<p><a href="https://deepmind.google/blog/speeding-up-planning-decisions-with-ai/">DeepMind</a></p>
+</li>
+<li>
+<p><a href="https://arxiv.org/abs/2610.40700">arXiv ML</a></p>
+</li>
+<li>
+<p><a href="https://news.mit.edu/2026/regina-barzilay-jim-collins-win-pritzker-prize-ai-and-science-research-excellence-1102">MIT AI News</a></p>
+</li>
+<li>
+<p><a href="https://www.eff.org/deeplinks/2026/11/independent-digital-media-not-privilege-governments-can-revoke-fight-save-egypts">EFF</a></p>
+</li>
+</ul>
+
+      ]]></content:encoded>
+    </item>
     <item>
       <title>THE KEYS TO SOMEBODY ELSE&#39;S HOUSE</title>
       <link>https://theloneanalyst.com/podcast/episodes/episode-032/</link>

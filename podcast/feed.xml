@@ -6,7 +6,7 @@
     <description>The internet&#39;s weird basement, live from a podcast booth. What happens when you read between the headlines.</description>
     <language>en-us</language>
     <copyright>2026 Veritas Aequitas Holdings LLC</copyright>
-    <lastBuildDate>Mon, 02 Nov 2026 18:02:02 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 03 Nov 2026 15:59:30 GMT</lastBuildDate>
     <image>
       <url>https://theloneanalyst.com/podcast/assets/podcast-cover.png</url>
       <title>The Lone Analyst Podcast</title>
@@ -20,6 +20,190 @@
     <itunes:explicit>clean</itunes:explicit>
     <itunes:category text="News" />
     <itunes:image href="https://theloneanalyst.com/podcast/assets/podcast-cover.png" />
+    <item>
+      <title>THE BOX THAT WATCHED BACK</title>
+      <link>https://theloneanalyst.com/podcast/episodes/episode-034/</link>
+      <guid>https://apt6pack.neocities.org/podcast/episodes/episode-034/</guid>
+      <pubDate>Tue, 03 Nov 2026 00:00:00 GMT</pubDate>
+      <description>Episode 34: A certified Android maker allegedly backdoored 1.3 million TV boxes, strangers are running up million-dollar AI bills on other people&#39;s keys, CrowdStrike spends half a billion to watch the watchers, and a property giant turns fifty-euro photos into dimes. The Analyst sees a pattern. Keiko wants the receipts.</description>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:episode>34</itunes:episode>
+      <itunes:author>Adam Rhys Heaton</itunes:author>
+      <itunes:duration>0:28:55</itunes:duration>
+      <enclosure url="https://ap6pack.github.io/dist/podcast/audio/episode-034.mp3" type="audio/mpeg" length="27755565" />
+      <content:encoded><![CDATA[
+        <p>[SEGMENT: cold_open]</p>
+<p>ANALYST: Keiko, when's the last time you really looked at the little black box under your TV? The streaming one. The one with the remote that only half works.</p>
+<p>SKEPTIC: I don't own one of those. I have an actual brand-name device, because I am a functioning adult.</p>
+<p>ANALYST: Good. Because somewhere out there, right now, over a million of those cheap little boxes are not watching anything. They are working. They've got jobs. They've got a shift schedule.</p>
+<p>SKEPTIC: Jobs doing what, exactly?</p>
+<p>ANALYST: Renting out the living room. Your Wi-Fi, specifically. Somebody's traffic going out through your house, wearing your address like a borrowed coat, and you paid retail for the privilege.</p>
+<p>SKEPTIC: Okay, that one's actually real, and I hate that it's real. Let's do the show before you start unplugging things in people's homes.</p>
+<p>[SEGMENT: intro]</p>
+<p>ANALYST: You're in the internet's weird basement. This is The Lone Analyst, where we read between the headlines until the headlines read back. I'm the Analyst.</p>
+<p>SKEPTIC: I'm Keiko Carrow, and my job is to keep what he just said within a hundred yards of the truth. Six stories tonight, and at least three of them involve somebody spending money that wasn't theirs.</p>
+<p>ANALYST: Spoiler: it's all one story. It's always all one story.</p>
+<p>SKEPTIC: It is not always one story. Start the first one.</p>
+<p>[SEGMENT: story]</p>
+<p>ANALYST: So the box under the TV. Here's what landed today. Google and a pile of industry partners pulled apart a botnet, and this is the part I need you to sit with, built out of more than 1.3 million Android TV set-top boxes.</p>
+<p>SKEPTIC: That number checks out. Google said it worked with industry partners to dismantle a botnet made up of more than 1.3 million Android TV set-top boxes that ship with malicious software which secretly rents the user's Internet connection out to strangers and conducts advertising fraud. They're calling the thing XCPE.</p>
+<p>ANALYST: Ships with. Those two words are the whole crime, Keiko. This wasn't somebody tricking grandma into a bad download. The malware was already in the box when it left the factory.</p>
+<p>SKEPTIC: That's the genuinely ugly part, and it's not your theory, it's Google's finding. They name a manufacturer. Videostrong Technology Co., a China-based Android original equipment and device manufacturer, implanted a backdoor into multiple devices it sold, and those backdoors established XCPE, an expansive botnet that cybercriminals used to conduct ad fraud, steal data and route malicious traffic through residential proxy networks.</p>
+<p>ANALYST: And this is a certified maker. Not some back-alley operation soldering boards in a garage. Certified. Google put a stamp on these.</p>
+<p>SKEPTIC: Right, and Google's response to that was pretty severe. Google has cut ties with the company and banned it, along with future subsidiaries and affiliates, from producing certified Android devices or supplying software to other certified vendors. They also say they changed the firmware review process.</p>
+<p>ANALYST: Which tells you the old review process was, what, a vibe? A handshake? Somebody waved a box past the checkpoint and nobody flashed the actual firmware. For years.</p>
+<p>SKEPTIC: I'm not going to defend the review process, because even Google is basically admitting it missed this. But I want to be precise about the accusation. Google assesses, with high confidence, that this was intentional. The company hasn't been convicted of anything in a courtroom. 'Alleges' is doing load-bearing work in every writeup I saw.</p>
+<p>ANALYST: Fine. High confidence, allegedly, intentionally. But walk through what the box actually did, because this is where it stops being boring. The backdoor runs with system privileges. It's not an app you can see. And then it's a platform. Other criminals rent the backdoor like a food court.</p>
+<p>SKEPTIC: That framing is actually in the reporting. The devices were also used to generate revenue by installing malware modules belonging to other operators, turning the backdoor into a plug-in cybercrime platform for other cybercriminals. So one company allegedly builds the door, and then leases it to whoever's buying.</p>
+<p>ANALYST: A plug-in platform. They built an app store for crime and the apps were all residential proxies and ad fraud. And the proxies have brand names, Keiko. These aren't shadowy. Honeygain, NetNut, Traffmonetizer. Companies with websites.</p>
+<p>SKEPTIC: That's the uncomfortable gray zone. According to Google, these modules included software associated with residential proxy services such as Linkfog, AppSalt slash Honeygain, GaGaNode, NetNut, and Traffmonetizer, which was used to route third-party internet traffic through infected devices without their owners' knowledge or consent. Residential proxy as a business model isn't inherently illegal. Doing it to someone who never agreed is the problem.</p>
+<p>ANALYST: Without knowledge or consent. So your box is moonlighting and you never signed the timesheet. Now here's the part that genuinely spooked me. It wasn't only TV boxes.</p>
+<p>SKEPTIC: No, it wasn't. Most of the devices comprising the XCPE botnet were Android TV set-top boxes, but researchers also observed infected Android-based telehealth devices, karaoke machines and digital signs. Telehealth being the one that makes me put the pen down.</p>
+<p>ANALYST: A medical device. A thing in somebody's house measuring their heart or their blood sugar, and it's got a side gig routing a stranger's traffic. The karaoke machine I can laugh at. The telehealth box I cannot.</p>
+<p>SKEPTIC: And it doesn't stop at the 1.3 million, which is the part people are underselling. Google took legal action against the domains and servers Videostrong used, and against the control domains of over a dozen malware families loaded through the backdoor, and because those affiliates spread their modules through other channels too, Google expects the takedown to cut access to at least 10 million more compromised devices.</p>
+<p>ANALYST: Ten million more. So the thing we're calling the big takedown is the small end of it. This is my whole point about trust being a supply chain. You trusted the brand, the brand trusted the manufacturer, the manufacturer sold the trust by the pound.</p>
+<p>SKEPTIC: I'll give you this one almost clean. The ordinary explanation here isn't boring, it's that a hardware maker allegedly found it more profitable to poison its own customers than to sell them an honest box. And Google thinks it's the biggest operation of its kind they've seen.</p>
+<p>ANALYST: So the lesson for the person at home is what, throw the box in the river?</p>
+<p>SKEPTIC: The lesson is buy certified and even then stay a little paranoid, which I cannot believe I just recommended to you of all people.</p>
+<p>ANALYST: I'm framing that. Moving on before you take it back.</p>
+<p>[SEGMENT: story]</p>
+<p>ANALYST: Keeping the theme of strangers spending your resources. There's a second Google warning out, and this one's about AI, and the numbers are genuinely obscene. People are hijacking company AI accounts and running the meter into the ground.</p>
+<p>SKEPTIC: They've got a name for it. LLMjacking. And the dollar figures are the headline. Across individual incidents they observed fraudulent charges associated with resource consumption exceeding $100,000 in a single day, with cumulative charges at some organizations reaching one million dollars before access was revoked.</p>
+<p>ANALYST: A hundred grand a day. That's not a hacker in a hoodie, that's a utility bill for a small town. And unlike the old crypto-mining scams, this spikes fast.</p>
+<p>SKEPTIC: That contrast is exactly how Google framed it. Unlike the gradual resource consumption associated with cryptojacking, LLMjacking can generate large spikes in fraudulent cloud charges in a matter of hours, Google Threat Intelligence Group and Mandiant said. Crypto-mining was a slow drip. This is a firehose.</p>
+<p>ANALYST: Because tokens are expensive and there's no mining rig to buy. The victim already paid for the infrastructure. The thief just needs the key. And they get the key from, let me guess, the usual carelessness.</p>
+<p>SKEPTIC: Pretty much the whole menu. Threat actors bypass front-end chatbots to target backend model resources, usually via LLM API keys or exposed or stolen cloud identity tokens, including IAM credentials, Service Account keys, GitHub Personal Access Tokens and active session tokens. A key left in some public code repo. A token in an exposed config.</p>
+<p>ANALYST: So the front door is a chatbot with a friendly face, and these people just walk around the back where the actual engine is and start flooring it. Now tell me about the resale, because this is the part that broke my brain.</p>
+<p>SKEPTIC: This is the part that got me too. It's a whole underground business. They call the middlemen LLM mixers. The standout example they named is a service called Jet Night. That operation used stolen third-party API keys to power Jet Night, a legitimate-looking token-routing service that executed more than 500,000 LLM API calls in under eight hours, passing nearly a million dollars in token costs to the victim organization.</p>
+<p>ANALYST: Five hundred thousand calls. Eight hours. And here's the kicker, that service is sold to end users cheap, right? Like a subscription?</p>
+<p>SKEPTIC: Yeah, and the pricing is the insult. Jet Night advertises unlimited access to frontier models for approximately sixty dollars a month, substantially lower than the typical cost of comparable legitimate access. So the end customer thinks they found a deal.</p>
+<p>ANALYST: They've built an all-you-can-eat buffet where the food is stolen and some poor company is the one getting the catering invoice. Sixty bucks for you, a million-dollar bill for a business in, where, the financial sector?</p>
+<p>SKEPTIC: Spread wide. Impacted entities are located in North America, South America, and Asia Pacific across the financial services, retail, technology, and transportation sectors. And there's a named group, UNC6993, that got creative.</p>
+<p>ANALYST: Creative how? I love when they get creative.</p>
+<p>SKEPTIC: They didn't just use the key they stole. UNC6993 created additional API keys to scale their operations within victim cloud projects, racking up over $100,000 USD in billing charges. They got in, then minted themselves more keys inside your account to go bigger.</p>
+<p>ANALYST: That's the burglar moving into the house and then changing the locks to let his friends in. Here's my actual worry, Keiko, and it's not the money. It's that this is a resale economy. Somebody is doing customer support for stolen AI. There's a billing department. There's probably a refund policy.</p>
+<p>SKEPTIC: I'd push back a little on the 'they're so organized it's scary' tone. The flip side is this is loud. A hundred grand a day is not subtle. These get caught because the bill screams. That's why the reporting keeps saying 'before access was revoked.' They do get revoked.</p>
+<p>ANALYST: They get caught after the money's gone, though. The revoke happens at the end of the sentence, not the start of it.</p>
+<p>SKEPTIC: True. And that's the real operational lesson, which is boring and correct. Watch your spend. A billing alert is a security tool now. If your AI bill jumps a hundred grand overnight, that's not a successful quarter, that's a break-in.</p>
+<p>ANALYST: A billing alert is a security tool. Write that down. That's the most depressing true sentence we'll say tonight.</p>
+<p>SKEPTIC: I've said sadder. Keep going.</p>
+<p>[SEGMENT: story]</p>
+<p>ANALYST: So if strangers are hijacking AI agents and running up the tab, naturally there's now an entire industry forming to watch the AI agents. And CrowdStrike just spent half a billion dollars to buy their way into it.</p>
+<p>SKEPTIC: Reportedly spent. Let's be careful, because CrowdStrike itself didn't put a number on it. CrowdStrike has not disclosed the financial terms of either acquisition, but according to The Wall Street Journal, which reported the deals ahead of the official announcements, the cybersecurity giant is paying roughly $400 million for Fiddler and about $95 million for Dreadnode. That's the 495 everyone's quoting.</p>
+<p>ANALYST: Two companies. One watches what the AI agents are doing, one tries to break them before the bad guys do. That's the whole pitch, right?</p>
+<p>SKEPTIC: That's a fair summary. Fiddler is the watcher. The company is acquiring Palo Alto, California-based Fiddler AI, an AI agent observability and explainability company that develops software to monitor and explain AI agent behavior. And Dreadnode is the attacker. Dreadnode develops an automated security-testing platform that identifies vulnerabilities in AI models before deployment.</p>
+<p>ANALYST: Observability and explainability. Which is a very polite way of saying, we have no idea what the AI is doing and we'd like to pay four hundred million dollars to find out.</p>
+<p>SKEPTIC: That's cynical but I can't call it wrong. The honest version is that enterprises are deploying agents they can't fully account for, and this is the market that sprang up to account for them. Dreadnode's the younger one, by the way. Dreadnode, founded in 2023, develops offensive AI security tools, and the startup raised fourteen million dollars in Series A funding in early 2025.</p>
+<p>ANALYST: Fourteen million in funding, bought for ninety-five. Somebody did okay. What's Dreadnode actually do when it attacks a model? Give me the fun part.</p>
+<p>SKEPTIC: It throws the known tricks at it. Dreadnode develops offensive AI security tools that simulate over 100 AI attack strategies such as jailbreaks and prompt injections, providing severity-ranked findings mapped to frameworks like OWASP Top 10 for LLMs and MITRE ATLAS. A hundred-plus ways to make a model misbehave, run automatically.</p>
+<p>ANALYST: So they built a robot whose job is to bully other robots into saying things they shouldn't, and that's a sellable product now. I genuinely love the future. But here's what caught my eye, there's a third piece they shipped the same day. A kill switch.</p>
+<p>SKEPTIC: There is, and it's not vaporware, it's live. CrowdStrike's new AI Kill Switch, available now, allows security teams to stop rogue agents through gateway controls, block relaunches, and cut off network access. The framing is a human stays in control and can terminate an agent at the root.</p>
+<p>ANALYST: Stop. A kill switch. For the agents. That you deployed. On purpose. We are now paying for the undo button on a thing we just finished installing. The whole stack is test it, watch it, and keep a hand on the plug.</p>
+<p>SKEPTIC: And they've literally arranged it that way as a product story. One tests the agent before launch, one watches it in production, the kill switch ends it if it goes sideways. Fiddler's tech is reportedly going to become a product called Falcon Observe.</p>
+<p>ANALYST: Here's my paranoid read, and I'll own that it's paranoid. The same companies selling you the AI agent are selling you the leash, the muzzle, and the off switch, as separate line items. That's not a bug in the market. That's the business model. You sell the fire and the extinguisher.</p>
+<p>SKEPTIC: Except CrowdStrike doesn't sell you the AI agent. They sell security. So in their case they're genuinely just the leash vendor. You're mashing two different companies into one villain.</p>
+<p>ANALYST: Fair. I'll narrow it. CrowdStrike saw that everyone else's agents are a liability and bought the toll booth on the road out of the mess. That's not villainy, that's good positioning.</p>
+<p>SKEPTIC: That I'll sign. Whether it's worth 495 million we won't know until it ships, and the testing piece isn't even generally available until the fourth quarter of their fiscal 2027. This is them buying a position, not a finished product.</p>
+<p>ANALYST: Buying the future and billing it as the present. Which, honestly, is the entire AI sector in one sentence.</p>
+<p>SKEPTIC: Don't quote yourself in the outro. I see you winding up.</p>
+<p>[SEGMENT: story]</p>
+<p>ANALYST: Okay, from robots we have to leash, to robots renting you an apartment. There's an OpenAI case study out today about a European landlord, Heimstaden, and the number they're leading with is a cost cut of more than ninety-nine percent.</p>
+<p>SKEPTIC: On a very specific thing, which matters. Heimstaden said the cost of producing a virtually staged property image in the Netherlands fell from approximately fifty euros to less than ten euro cents, and estimated annual savings potential of 130,000 euros in that market alone. So it's property photos, not the whole business.</p>
+<p>ANALYST: Fifty euros to a dime. A photo of an apartment that goes from the price of a nice dinner to basically free. And somewhere in the Netherlands there's a person who used to stage and shoot those apartments and now there isn't.</p>
+<p>SKEPTIC: That's the part the case study doesn't dwell on and you always do. But it's a reasonable read. Virtual staging was already somebody's job. Now it's a prompt. The other number they push is Codex going through their property files.</p>
+<p>ANALYST: Right, the Codex number. Give me that one, because the way they phrase it is doing a lot of work.</p>
+<p>SKEPTIC: It is. Heimstaden assessed 20,112 property assets with Codex, reducing the estimated delivery requirement from five people over one year to two people over two months. So five person-years down to roughly four person-months, if you do the math.</p>
+<p>ANALYST: That's not a productivity gain, Keiko, that's a staffing decision wearing a productivity costume. Five people over a year becomes two people over two months. Where'd the other people and the other ten months go?</p>
+<p>SKEPTIC: To be fair, the case study doesn't say anyone was let go. It says the work got done faster. Those aren't the same claim, and I'm not going to put layoffs in their mouth they didn't say. What I will note is who did the building.</p>
+<p>ANALYST: The person without a coding background. I saw that. That's actually the interesting wrinkle.</p>
+<p>SKEPTIC: It is. Heimstaden's Julia Erlandsen, an environmental sustainability analyst without a software development background, used Codex to help build a different approach. That's the real shift in the story, an analyst building software tools she couldn't have written a year ago.</p>
+<p>ANALYST: And I'm genuinely torn on that one, which doesn't happen often. On one hand, that's empowering, a non-coder shipping a tool. On the other hand, who's reviewing the code the sustainability analyst vibe-coded into the system that decides your apartment's environmental risk?</p>
+<p>SKEPTIC: Which is a legitimate question and not a conspiracy, so congratulations. The adoption curve was fast, too. After ChatGPT Enterprise launched in September 2025, half of employees were using it within two to three months. That's quick for a company that manages buildings, not software.</p>
+<p>ANALYST: Half the company in a quarter. And where's it all heading? The roadmap is the part that gives me the twitch.</p>
+<p>SKEPTIC: The roadmap is a system that reaches into the core business. Heimstaden is co-developing Amplio Estate, a property management system designed to support AI-powered workflows through MCP, with the goal of enabling employees to use AI such as ChatGPT to retrieve property information and take action in core business systems, with appropriate human oversight.</p>
+<p>ANALYST: Take action in core business systems. On your lease. On your deposit. On your rent increase. With appropriate human oversight, which is the phrase everyone uses right up until the human oversight is also the AI.</p>
+<p>SKEPTIC: They do keep stressing the human stays in the loop for the commercial decisions. But I'll grant the direction is clear. The photos were the demo. The actual prize is an AI that touches the systems that decide things about where people live.</p>
+<p>ANALYST: The photo was never the point. The photo was the free sample at the front of the store.</p>
+<p>SKEPTIC: And now you're hungry and deeper into the store than you meant to be. Yeah. Next.</p>
+<p>[SEGMENT: story]</p>
+<p>ANALYST: Alright, let me try to be fair to an AI company for once, because this next one is actually about science. Anthropic widened a program to hand free AI credits to a bunch of research institutions.</p>
+<p>SKEPTIC: Twenty of them, specifically. Anthropic said on October 28, 2026 that it has partnered with twenty scientific foundations, institutions and research groups in an expansion of its AI for Science program, which it describes as one that gives free Claude credits to researchers working on high-impact scientific projects.</p>
+<p>ANALYST: Free credits. And the partners aren't randos. These are the big science money names. Who's on the list?</p>
+<p>SKEPTIC: Heavy hitters on the funding side. The new science funders and societies include the Alfred P. Sloan Foundation, the Simons Foundation, Schmidt Sciences, the Open Source for Science Fund at Renaissance Philanthropy, the U.S. National Science Foundation and CAS, a division of the American Chemical Society. Then there's a tier of actual research institutions.</p>
+<p>ANALYST: The National Science Foundation. That's a federal agency now in the business of passing out one company's AI credits. You don't find that even a little bit interesting?</p>
+<p>SKEPTIC: I find it worth noting, not sinister. Foundations partner with vendors constantly. The institutions getting it directly are serious places. Six major research institutions will receive direct support, including the Space Telescope Science Institute, the Wellcome Sanger Institute, the Francis Crick Institute, Imperial College London's life sciences department, the European Molecular Biology Laboratory and the Gladstone Institutes.</p>
+<p>ANALYST: And it started out just biology, right? Now it's everything?</p>
+<p>SKEPTIC: That's the expansion story. Anthropic has expanded the program beyond life sciences, announcing partnerships across astronomy, genomics, cancer research, climate science and mathematics, where it had launched in May 2025 initially focused on biology and life sciences. So telescopes and proofs now, not just cells.</p>
+<p>ANALYST: Here's the thing I actually can't shake, and it's not even a joke. If you give every serious scientist on earth free access to your model, you don't just help science. You find out, before anyone else, what science is about to discover. You're sitting at the intake valve of human knowledge.</p>
+<p>SKEPTIC: Okay, but slow down, because the data terms matter and you're skipping them. Giving credits isn't the same as reading everyone's research. And honestly the more mundane read is a customer-acquisition play. Get the model into the institutions that train the next generation, and you've got a pipeline.</p>
+<p>ANALYST: A pipeline. You said it, not me.</p>
+<p>SKEPTIC: I said it as the boring explanation, not the scary one. There's also a genuinely cool piece buried in here that isn't about credits at all. They built a hardware standard with Janelia.</p>
+<p>ANALYST: A hardware standard? For what, plugging the AI into the lab?</p>
+<p>SKEPTIC: Basically yes. Anthropic and HHMI Janelia Research Campus co-developed the Model Hardware Standard, a shared specification that lets AI agents safely control lab instruments, and it is currently in research preview. That's the one I'd actually watch.</p>
+<p>ANALYST: See, now you've done it. You've handed me the thing. The AI isn't just reading about the experiment anymore. It's allowed to run the pipette. It's got hands in the lab.</p>
+<p>SKEPTIC: In research preview, with safety in the name, and a human presumably standing right there. But yes, the direction is an agent that touches physical instruments. That's a real line being crossed, not a conspiracy, and I think it deserves more attention than the credits headline got.</p>
+<p>ANALYST: We agree on something and it's the scary part. That's how I know it's real.</p>
+<p>SKEPTIC: Don't get used to it.</p>
+<p>[SEGMENT: story]</p>
+<p>ANALYST: Last one, and it's a weird palate cleanser. It's not a product, it's not a breach. It's a guy who facilitates AI safety courses writing a long note of extra context for his students, and the whole thing opens by telling them not to trust advice. Including his.</p>
+<p>SKEPTIC: Which, I have to say, is a strangely honest way to open a document. He's upfront that it's optional. He emphasises that these posts are to be considered as bonus content, not core curriculum content, really just there for students who want to go deeper, before or after the course.</p>
+<p>ANALYST: Bonus content. He's a teacher putting the deleted scenes on the DVD. But then he gets into this thing about advice that I actually can't stop thinking about.</p>
+<p>SKEPTIC: Yeah, this is the part that's genuinely good. He suspects that most advice, including most of the advice he's given in the past, is bad, because people have very different goals, personalities, skills and opportunities, and what one person needs to hear may be the absolute worst thing for another.</p>
+<p>ANALYST: And then there's the bit about elders, which is where my brain lit up. Give me that one.</p>
+<p>SKEPTIC: It's a nice observation. The gist is that in traditional societies with a slow rate of change, elders are revered, because they've lived through what you're living through. In a fast-changing world, that experience is worth less, because the world they learned isn't the world you're entering.</p>
+<p>ANALYST: And that's the whole tech industry's self-justification in one line, isn't it? Nobody over forty understands this. The old maps are useless, trust the people building the new thing. Which is extremely convenient for the people building the new thing.</p>
+<p>SKEPTIC: That's a leap, but it's a decent one. Although in his context he's talking about AI safety and governance specifically, which genuinely are shifting fast. He's not saying ignore all elders, he's saying question how much anyone really knows about where this is going.</p>
+<p>ANALYST: There's also a quote in there about reversing advice, right? That one felt like a trap.</p>
+<p>SKEPTIC: It's him citing Scott Alexander. Rather than just questioning how much we can trust advice, he provocatively suggests that you may want to reverse any advice you hear. Which is a thought experiment, not a life instruction.</p>
+<p>ANALYST: Reverse any advice you hear. Okay but if I reverse that advice, then I should trust advice completely, and then I've disappeared up my own logic. It eats itself.</p>
+<p>SKEPTIC: That's actually the point of the joke. It's meant to make you stop and ask why you believe a thing, not to be followed literally. And look, the reason this one belongs on the show at all isn't the conspiracy angle. It's that it's a rare document from inside the AI safety world where someone's just being honest that they don't have it figured out.</p>
+<p>ANALYST: And you find that reassuring. I find it terrifying. The people studying whether the machine kills us are also openly unsure which way to point the students.</p>
+<p>SKEPTIC: Or it's the healthiest thing you can hear from a field that's a few years old. Admitting the maps are rough is better than selling a fake one. I'll take the honest shrug over the confident sales pitch any day.</p>
+<p>ANALYST: That's the difference between you and me, Keiko. You hear 'I'm not sure' and relax. I hear it and check the exits.</p>
+<p>SKEPTIC: And yet here we both still are. Wrap it.</p>
+<p>[SEGMENT: brain_worms]</p>
+<h2>Field Notes // Brain Worms</h2>
+<p>ANALYST: Field notes before we close the folder. A karaoke machine and a telehealth monitor were quietly renting out your home internet to strangers, which means your grandma's blood pressure cuff had a side hustle.</p>
+<p>SKEPTIC: The telehealth part genuinely bothers me and the karaoke part makes it worse, somehow.</p>
+<p>ANALYST: Next one. A stranger made half a million AI calls in eight hours on somebody else's key and sold it as a sixty-dollar-a-month buffet while the victim got the thousand-dollar check.</p>
+<p>SKEPTIC: Nearly a million-dollar check, technically, but yes, worst split in history.</p>
+<p>ANALYST: And last. They taught the machine to turn a fifty-euro apartment photo into a ten-cent apartment photo, and somewhere a photographer became a rounding error.</p>
+<p>[SEGMENT: outro]</p>
+<p>SKEPTIC: So wrap it. One thread, not a sermon. What actually tied tonight together?</p>
+<p>ANALYST: Spending. Every story was somebody spending a resource that belonged to someone who didn't agree to it. A manufacturer spent its customers' internet. Thieves spent a company's AI budget. A landlord spent a photographer's whole job down to a dime. And CrowdStrike spent half a billion betting all of this gets worse.</p>
+<p>SKEPTIC: That mostly holds, though I'd push on two of them. The Anthropic one is somebody giving a resource away, not stealing it, and the course note is a guy admitting he doesn't know enough to spend anyone's trust. Not everything is a heist.</p>
+<p>ANALYST: Fine. Four heists and two honest men. That's a better ratio than most Tuesdays.</p>
+<p>SKEPTIC: We don't do the Tuesday bit. But I'll let the number stand. The thing I'd actually tell people to take home is the boring one, watch your own bill. Tonight that was true for a company's AI account and it was basically true for a family's Wi-Fi.</p>
+<p>ANALYST: The bill is the security camera now. Check the bill, check the box under the TV, and maybe don't let the sustainability analyst ship code straight to production.</p>
+<p>SKEPTIC: She did fine, allegedly. On that word, we're done.</p>
+<p>[SEGMENT: signoff]</p>
+<p>ANALYST: That's the show. You've been down in the weird basement with The Lone Analyst. Unplug the box you don't recognize, and if your AI bill triples overnight, that's not growth, that's a guest.</p>
+<p>SKEPTIC: I'm Keiko Carrow. He's the Analyst, and that's apparently the only name I'm allowed to use. Thanks for listening to The Lone Analyst.</p>
+<p>ANALYST: Check your exits. We'll be back.</p>
+<h2>Sources</h2>
+<ul>
+<li>
+<p><a href="https://krebsonsecurity.com/2026/11/tech-firms-dismantle-botnet-that-turned-1-3m-tv-boxes-into-proxies/">Krebs on Security</a></p>
+</li>
+<li>
+<p><a href="https://thehackernews.com/2026/11/google-warns-llmjacking-attacks-are.html">The Hacker News</a></p>
+</li>
+<li>
+<p><a href="https://www.securityweek.com/crowdstrike-reportedly-paying-495-million-for-ai-security-firms-fiddler-dreadnode/">SecurityWeek</a></p>
+</li>
+<li>
+<p><a href="https://openai.com/index/heimstaden">OpenAI</a></p>
+</li>
+<li>
+<p><a href="https://www.anthropic.com/news/ai-for-science-expands-foundations-research-institutions">Anthropic</a></p>
+</li>
+<li>
+<p><a href="https://www.alignmentforum.org/posts/6qDn6H5XG5Hc6BJFe/additional-course-context-for-ai-safety-fundamentals">Alignment Forum</a></p>
+</li>
+</ul>
+
+      ]]></content:encoded>
+    </item>
     <item>
       <title>THE LICENSE THEY NEVER APPROVED</title>
       <link>https://theloneanalyst.com/podcast/episodes/episode-033/</link>

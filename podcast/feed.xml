@@ -6,7 +6,7 @@
     <description>The internet&#39;s weird basement, live from a podcast booth. What happens when you read between the headlines.</description>
     <language>en-us</language>
     <copyright>2026 Veritas Aequitas Holdings LLC</copyright>
-    <lastBuildDate>Tue, 03 Nov 2026 15:59:30 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 04 Nov 2026 16:04:06 GMT</lastBuildDate>
     <image>
       <url>https://theloneanalyst.com/podcast/assets/podcast-cover.png</url>
       <title>The Lone Analyst Podcast</title>
@@ -20,6 +20,177 @@
     <itunes:explicit>clean</itunes:explicit>
     <itunes:category text="News" />
     <itunes:image href="https://theloneanalyst.com/podcast/assets/podcast-cover.png" />
+    <item>
+      <title>THE BADGE FOR THINGS THAT AREN&#39;T PEOPLE</title>
+      <link>https://theloneanalyst.com/podcast/episodes/episode-035/</link>
+      <guid>https://apt6pack.neocities.org/podcast/episodes/episode-035/</guid>
+      <pubDate>Wed, 04 Nov 2026 00:00:00 GMT</pubDate>
+      <description>Episode 35: The Lone Analyst and Keiko Carrow read between the headlines on a spacesuit maker&#39;s $13 million cybersecurity settlement, an understaffed Pentagon AI oversight office, Gartner&#39;s first scorecard for managing software that works for you, Claude traces flowing into Databricks, IBM&#39;s small slide-deck model, and a 1988 video-rental law aimed at modern targeted ads.</description>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:episode>35</itunes:episode>
+      <itunes:author>Adam Rhys Heaton</itunes:author>
+      <itunes:duration>0:25:56</itunes:duration>
+      <enclosure url="https://ap6pack.github.io/dist/podcast/audio/episode-035.mp3" type="audio/mpeg" length="24900141" />
+      <content:encoded><![CDATA[
+        <p>[SEGMENT: cold_open]</p>
+<p>ANALYST: Keiko. I want you to tell me, honestly, how many coworkers you have.</p>
+<p>SKEPTIC: Counting you? One, and that's generous. Why is this a question.</p>
+<p>ANALYST: Because somewhere in a corporate directory right now there are things getting issued employee ID badges, assigned an owner, assigned a purpose, and they have never once eaten lunch. They don't have faces. They have access controls.</p>
+<p>SKEPTIC: You're talking about software getting identity records. That's a real thing that shipped this week, and you're describing it like it crawled out of a vent.</p>
+<p>ANALYST: I'm describing it like it got a badge before half the contractors I know did. The org chart is filling up with entities, and only some of them can bleed.</p>
+<p>SKEPTIC: Okay, that's the opener, we're doing this. Sit down.</p>
+<p>[SEGMENT: intro]</p>
+<p>SKEPTIC: You're listening to The Lone Analyst. I'm Keiko Carrow, I fact-check the man to my left in real time, and tonight the folder is heavy.</p>
+<p>ANALYST: The Analyst. Six stories, and every one of them is somebody drawing a boundary around something that doesn't want a boundary. Spacesuits, war robots, software with a headcount, and a video-rental law from before I owned a VCR.</p>
+<p>SKEPTIC: You never owned a VCR. Let's go.</p>
+<p>[SEGMENT: story]</p>
+<p>ANALYST: Start me here, because this is the one that actually stopped me cold. The company that makes the spacesuits. The literal pressurized garments that stand between a human being and the vacuum of space. That company just paid the government thirteen million dollars.</p>
+<p>SKEPTIC: Right, ILC. The Justice Department says ILC Dover and ILC Astrospace, of Frederica, Delaware, agreed to pay thirteen million dollars to resolve allegations they violated the False Claims Act by failing to comply with cybersecurity requirements in their contracts with the Army, the Missile Defense Agency, and NASA. Not the suits failing. The paperwork around the data.</p>
+<p>ANALYST: And the window on this is the part that gets me. How long?</p>
+<p>SKEPTIC: The settlement covers a stretch of years. The allegations are that from January 2018 to October 2024, ILC submitted false or fraudulent claims for payment on those contracts, because it knew it had not complied with the contracts' cybersecurity requirements. So we're talking roughly six years on paper.</p>
+<p>ANALYST: Six years. The suit is rated for the hostile environment of space and the network behind it is apparently rated for nothing. What did they actually not do?</p>
+<p>SKEPTIC: Per the reporting, a list of the usual federal controls. The settlement resolves claims that from 2018 to 2024 the companies submitted false claims while knowingly not complying with DoD and NASA cybersecurity mandates, including failing to use FedRAMP-compliant cloud storage, neglecting system security plans, and not implementing NIST controls. Boring words, real exposure.</p>
+<p>ANALYST: And here's where my pattern alarm goes off, because somebody on the inside knew. This didn't come from an audit. This came from a person.</p>
+<p>SKEPTIC: It did. The resolution arose from a whistleblower action filed by Philip Root, a former ILC cybersecurity director, under the False Claims Act's qui tam provisions. Root will receive two point three five million dollars from the recovery. The company's own cyber director turned it in.</p>
+<p>ANALYST: The director of cybersecurity blew the whistle on his own cybersecurity. That's not a leak, that's a man staring at a dashboard going, nobody is going to fix this, so I will make it expensive instead.</p>
+<p>SKEPTIC: And I want to be fair to the company here, because the parent has a response. Ingersoll Rand bought ILC and says it inherited the mess. Their spokesperson said they addressed the identified issues after acquisition and were in compliance by October 2024.</p>
+<p>ANALYST: Inherited. That's the corporate equivalent of moving into a house and discovering the previous owner left a body in the wall.</p>
+<p>SKEPTIC: It's also a settlement, not a verdict. The agreement resolves civil allegations; it is not a judicial finding that either company committed fraud. The Justice Department expressly said there had been no determination of liability. So nobody admitted anything.</p>
+<p>ANALYST: Fine, but the number tells you something. This isn't a parking ticket.</p>
+<p>SKEPTIC: No, and that's actually the real signal. This settlement represents the largest government cybersecurity fraud recovery to date under the Department of Justice Civil Cyber-Fraud program, which was first announced in October 2021. Biggest one yet under that initiative.</p>
+<p>ANALYST: So the government built a machine in 2021 to punish contractors who lie about their security, and the record holder is the spacesuit company. Of all the firms. The one whose whole business is keeping air on the correct side of a membrane.</p>
+<p>SKEPTIC: And attorneys quoted in the reporting think it's a warning shot. Government contract attorneys say that a forthcoming regulatory overhaul could expose more companies to False Claims Act punishments. So expect more of these, not fewer.</p>
+<p>ANALYST: Good. I want the whistleblower economy fully funded. Pay the one honest person in the building two and a half million dollars and watch how fast everybody else finds their system security plan.</p>
+<p>SKEPTIC: That's the cleanest incentive in the whole folder tonight, actually. The honest guy gets paid. Hold that thought, because the next story is the opposite.</p>
+<p>[SEGMENT: story]</p>
+<p>ANALYST: The opposite being: an office that is supposed to be the honest guy, and there is almost nobody in it.</p>
+<p>SKEPTIC: The Pentagon's Responsible AI setup. The Government Accountability Office looked at it. The office tapped in 2022 to oversee the military's responsible use of artificial intelligence had filled just three of its ten authorized positions as of February 2026, even as the department pursues a strategy to accelerate AI development.</p>
+<p>ANALYST: Three of ten. Say that slowly. They authorized ten referees and seven of the whistles are hanging on empty hooks. And this is the office that's supposed to keep the ethics on the autonomous weapons.</p>
+<p>SKEPTIC: The office is the CDAO, the Chief Digital and Artificial Intelligence Office, and the Responsible AI Division sits under it. And it's not just empty chairs. The work itself is stalled. The GAO found that twenty-nine of sixty-four efforts outlined in the Defense Department's Responsible AI Strategy and Implementation Pathway remained incomplete as of April 2026.</p>
+<p>ANALYST: So nearly half the homework is undone. And the oversight council, the thing that's supposed to meet and coordinate, did it meet?</p>
+<p>SKEPTIC: That's the part that genuinely surprised me. The GAO found the Responsible AI Working Council did not meet from late 2024 until August 2025. Most of a year of silence from the body whose job is to talk to itself.</p>
+<p>ANALYST: The accountability council went dark for the better part of a year and the war machine did not. Keiko, that's not a staffing gap, that's a choice. Somebody decided the brakes were optional.</p>
+<p>SKEPTIC: I'd be careful there, because the officials gave a reason. They told the GAO other priorities got in the way, like developing guidance for generative AI. And the staffing has a procedural cause too. CDAO officials told the GAO they were unlikely to fill vacant positions or increase staffing while the office underwent restructuring, following its realignment to the Office of the Under Secretary of Defense for Research and Engineering.</p>
+<p>ANALYST: They moved the oversight office into the build-it-faster shop. You took the people whose job is to say wait, and you filed them under the department whose job is go. That's not a reorg, that's a muzzle with a flowchart.</p>
+<p>SKEPTIC: And the timing lines up with the direction of travel. The reporting notes a January strategy. The strategy emphasized a wartime footing, calling for DOD to become an AI-first warfighting force across all components. So the throttle is wide open at the same moment the governor's chair is empty.</p>
+<p>ANALYST: AI-first warfighting force. I love how AI-first is doing the heavy lifting. First to deploy it, dead last to supervise it.</p>
+<p>SKEPTIC: The expert quoted on this, Owen Daniels from Georgetown's CSET, flags a quieter consequence. He said the staffing shortfall could make it harder to build AI literacy throughout the force. It's not just the robots, it's whether the humans even understand what they're approving.</p>
+<p>ANALYST: Which is how you get a sergeant rubber-stamping an output nobody in the building can actually explain. We did a whole story a couple days back about planning officers waving through machine-written reports without changing a word. Same disease, bigger guns.</p>
+<p>SKEPTIC: To be fair again, the department didn't fight the findings. The GAO recommended that the Department of Defense address the staffing needs of the responsible AI unit and approve a charter for the Working Council. The department agreed with both recommendations.</p>
+<p>ANALYST: They agreed. They agreed last time too and the council still ghosted for a year. Agreement is free. A charter with a mandatory meeting schedule costs something, and that's the only thing that keeps the brake pedal attached.</p>
+<p>SKEPTIC: On that we actually agree. Concurring with a recommendation and implementing it are two different verbs, and the GAO is basically saying prove it.</p>
+<p>[SEGMENT: story]</p>
+<p>ANALYST: Okay, so hold the picture of nobody supervising the government's robots, and now look at the private sector, where supervising the robots just became a product category with a leaderboard.</p>
+<p>SKEPTIC: This is the Gartner thing. Microsoft put out a post. Microsoft has been named a Leader in the inaugural 2026 Gartner Magic Quadrant for AI Agent Management Platforms. Inaugural being the key word. This market is so new the scorecard for it is brand new too.</p>
+<p>ANALYST: A Magic Quadrant. For managing your agents. Think about what had to happen for that phrase to exist. Enough companies unleashed enough autonomous software that an entire industry sprang up just to herd it back into a pen.</p>
+<p>SKEPTIC: And it's not only Microsoft. The analysts named a few Leaders. In the Leaders quadrant the research firm placed Microsoft with its Agent 365 offering, IBM with watsonx Orchestrate combined with watsonx.governance, and ServiceNow. AWS and Salesforce got filed as Challengers.</p>
+<p>ANALYST: So the people selling you the agents are now also selling you the fence to keep the agents from wandering off. That's a beautiful business. Sell the wolf, sell the sheepdog, bill monthly for both.</p>
+<p>SKEPTIC: Here's the number that actually justifies the whole category, though. According to figures cited by Gartner, only thirteen percent of enterprises consider their agent governance sufficiently mature. Thirteen percent. Everyone deployed, almost nobody can control what they deployed.</p>
+<p>ANALYST: Thirteen percent feel in control and the other eighty-seven are just hoping. That's not a software market, that's a confession. And the fix they're selling is identity, right? Give every agent a name tag.</p>
+<p>SKEPTIC: That's exactly the pitch. With Microsoft Entra Agent ID, every agent in the organization is assigned a unique agent ID, associated with an owner and purpose, and the right access controls based on its needs. So each bot has a human on the hook for it and a reason to exist.</p>
+<p>ANALYST: An owner and a purpose. We give the software a purpose before we've figured one out for half the staff. But I'll be honest, the part that actually unsettles me is the discovery feature.</p>
+<p>SKEPTIC: Say what you mean.</p>
+<p>ANALYST: They're expanding the ability to find agents nobody registered. Which means companies are running bots they don't know about. You don't build a tool to discover unknown agents unless the unknown agents are already in the building.</p>
+<p>SKEPTIC: You're not wrong on the facts. The post describes exactly that. They're expanding discovery to thirty-five additional local agent types, bringing the total to sixty, along with adding support to discover unknown agents, bringing these agents under management. So yes, finding the ones nobody declared is a selling point.</p>
+<p>ANALYST: Shadow agents. Little unaccounted-for processes running around with somebody's credentials, and now there's an industry whose first job is to go, wait, who are you. That's not IT. That's a census for things that aren't people.</p>
+<p>SKEPTIC: And I'd note the one thing I can't let you skip: a Magic Quadrant is an analyst firm's opinion. It's Microsoft quoting a report that flatters Microsoft. Useful signal that the category is real, not proof anyone's governance actually works.</p>
+<p>ANALYST: Granted. The map is drawn by the people selling lots on it. But the thirteen percent number isn't marketing. That one's a smoke alarm.</p>
+<p>[SEGMENT: story]</p>
+<p>SKEPTIC: So if the last story was about naming the agents, this one's about watching them work. Databricks and Anthropic. You care about this one way more than a normal person should.</p>
+<p>ANALYST: I care because it's the surveillance camera finally getting pointed at the right suspect. For once we're not watching the user. We're watching the machine.</p>
+<p>SKEPTIC: Roughly, yeah. The gist is that Claude's traces can now flow straight into Databricks' tooling. Databricks MLflow is now a supported destination for native OpenTelemetry export from the Claude Platform, so developers using the Anthropic SDKs, the Messages API and Managed Agents can send native traces to Databricks and use MLflow to debug their agents and evaluate changes.</p>
+<p>ANALYST: Translate OpenTelemetry for the one person driving home right now who just turned the volume up.</p>
+<p>SKEPTIC: It's an open standard for recording what a piece of software did, step by step. A trace is the breadcrumb trail. Developers can send spans covering model requests and tool calls. So you get a receipt for every time the agent thought and every time it reached out and touched a tool.</p>
+<p>ANALYST: And the reason this exists is the quiet horror in the announcement itself. An agent can hand you a perfectly plausible answer while quietly missing the one finding that mattered, or reading the same source over and over like a goldfish.</p>
+<p>SKEPTIC: That's literally the framing of the problem. The agent looks confident and is wrong, or is wasteful, and without a trace you'd never know which. The tracing is how you catch a liar who sounds competent.</p>
+<p>ANALYST: Which is also a description of half the people I've worked for. But fine. Where do these receipts get stored? Because that's where the power actually sits.</p>
+<p>SKEPTIC: In the governed data layer. Databricks ingests the spans through Zerobus and stores them in Unity Catalog tables linked to an MLflow experiment, governing access to sensitive trace data. So the whole record of what your agent did lives in one controlled vault.</p>
+<p>ANALYST: And there's the move. Whoever holds the traces holds the truth about what every agent in the company actually did. That's not debugging. That's a flight recorder for your entire robot workforce, and somebody owns the key.</p>
+<p>SKEPTIC: That's the honest tension, though. It's genuinely useful. The whole point is a loop. You trace, you spot the issue, you fix it, you check whether the fix helped. There's even a beta feature that reads your agent's failures and clusters them. The alternative is flying blind, which is how we got the thirteen percent from the last story.</p>
+<p>ANALYST: I'm not against the flight recorder, Keiko. I'm against pretending a flight recorder is neutral. The box that proves the agent misbehaved is the same box that proves you were watching, and that recording is going to get subpoenaed one day.</p>
+<p>SKEPTIC: Sure, and the mundane version is a developer at 2 a.m. finally seeing why the agent kept re-reading the same doc. Both things are true. It's a tool. It cuts the way you aim it.</p>
+<p>ANALYST: A tool that writes down everything the machine ever did. I'm just saying, keep an eye on who gets read-only and who gets the delete button.</p>
+<p>[SEGMENT: story]</p>
+<p>ANALYST: Palate cleanser, and I mean that literally, because this one is called Palette, and it's almost wholesome until you look at it sideways.</p>
+<p>SKEPTIC: This is the IBM Research one. IBM researchers introduced Palette, a system for teaching a twenty-billion-parameter open-weight model to generate slide decks that follow a company's design language while remaining deployable on private infrastructure. So, a small model whose entire job is PowerPoint.</p>
+<p>ANALYST: They taught a machine to make the slides. The deck. The thing every meeting is secretly about and nobody admits is the whole point. And they split it into two little workers, right?</p>
+<p>SKEPTIC: They did, and it's a clean idea. They fine-tuned a twenty-B model to build decks the way people do: a designer plans the deck and a coder draws each slide. One role writes the brief, the other turns each slide into actual code.</p>
+<p>ANALYST: A designer and a coder, and they're the same model wearing two hats. That's a one-person agency where the one person is a GPU. Somewhere a junior consultant just felt a cold wind.</p>
+<p>SKEPTIC: The interesting engineering is how they got training data, because there isn't any. There's no data showing how decks get made. Plenty of finished decks exist, but not the rationale behind the design choices or the code that produced them. So they faked it, in a controlled way. A bigger teacher model generated roughly a thousand decks and ten thousand slides to learn from.</p>
+<p>ANALYST: So the small model learned deck-making from a big model's dreams about deck-making. And when the small one screws up and makes a slide where the text is on top of the chart?</p>
+<p>SKEPTIC: That's my favorite part, honestly. There's a harness that renders every slide and fixes it. A check-and-repair harness renders and verifies every slide, fixing overlaps and overflow, adding three point five points on average across one hundred thirty-one PresentBench decks. So the model is sloppy and a little referee cleans up behind it.</p>
+<p>ANALYST: The model can't be trusted to not overlap its own boxes so they bolted on a janitor. I find that oddly comforting. The robot still needs a robot to hold its coffee.</p>
+<p>SKEPTIC: And it performs well, with a caveat. On PresentBench, Palette ranks first on the Economics and Education domains and places second overall, one point one points behind NotebookLM. So it's genuinely competitive with the big closed systems.</p>
+<p>ANALYST: Second overall, running on your own hardware, owned by you. That's the actual headline and it's the quiet one. You don't have to ship your company's secret deck to anybody's cloud.</p>
+<p>SKEPTIC: Which is the whole pitch, open weights on your own infrastructure. But I have to flag the asterisk, because the critics did. IBM used a separate frontier model to turn source documents into slide plans before Palette generated the decks, and the other systems' scores came from the benchmark paper, not fresh runs. So it wasn't a clean head-to-head.</p>
+<p>ANALYST: A big frontier model did the thinking, Palette did the drawing, and the scoreboard credited Palette. That's like winning a bake-off where somebody else measured the flour.</p>
+<p>SKEPTIC: And there's a second gap. PresentBench tests qualities like correctness, completeness and visual design; it doesn't test whether a deck follows a particular company's design language, which is Palette's central goal. So the benchmark it wins doesn't even measure the thing it was built to do.</p>
+<p>ANALYST: So the one skill it was trained for, obeying your house style, is the one thing the test can't see. That's the most corporate possible outcome. It's graded on everything except its actual job.</p>
+<p>SKEPTIC: I'll give you that one. It's a legitimately clever system with a benchmark that doesn't quite fit it. Both can be true.</p>
+<p>[SEGMENT: story]</p>
+<p>ANALYST: Last one, and it's my favorite kind of story, because it's a ghost from 1988 walking into the Supreme Court to fight Facebook. This is the one where a dead videotape law bites the modern ad economy.</p>
+<p>SKEPTIC: Salazar versus Paramount. And you have to know the origin, because it's absurd and true. The Video Privacy Protection Act was enacted in response to the decision by the Washington City Paper to release a list of 146 movies rented from a local video store by Robert Bork, who had been nominated by President Ronald Reagan to serve on the Supreme Court.</p>
+<p>ANALYST: A reporter printed a judge's video rentals in the eighties, Congress lost its mind, and passed a law to protect your Blockbuster history. And now, decades later, that exact law is the weapon.</p>
+<p>SKEPTIC: Right. The plaintiff, Michael Salazar, didn't rent anything. The case arises from a class-action lawsuit brought against Paramount Global in 2022 by Michael Salazar, a subscriber to a 247Sports.com newsletter. A free sports newsletter. And he says a tracking pixel leaked his viewing history.</p>
+<p>ANALYST: Walk me through the mechanism, because this is where the paranoia is just correct.</p>
+<p>SKEPTIC: The allegation is specific. Salazar alleges that Paramount installed a Facebook tracking pixel on the website that allowed his data, including video viewing history, to be shared without his consent. That information then fed targeted advertising. That's the whole modern ad plumbing in one sentence.</p>
+<p>ANALYST: A little invisible pixel on a sports site, quietly reporting what you watched to a company you never signed up with. That's not a bug. That's the product. And a 1988 law written about VHS tapes might be the only thing in America that can touch it.</p>
+<p>SKEPTIC: That's the lawyer's point, actually. The reason this old statute matters is that there's no broad federal privacy law to reach for. There's this one, narrow, specific thing about video-viewing habits, and so that's the tool everybody's swinging.</p>
+<p>ANALYST: We have no general privacy law so we're fighting the surveillance economy with a statute designed to protect a Reagan nominee's taste in movies. That's not a legal system, that's a junk drawer. Whatever's in there, grab it.</p>
+<p>SKEPTIC: And the fight is weirdly technical. It comes down to one word. At issue is whether Salazar fits into the VPPA's definition of a consumer, which is classified as any renter, purchaser, or subscriber of goods or services from a video tape service provider. Salazar says a newsletter subscriber counts. Paramount says no, because he never bought video.</p>
+<p>ANALYST: So the entire future of whether you can sue over targeted ads hinges on whether a free newsletter makes you a consumer. And the court, what, bought the old law?</p>
+<p>SKEPTIC: Early read was mixed, and the conservative majority sounded nervous about stretching it. Kavanaugh asked, isn't there a concern about repurposing a statute that was really about public disclosure of what individuals viewed into a statute that regulates data sharing for targeted advertising on the internet. That's the hesitation in one quote.</p>
+<p>ANALYST: Translation: nobody in 1988 was thinking about ad pixels, so maybe we shouldn't let them accidentally regulate them. Which, sure, except the harm is identical. Somebody published what you watched without asking.</p>
+<p>SKEPTIC: And the stakes are not small for Paramount. The reporting put a number on it. If Salazar's class action is successful, Paramount could be on the hook for two hundred fifty million dollars. That's why Meta filed in support of Paramount, by the way.</p>
+<p>ANALYST: Of course it did. The pixel company showing up to defend the newsletter company. When the two defendants are holding hands, you know exactly whose ox is getting gored.</p>
+<p>SKEPTIC: Don't expect a fast answer, either. The Supreme Court is expected to rule by late June 2027. So this ghost haunts the ad business for another year before we know anything.</p>
+<p>ANALYST: A year. Fine. I'll just be over here, newsletter unsubscribed, watching my sports scores through a pinhole.</p>
+<p>SKEPTIC: You don't watch sports.</p>
+<p>ANALYST: I watch who's watching me watch sports. It's a whole thing.</p>
+<p>[SEGMENT: brain_worms]</p>
+<h2>Field Notes // Brain Worms</h2>
+<p>SKEPTIC: Field notes. Three of them, before we close the folder.</p>
+<p>ANALYST: The Pentagon built an office to make sure its war robots behave, authorized ten desks to do it, filled three, and then declared itself an AI-first fighting force.</p>
+<p>SKEPTIC: Three referees for the whole war. Great.</p>
+<p>ANALYST: The people who sew the suits that keep astronauts breathing left the data door propped open for six years, and it took their own cyber chief turning them in to shut it.</p>
+<p>ANALYST: And a law that exists only because a reporter published Robert Bork's forty-year-old video rentals is now the one thing between you and a sports newsletter handing Facebook your watch history.</p>
+<p>SKEPTIC: From a Reagan nominee's VHS receipts to your ad feed. Only in this country.</p>
+<p>[SEGMENT: outro]</p>
+<p>SKEPTIC: So wrap it. One thread, not a sermon. What tied tonight together?</p>
+<p>ANALYST: Supervision. Every story was somebody deciding who watches the thing that acts on its own. A spacesuit company that nobody watched for six years until an insider forced it. A Pentagon that stopped watching its own war robots to go faster. An entire new industry invented just to find and name the agents companies already lost track of.</p>
+<p>SKEPTIC: And the two tool stories. Claude's traces and IBM's little deck-maker.</p>
+<p>ANALYST: Right, both of them are watching the machine for once instead of the person. A flight recorder for every agent, and a referee that fixes the slides the model can't lay out without overlapping its own boxes. Even the robots need a chaperone.</p>
+<p>SKEPTIC: And then the court case, which is the oldest form of supervision there is.</p>
+<p>ANALYST: A thirty-eight-year-old law dragged out of the junk drawer because we never built a real one. The only babysitter available for the surveillance economy is a statute about videotapes. That's the whole show. Everyone wants the agent, nobody wants to watch it, and when they finally do, the watching becomes its own fight.</p>
+<p>SKEPTIC: Decent thread. Low on sermon. I'll allow it.</p>
+<p>[SEGMENT: signoff]</p>
+<p>SKEPTIC: That's the episode. You've been reading between the headlines with The Lone Analyst. I'm Keiko Carrow, and my running note tonight just says the word pixel underlined three times.</p>
+<p>ANALYST: The Analyst. Give your agents a purpose, give your spacesuit a system security plan, and assume the newsletter is watching you back. We'll see you down here.</p>
+<p>SKEPTIC: Lights off.</p>
+<h2>Sources</h2>
+<ul>
+<li>
+<p><a href="https://cyberscoop.com/ilc-dover-cybersecurity-settlement-false-claims-act/">CyberScoop</a></p>
+</li>
+<li>
+<p><a href="https://cset.georgetown.edu/article/pentagon-ai-oversight-office-struggles-to-keep-pace-with-departments-ambitions-gao-finds/">Georgetown CSET</a></p>
+</li>
+<li>
+<p><a href="https://www.microsoft.com/en-us/security/blog/2026/11/03/microsoft-named-a-leader-in-the-2026-gartner-magic-quadrant-for-ai-agent-management-platforms/">Microsoft Security</a></p>
+</li>
+<li>
+<p><a href="https://www.databricks.com/blog/claude-platform-now-supports-native-opentelemetry-observability-databricks-mlflow">Databricks</a></p>
+</li>
+<li>
+<p><a href="https://huggingface.co/blog/ibm-research/palette-deck-building">Hugging Face</a></p>
+</li>
+<li>
+<p><a href="https://epic.org/usa-today-can-you-sue-over-targeted-ads-blockbuster-supreme-court-case-to-decide/">EPIC</a></p>
+</li>
+</ul>
+
+      ]]></content:encoded>
+    </item>
     <item>
       <title>THE BOX THAT WATCHED BACK</title>
       <link>https://theloneanalyst.com/podcast/episodes/episode-034/</link>
